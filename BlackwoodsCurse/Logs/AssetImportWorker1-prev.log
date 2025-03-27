@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.39f1 (fb3b7b32f191) revision 16464763'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32603 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32535 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.39f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
+C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62030
-Successfully changed project path to: C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
-C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
+61513
+Successfully changed project path to: C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
+C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,118 +47,117 @@ C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14536] Host "[IP] 192.168.52.1 [Port] 0 [Flags] 2 [Guid] 565448524 [EditorId] 565448524 [Version] 1048832 [Id] WindowsEditor(7,MAYAR-DESKTOP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20972] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 123485098 [EditorId] 123485098 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [14536] Host "[IP] 192.168.52.1 [Port] 0 [Flags] 2 [Guid] 565448524 [EditorId] 565448524 [Version] 1048832 [Id] WindowsEditor(7,MAYAR-DESKTOP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20972] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 123485098 [EditorId] 123485098 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 37.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 51.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse/Assets
+[Subsystems] Discovering subsystems at path C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
     Vendor:   NVIDIA
-    VRAM:     12115 MB
+    VRAM:     7949 MB
     Driver:   32.0.15.6094
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002121 seconds.
+Registered in 0.002622 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 41.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.334 seconds
+- Completed reload, in  0.385 seconds
 Domain Reload Profiling:
-	ReloadAssembly (335ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (386ms)
+		BeginReloadAssembly (62ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (230ms)
-			LoadAssemblies (52ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (267ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (59ms)
+			SetupTypeCache (61ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (14ms)
-			SetupLoadedEditorAssemblies (136ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (165ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (37ms)
+				RefreshPlugins (41ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (68ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				ProcessInitializeOnLoadAttributes (83ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002504 seconds.
+Registered in 0.003369 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.885 seconds
+- Completed reload, in  0.962 seconds
 Domain Reload Profiling:
-	ReloadAssembly (886ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (963ms)
+		BeginReloadAssembly (83ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (11ms)
-		EndReloadAssembly (763ms)
-			LoadAssemblies (53ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (541ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (562ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (37ms)
-				ProcessInitializeOnLoadAttributes (485ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (498ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (46.7 KB). Loaded Objects now: 3568.
-Memory consumption went from 193.8 MB to 193.8 MB.
-Total: 1.571300 ms (FindLiveObjects: 0.127600 ms CreateObjectMapping: 0.035700 ms MarkObjects: 1.361300 ms  DeleteObjects: 0.046200 ms)
+Unloading 24 unused Assets / (47.0 KB). Loaded Objects now: 3568.
+Memory consumption went from 193.7 MB to 193.7 MB.
+Total: 2.902800 ms (FindLiveObjects: 0.246600 ms CreateObjectMapping: 0.148300 ms MarkObjects: 2.399600 ms  DeleteObjects: 0.105700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -168,53 +167,54 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 528983.976233 seconds.
-  path: Assets/Horror_Mansion/Models/Characters
-  artifactKey: Guid(f9d9b537b749b0a4d9be4f9417d5c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 2660.675253 seconds.
+  path: Assets/Horror_Mansion
+  artifactKey: Guid(78c6b9782895e864fac7726dc038609c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters using Guid(f9d9b537b749b0a4d9be4f9417d5c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8e92a968d253af3f19c823b9202001') in 0.014110 seconds 
+Start importing Assets/Horror_Mansion using Guid(78c6b9782895e864fac7726dc038609c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e1911d6f5559324090a9f3b85b8fbd') in 0.015709 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 44.002555 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Ch31_1001_Diffuse.png
-  artifactKey: Guid(8307691cb2753b74c842291cd5dfa903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 36.671901 seconds.
+  path: Assets/Horror_Mansion/Other/Demo_Profile.asset
+  artifactKey: Guid(19193ba81ff75e348b5f62cf6a0e9421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Ch31_1001_Diffuse.png using Guid(8307691cb2753b74c842291cd5dfa903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c419b1b9807e710aef0adca31ca25c') in 0.060791 seconds 
-Number of asset objects unloaded after import = 2
+Start importing Assets/Horror_Mansion/Other/Demo_Profile.asset using Guid(19193ba81ff75e348b5f62cf6a0e9421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b5ec604e42625f283a6c42eb9f3d7b') in 0.018696 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Horror_Mansion/Other/Layer_Pebbles.terrainlayer
+  artifactKey: Guid(e6d07055b48430c4e81f73a5454992e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Other/Layer_Pebbles.terrainlayer using Guid(e6d07055b48430c4e81f73a5454992e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752d9e2536263971dcf22e803dba53e4') in 0.071974 seconds 
+Number of asset objects unloaded after import = 5
 ========================================================================
 Received Import Request.
   Time since last request: 0.000016 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Ch31_1002_Diffuse.png
-  artifactKey: Guid(df75330c95dd65a47b2e3acc52bb09d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Horror_Mansion/Other/Layer_Grass_02.terrainlayer
+  artifactKey: Guid(92f83e6d9bd3dc242ad29e6377bac397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Ch31_1002_Diffuse.png using Guid(df75330c95dd65a47b2e3acc52bb09d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22086bade70676015d18c44a019131c9') in 0.022310 seconds 
-Number of asset objects unloaded after import = 2
+Start importing Assets/Horror_Mansion/Other/Layer_Grass_02.terrainlayer using Guid(92f83e6d9bd3dc242ad29e6377bac397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59daffdb006a0cd936b5e34edb0513fa') in 0.020428 seconds 
+Number of asset objects unloaded after import = 5
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Ch31_1001_Specular.png
+  Time since last request: 0.000021 seconds.
+  path: Assets/Horror_Mansion/Other/Terrain.asset
+  artifactKey: Guid(5de0cd1207d2c7d44b5f0716915e97da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Other/Terrain.asset using Guid(5de0cd1207d2c7d44b5f0716915e97da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00746bc786cf3dbc2fcbc92962e646d') in 0.102711 seconds 
+Number of asset objects unloaded after import = 308
+========================================================================
+Received Import Request.
+  Time since last request: 17.463544 seconds.
+  path: Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1001_Specular.png
   artifactKey: Guid(2266e4206ead48e47a7a25eb27ea134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Ch31_1001_Specular.png using Guid(2266e4206ead48e47a7a25eb27ea134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7465b3a6907d3aa057d49708e010c99b') in 0.012231 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Ch31_1001_Normal.png
-  artifactKey: Guid(cbc44e8fc1357df45aa2718e9da08be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Ch31_1001_Normal.png using Guid(cbc44e8fc1357df45aa2718e9da08be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737052609abac549f404d5dfd111e103') in 0.011441 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Ch31_1001_Glossiness.png
-  artifactKey: Guid(0b8bf3231a461454cad7a059dc7890d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Ch31_1001_Glossiness.png using Guid(0b8bf3231a461454cad7a059dc7890d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78b519984bd753f97a22e2e8c05107b') in 0.010696 seconds 
+Start importing Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1001_Specular.png using Guid(2266e4206ead48e47a7a25eb27ea134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b06a85d3cc2542e758bae7a0cb5a2d') in 0.040409 seconds 
 Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
