@@ -1,0 +1,604 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.39f1 (fb3b7b32f191) revision 16464763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32603 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.39f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker13
+-projectPath
+C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
+-logFile
+Logs/AssetImportWorker13.log
+-srvPort
+52665
+Successfully changed project path to: C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
+C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [5528] Host "[IP] 192.168.52.1 [Port] 0 [Flags] 2 [Guid] 4082943919 [EditorId] 4082943919 [Version] 1048832 [Id] WindowsEditor(7,MAYAR-DESKTOP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [5528] Host "[IP] 192.168.52.1 [Port] 0 [Flags] 2 [Guid] 4082943919 [EditorId] 4082943919 [Version] 1048832 [Id] WindowsEditor(7,MAYAR-DESKTOP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 40.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12115 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002498 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 36.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.359 seconds
+Domain Reload Profiling:
+	ReloadAssembly (360ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (232ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (57ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (14ms)
+			SetupLoadedEditorAssemblies (138ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (37ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003489 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Domain Reload Profiling:
+	ReloadAssembly (900ms)
+		BeginReloadAssembly (73ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (769ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (147ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (476ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (47.5 KB). Loaded Objects now: 3568.
+Memory consumption went from 196.2 MB to 196.2 MB.
+Total: 2.453300 ms (FindLiveObjects: 0.194800 ms CreateObjectMapping: 0.066800 ms MarkObjects: 2.121200 ms  DeleteObjects: 0.068900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 131939.252398 seconds.
+  path: Assets/Horror_Mansion/Models/House/Arch_Apartment_02.fbx
+  artifactKey: Guid(4769854d62cceb8408aa1cfad5e7ebfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Arch_Apartment_02.fbx using Guid(4769854d62cceb8408aa1cfad5e7ebfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983d2d4f667e5ee29e492a2615bff469') in 0.154295 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Horror_Mansion/Models/House/Floor_4x2_01.fbx
+  artifactKey: Guid(ce770ee305387794db1d6a5daf437162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Floor_4x2_01.fbx using Guid(ce770ee305387794db1d6a5daf437162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ff66a898e3a34fe5ee9211fb910ca1') in 0.086052 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Horror_Mansion/Models/House/Beam_4m_02.fbx
+  artifactKey: Guid(b4e56ba4ce61e674fbd29b96d8e9e729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Beam_4m_02.fbx using Guid(b4e56ba4ce61e674fbd29b96d8e9e729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b088444e1f3de8047f784420456488') in 0.083595 seconds 
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/House/Column_01.fbx
+  artifactKey: Guid(7eb6b437e6501d54c8d7fb4aeb00b3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Column_01.fbx using Guid(7eb6b437e6501d54c8d7fb4aeb00b3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e740f68d2bb28075ab0114dc4b0823') in 0.030870 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/House/Entrance_Basement.fbx
+  artifactKey: Guid(27868c598bd979842b4a43903f2788bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Entrance_Basement.fbx using Guid(27868c598bd979842b4a43903f2788bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7e64337ec192381eaeee7cd01aefa8') in 0.152623 seconds 
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Models/House/Balcony_02.fbx
+  artifactKey: Guid(bea5bd1c4f95d944bbd130471d380a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Balcony_02.fbx using Guid(bea5bd1c4f95d944bbd130471d380a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a84e0ff267ab433db53dfc9bd7c6f7e') in 0.057308 seconds 
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Horror_Mansion/Models/House/Porch.fbx
+  artifactKey: Guid(bd548bffecda3b54fb8ec74aade353cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Porch.fbx using Guid(bd548bffecda3b54fb8ec74aade353cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa53cce986be3548121c0b3dc92e96dd') in 0.065360 seconds 
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Models/House/Railings_02.fbx
+  artifactKey: Guid(dc62591c6e9138b48ad017ddfdfed041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Railings_02.fbx using Guid(dc62591c6e9138b48ad017ddfdfed041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be0d7964e06d7815cf5d287001d91fe') in 0.034945 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Horror_Mansion/Models/House/Basement_Column_01.fbx
+  artifactKey: Guid(16ff9e42ccabcff4ca3d080fcebbd544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Basement_Column_01.fbx using Guid(16ff9e42ccabcff4ca3d080fcebbd544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3a0fea0437ec47c29df616545d56a5') in 0.028355 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Basement_Passage.fbx
+  artifactKey: Guid(cd5befb612de44c44ba90de9297b8471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Basement_Passage.fbx using Guid(cd5befb612de44c44ba90de9297b8471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a32e3e1d93bb9285e6cf097bd88687') in 0.027861 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Beam_4m.fbx
+  artifactKey: Guid(cd26d67b9c22db248b9dae924f157044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Beam_4m.fbx using Guid(cd26d67b9c22db248b9dae924f157044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f189d7b14722e86de6aabb23632530') in 0.027145 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Interior_Door_02.fbx
+  artifactKey: Guid(b84e2a649bb471b4fa404f48778bf540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Interior_Door_02.fbx using Guid(b84e2a649bb471b4fa404f48778bf540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ada2419a422f77ef56458f02bbaaf041') in 0.092612 seconds 
+Number of asset objects unloaded after import = 50
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Horror_Mansion/Models/House/Cornice_2m_01.fbx
+  artifactKey: Guid(fa3698eb51e1da941aa4445ae8fc82e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Cornice_2m_01.fbx using Guid(fa3698eb51e1da941aa4445ae8fc82e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9364f076b9d63bb2af5acbee217381c1') in 0.026488 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Models/House/Basement_Column_Wood.fbx
+  artifactKey: Guid(0aacb09c2eb092a45a9082afe0b88c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Basement_Column_Wood.fbx using Guid(0aacb09c2eb092a45a9082afe0b88c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6790af95ba762b221fa446f7289bfe4') in 0.030099 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Horror_Mansion/Models/House/Interior_Column_01.fbx
+  artifactKey: Guid(1cee8625586fba04781e8ae1aa6020aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Interior_Column_01.fbx using Guid(1cee8625586fba04781e8ae1aa6020aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347d2541c2dba2821f4de2a72e0e19ef') in 0.041224 seconds 
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Chimney_02.fbx
+  artifactKey: Guid(f3e5047566376fd45842f50ac9202038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Chimney_02.fbx using Guid(f3e5047566376fd45842f50ac9202038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1595f30986868e52cd08a11ec412a11d') in 0.038060 seconds 
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Models/House/Column_Wall_01.fbx
+  artifactKey: Guid(c42614ac022324142a201cf05ff7511d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Column_Wall_01.fbx using Guid(c42614ac022324142a201cf05ff7511d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40400287727f9292ce43c0b57476700e') in 0.029159 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/House/Back_Entrance.fbx
+  artifactKey: Guid(e23e935d1c8e825418f26fd5b07ddf1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Back_Entrance.fbx using Guid(e23e935d1c8e825418f26fd5b07ddf1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2059371293ac5018b2789f36e3245c9e') in 0.046881 seconds 
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Veranda_Roof_Angle_01.fbx
+  artifactKey: Guid(85f530661810fb94ebb0fd99057a31ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Veranda_Roof_Angle_01.fbx using Guid(85f530661810fb94ebb0fd99057a31ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25fd77c23bf0df65e6bcde11052a2132') in 0.034466 seconds 
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Horror_Mansion/Models/House/Molding_01.fbx
+  artifactKey: Guid(25b71110aecac4943940c677604015a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Molding_01.fbx using Guid(25b71110aecac4943940c677604015a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b25daf30aa2127c519b93e0dcb1e448') in 0.028377 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Horror_Mansion/Models/House/Balcony_01.fbx
+  artifactKey: Guid(e7c7ad773bab97743a5a04958740b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Balcony_01.fbx using Guid(e7c7ad773bab97743a5a04958740b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0879d0fbfb0d6854b4522a981cc46d') in 0.037133 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Dormer_Window_03.fbx
+  artifactKey: Guid(1f1fad2c6a0a4af43bdfb1b83d33d65b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Dormer_Window_03.fbx using Guid(1f1fad2c6a0a4af43bdfb1b83d33d65b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435c7646eba64c44e07a8021b2931206') in 0.040792 seconds 
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Horror_Mansion/Models/House/Front_Porch.fbx
+  artifactKey: Guid(5ff702fb444a5054890ad17256214ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Front_Porch.fbx using Guid(5ff702fb444a5054890ad17256214ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22221587a81203c235839dcd3649f34') in 0.039665 seconds 
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Models/House/Floor_2x4_01.fbx
+  artifactKey: Guid(f3ec3b97872d3804592070d494264fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Floor_2x4_01.fbx using Guid(f3ec3b97872d3804592070d494264fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcfa477d4319038e0d3388f3565ac2d') in 0.037685 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_0,5m.fbx
+  artifactKey: Guid(b001ab0d01a04be4690d618c21e3ffec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_0,5m.fbx using Guid(b001ab0d01a04be4690d618c21e3ffec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff25fd3a892ceaf18e5d3b6aa083a77c') in 0.027814 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Horror_Mansion/Models/House/Veranda_Roof_4m_01.fbx
+  artifactKey: Guid(1b5030457f68c5e499b6e68cf6887c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Veranda_Roof_4m_01.fbx using Guid(1b5030457f68c5e499b6e68cf6887c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4f915ace433e293aeac6b945e6f03f') in 0.032022 seconds 
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Models/House/Roof_Module_4m_01.fbx
+  artifactKey: Guid(80d8211a904fdec4e935ac14739cd644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Roof_Module_4m_01.fbx using Guid(80d8211a904fdec4e935ac14739cd644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32cb101d9ad27f354252f84562f6117') in 0.046102 seconds 
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_4x2m.fbx
+  artifactKey: Guid(415f8bf19a898694bb90cf019a6d02e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_4x2m.fbx using Guid(415f8bf19a898694bb90cf019a6d02e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266c2d9f78d53b2ac67227b479ec7043') in 0.034724 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Ladder.fbx
+  artifactKey: Guid(da186a5fd2ed3b24fb012e0a7ded9934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Ladder.fbx using Guid(da186a5fd2ed3b24fb012e0a7ded9934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb617fd115004573a81afe83b4fded4') in 0.084919 seconds 
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Railings_01.fbx
+  artifactKey: Guid(c2498a95d7692394e937109b9f78c318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Railings_01.fbx using Guid(c2498a95d7692394e937109b9f78c318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336cdba5f96058ae08e6ad8f0b016abd') in 0.034944 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Beam_2m.fbx
+  artifactKey: Guid(a2de72b268586ed468fc22ba9b93563f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Beam_2m.fbx using Guid(a2de72b268586ed468fc22ba9b93563f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95732d446be52859c9f7a24d8724836') in 0.030080 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Models/House/Quoin_Block_4m_02.fbx
+  artifactKey: Guid(ea0b4661e921eb340920c5d91637b5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Quoin_Block_4m_02.fbx using Guid(ea0b4661e921eb340920c5d91637b5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac073d86d8d20c4bfc507826e9c94b0') in 0.037471 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/House/Roof_Module_Angle_02.fbx
+  artifactKey: Guid(fc897fe869a86bc49bd0aae57db3e388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Roof_Module_Angle_02.fbx using Guid(fc897fe869a86bc49bd0aae57db3e388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0197b99c34e20cb494906ea942cc7317') in 0.035487 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.600026 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_Interior_0,5m_02.fbx
+  artifactKey: Guid(ec9274de5c9287c45a6e40d85be71e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_Interior_0,5m_02.fbx using Guid(ec9274de5c9287c45a6e40d85be71e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79624cf19dcab8ab878f439743910507') in 0.049373 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_Windows_05.fbx
+  artifactKey: Guid(0194691382b73bd4fbe78b25f946cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_Windows_05.fbx using Guid(0194691382b73bd4fbe78b25f946cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cba23891bc9c40c39e0fa967e6374df') in 0.084374 seconds 
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_Windows_03.fbx
+  artifactKey: Guid(fdaf5f5ab07bc09448585863863b79c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_Windows_03.fbx using Guid(fdaf5f5ab07bc09448585863863b79c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef93c0b5e0d1b130f28ea85cc9ae3145') in 0.064233 seconds 
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 14.134722 seconds.
+  path: Assets/Horror_Mansion/Other/Layer_Grass_01.terrainlayer
+  artifactKey: Guid(690ea50bdbbda92469553ca817dbcff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Other/Layer_Grass_01.terrainlayer using Guid(690ea50bdbbda92469553ca817dbcff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa92ee2102f7b4579a484c7e22c82114') in 0.050839 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 7.165854 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Bone_01.fbx
+  artifactKey: Guid(2f0ff6723a95c014183e20575d160173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Bone_01.fbx using Guid(2f0ff6723a95c014183e20575d160173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fcbc1d2b5c0cd5999290b4544bd5b87') in 0.125410 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_04.fbx
+  artifactKey: Guid(d963c01a15a501b498996eaaa2d050a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_04.fbx using Guid(d963c01a15a501b498996eaaa2d050a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e57500ca192e5e806fa707b6303255') in 0.026137 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Home_Flower_01.fbx
+  artifactKey: Guid(3cb6274a500b9e04fb85b9a51d7b9bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Home_Flower_01.fbx using Guid(3cb6274a500b9e04fb85b9a51d7b9bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5ab1c384059822ca7db87956fc8648') in 0.061878 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Home_Flower_03.fbx
+  artifactKey: Guid(7ffca9bb37d14e3499b745cf6c008bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Home_Flower_03.fbx using Guid(7ffca9bb37d14e3499b745cf6c008bb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b3de50150acd5a9f3a5581985b4c38') in 0.041732 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Candle_Stand_03.fbx
+  artifactKey: Guid(733de09fd1fc8184d9800d0af969c44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Candle_Stand_03.fbx using Guid(733de09fd1fc8184d9800d0af969c44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1fe999722b74129814da42ac824c87e') in 0.046166 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_Pack_01.fbx
+  artifactKey: Guid(a2774f9450e4008429f4777f24868fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_Pack_01.fbx using Guid(a2774f9450e4008429f4777f24868fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab0673730b52d0e0bac52808015e4e57') in 0.031021 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Firewood_Pile_01.fbx
+  artifactKey: Guid(2bf9f0f32ca2aa840b8202ed023f2027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Firewood_Pile_01.fbx using Guid(2bf9f0f32ca2aa840b8202ed023f2027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f565bb27a577f2a7b9e1ff946af0104') in 0.040947 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Broken_Plate_03.fbx
+  artifactKey: Guid(eb0a8f80d1f6491459364d6c23d2c126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Broken_Plate_03.fbx using Guid(eb0a8f80d1f6491459364d6c23d2c126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0e8fbb176f444ef7b148624c8934fd') in 0.031241 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_01.fbx
+  artifactKey: Guid(d3accfa030d25494e906850640bcc02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_01.fbx using Guid(d3accfa030d25494e906850640bcc02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73828974c7c5b1c44dd3c8bdc44a3b1b') in 0.025467 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Cup_01.fbx
+  artifactKey: Guid(d07eeefcb5fbaa94b9396f06d4359b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Cup_01.fbx using Guid(d07eeefcb5fbaa94b9396f06d4359b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e69e2b72d80dab79197cf42d5686db2') in 0.037786 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Fork.fbx
+  artifactKey: Guid(cb6a952342199fb4bbf51dae554c95d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Fork.fbx using Guid(cb6a952342199fb4bbf51dae554c95d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e849c580c5d3dc15625e118ed97d12a') in 0.029949 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.117544 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Picture_02.fbx
+  artifactKey: Guid(11682f9451ae48b47a0134c9a1cce25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Picture_02.fbx using Guid(11682f9451ae48b47a0134c9a1cce25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc585b484ca0099a8ecf63782a88b7e5') in 0.074584 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Picture_13.fbx
+  artifactKey: Guid(d5abcb0401659434281784fb7b6cfd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Picture_13.fbx using Guid(d5abcb0401659434281784fb7b6cfd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05d0cfc1338fa16586573ef12aa4712') in 0.031541 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.631493 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Piece_Paper_05.fbx
+  artifactKey: Guid(0d9061de6ae76934d8385b5060537c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Piece_Paper_05.fbx using Guid(0d9061de6ae76934d8385b5060537c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2463583790a2c4f8584bc0d25f2c47f') in 0.059414 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Shelf_01.fbx
+  artifactKey: Guid(c133875a1e662d141a70d0c74526e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Shelf_01.fbx using Guid(c133875a1e662d141a70d0c74526e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c941577c4ef6ef4a77053ea8c4189a') in 0.064073 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.197984 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Socket_01.fbx
+  artifactKey: Guid(c3f6639064c2ff245802e0a5d071fe00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Socket_01.fbx using Guid(c3f6639064c2ff245802e0a5d071fe00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe884f82bf1ff7a0aa0738738ba8244') in 0.063614 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Suitcase_03.fbx
+  artifactKey: Guid(fc1466d544366bf4a827bece3ba27aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Suitcase_03.fbx using Guid(fc1466d544366bf4a827bece3ba27aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a58f42988f590022e2f458df3304661') in 0.063022 seconds 
+Number of asset objects unloaded after import = 25
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

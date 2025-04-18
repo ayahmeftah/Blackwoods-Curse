@@ -347,6 +347,8 @@
 "Assets/Horror_Mansion/Other/Door.cs"
 "Assets/Horror_Mansion/Other/Rotate.cs"
 "Assets/Horror_Mansion/Other/SimpleCameraController.cs"
+"Assets/Scripts/MoveCamera.cs"
+"Assets/Scripts/PlayerCam.cs"
 -langversion:9.0
 /deterministic
 /optimize+

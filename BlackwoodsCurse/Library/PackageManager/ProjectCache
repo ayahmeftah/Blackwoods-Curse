@@ -13,10 +13,18 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638780109943754391
-    m_Hash: 1894139921
+      ticks: 638805576952878649
+    m_Hash: 1964616704
 m_EmbeddedPackageManifests:
-  m_ManifestsStatus: {}
+  m_ManifestsStatus:
+    C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/package.json:
+      m_FilePath: C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 638805576176772176
+      m_Hash: 1724004672
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/mayar/Documents/GitHub/Blackwoods-Curse/BlackwoodsCurse/Packages
@@ -324,12 +332,14 @@ m_ResolvedPackages:
     - 3.0.31
     - 3.0.34
     - 3.0.35
+    - 3.0.36
     compatible:
     - 3.0.28
     - 3.0.31
     - 3.0.34
     - 3.0.35
-    verified: 3.0.35
+    - 3.0.36
+    verified: 3.0.36
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -2867,6 +2877,70 @@ m_ResolvedPackages:
     version: 1.0.0
     nextVersion: 
     recommendedVersion: 
+- packageId: com.merry-yellow.code-assist@file:C:\Users\mayar\Documents\GitHub\Blackwoods-Curse\BlackwoodsCurse\Packages\com.merry-yellow.code-assist
+  testable: 1
+  isDirectDependency: 1
+  version: 1.4.13
+  source: 3
+  resolvedPath: C:\Users\mayar\Documents\GitHub\Blackwoods-Curse\BlackwoodsCurse\Packages\com.merry-yellow.code-assist
+  assetPath: Packages/com.merry-yellow.code-assist
+  name: com.merry-yellow.code-assist
+  displayName: Code Assist
+  author:
+    name: Merry Yellow
+    email: merryyellow@outlook.com
+    url: https://code-assist.netlify.app/
+  category: 
+  type: tool
+  description: Code Assist improves your coding experience with Visual Studio and
+    VS Code by adding more features for Unity projects. Coding Unity scripts becomes
+    easier and more efficient and with fewer bugs.
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    verified: 
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - Productivity
+  - Functionality
+  - Script
+  - CSharp
+  - Scripting
+  - Code Editor
+  - IDE
+  - Visual Studio
+  - Tool
+  - Code
+  - Utility
+  - Coding
+  - C#
+  - Workflow
+  - Generative AI
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
@@ -3307,6 +3381,7 @@ m_ResolvedPackages:
     - 1.0.3
     - 2.0.0
     - 2.0.1
+    - 2.1.0
     compatible:
     - 1.0.3
     - 2.0.0
