@@ -15,7 +15,7 @@ C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57156
+51472
 Successfully changed project path to: C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1452] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 3886751916 [EditorId] 3886751916 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7128] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 1864366295 [EditorId] 1864366295 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1452] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 3886751916 [EditorId] 3886751916 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7128] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 1864366295 [EditorId] 1864366295 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 44.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
@@ -68,37 +68,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002494 seconds.
+Registered in 0.003087 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 50.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.401 seconds
+- Completed reload, in  0.409 seconds
 Domain Reload Profiling:
-	ReloadAssembly (401ms)
-		BeginReloadAssembly (61ms)
+	ReloadAssembly (409ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (281ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (285ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (66ms)
+			SetupTypeCache (64ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (171ms)
+			SetupLoadedEditorAssemblies (177ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
+				RefreshPlugins (51ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadAttributes (89ms)
 				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -106,120 +106,96 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002715 seconds.
+Registered in 0.003850 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001FC5E8F6C20 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D220020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E8FBBD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E8FBBD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CF6B820 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F267010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E8FBBD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E8FBBD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E9FD2E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5EE6DC30 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E572010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E9FD2E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E7F8430 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC60096650 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E7F8430 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E7F8430 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F2B2830 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ECCE9A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ECCE9A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ECCE9A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F11D420 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D0A4220 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.050 seconds
+- Completed reload, in  1.084 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1050ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (1085ms)
+		BeginReloadAssembly (83ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (12ms)
-		EndReloadAssembly (896ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (933ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (173ms)
+			SetupTypeCache (175ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (609ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (637ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (540ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (518ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (47.1 KB). Loaded Objects now: 3568.
-Memory consumption went from 196.3 MB to 196.2 MB.
-Total: 4.106600 ms (FindLiveObjects: 0.346700 ms CreateObjectMapping: 0.277500 ms MarkObjects: 3.340700 ms  DeleteObjects: 0.140300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 6223.178638 seconds.
-  path: Assets/External/Fungus_v3.13.8.unitypackage
-  artifactKey: Guid(1997e54c20b3a3f449cc027c76303d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/External/Fungus_v3.13.8.unitypackage using Guid(1997e54c20b3a3f449cc027c76303d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e81a9652bc260a0d65857f2e3a3e08') in 0.054835 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005383 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.044 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1044ms)
-		BeginReloadAssembly (119ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (868ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (174ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (592ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (51ms)
-				BeforeProcessingInitializeOnLoad (37ms)
-				ProcessInitializeOnLoadAttributes (486ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3823 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (0.6 MB). Loaded Objects now: 4311.
-Memory consumption went from 222.2 MB to 221.6 MB.
-Total: 2.129100 ms (FindLiveObjects: 0.194200 ms CreateObjectMapping: 0.101300 ms MarkObjects: 1.642500 ms  DeleteObjects: 0.190000 ms)
+Unloading 4369 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (46.8 KB). Loaded Objects now: 4878.
+Memory consumption went from 231.2 MB to 231.2 MB.
+Total: 2.361300 ms (FindLiveObjects: 0.211600 ms CreateObjectMapping: 0.114900 ms MarkObjects: 1.968200 ms  DeleteObjects: 0.065700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -235,65 +211,751 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 136.844420 seconds.
-  path: Assets/External/Behavior Design - Behavior Trees for Everyone
-  artifactKey: Guid(26169eca225f418439ccf49ededf3294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 3470.669986 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Characters/Character.prefab
+  artifactKey: Guid(1bdb5f23fac132a4c975440614d12afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/External/Behavior Design - Behavior Trees for Everyone using Guid(26169eca225f418439ccf49ededf3294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7debf215aa5b350a815ba5bcd95732') in 0.021541 seconds 
+Start importing Assets/Horror_Mansion/Prefabs/Characters/Character.prefab using Guid(1bdb5f23fac132a4c975440614d12afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb964cf8c16c1dc1df21eccb71f4f496') in 0.123258 seconds 
+Number of asset objects unloaded after import = 372
+========================================================================
+Received Import Request.
+  Time since last request: 7.596074 seconds.
+  path: Assets/FungusExamples/FirstPerson/FirstPersonDemo.unity
+  artifactKey: Guid(f52a982060cbf1342bcd0c3da0aa9083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/FungusExamples/FirstPerson/FirstPersonDemo.unity using Guid(f52a982060cbf1342bcd0c3da0aa9083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad43488e50914d42fd4133d3aa8da58a') in 0.008753 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 33.955804 seconds.
-  path: Assets/External/Behavior Design - Behavior Trees for Everyone/Behavior Designer - Behavior Trees for Everyone v1.7.9.unitypackage
-  artifactKey: Guid(2634c937e45e65041aa6010f58d89f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 3.215420 seconds.
+  path: Assets/FungusExamples/FirstPerson/FirstPersonDemoSettings.lighting
+  artifactKey: Guid(1cb41a7302ec0174a96a6baa05417350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/External/Behavior Design - Behavior Trees for Everyone/Behavior Designer - Behavior Trees for Everyone v1.7.9.unitypackage using Guid(2634c937e45e65041aa6010f58d89f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf89773baa540d8ca3d3b9d0bffbcfb7') in 0.014460 seconds 
+Start importing Assets/FungusExamples/FirstPerson/FirstPersonDemoSettings.lighting using Guid(1cb41a7302ec0174a96a6baa05417350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7ca64bb9f505f4842ce90c314eb040') in 0.009259 seconds 
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 85.320950 seconds.
+  path: Assets/Horror_Mansion/Scenes/HM_Demo.unity
+  artifactKey: Guid(2f99c9bef5060d1419c81909459f9484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scenes/HM_Demo.unity using Guid(2f99c9bef5060d1419c81909459f9484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0e3de307db09ff85592151176bf928') in 0.002086 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1632.757645 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac07c90cca7fba9f13284895fd38cf0') in 0.011125 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.471544 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f21452ece602c76ec1ec75ca1068e5') in 0.001965 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.700878 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35007c9e61a30c9c01dee83c26872808') in 0.002149 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 268.397687 seconds.
+  path: Assets/Horror_Mansion/Scripts
+  artifactKey: Guid(41c68dd925e13ed429c538046e1e6b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts using Guid(41c68dd925e13ed429c538046e1e6b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46790395834fa9dee387d83745d7e2ac') in 0.009416 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.690397 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6743fbc7b1bcf92e97cd6f3829b0a25') in 0.010352 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.669772 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3c286984b7976f69d48993e3404cd5') in 0.002492 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.587358 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a154a9ae2dee55b9b35e2d574ed7067') in 0.002350 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002871 seconds.
+Registered in 0.008013 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001FC5CEE1020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6344B630 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6344B630 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D293460 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63E69010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5EAE9430 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5EAE9430 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC604F8020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63DA9030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC642C0030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62EF4030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63DA9030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5FD7C050 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63DB1040 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63DB1040 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62F23E40 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D0C5020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6421C020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F1CA870 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6421C020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63985430 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.987 seconds
+- Completed reload, in  1.494 seconds
 Domain Reload Profiling:
-	ReloadAssembly (988ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1495ms)
+		BeginReloadAssembly (235ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (1149ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (315ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (668ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (573ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 4896.
+Memory consumption went from 246.6 MB to 246.5 MB.
+Total: 3.236000 ms (FindLiveObjects: 0.241300 ms CreateObjectMapping: 0.148200 ms MarkObjects: 2.814000 ms  DeleteObjects: 0.031600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 39.262717 seconds.
+  path: Assets/Horror_Mansion/Animation/Main Camera.controller
+  artifactKey: Guid(3cf04f8215148594098cb7abd31a323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Animation/Main Camera.controller using Guid(3cf04f8215148594098cb7abd31a323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed35af3342ca315083423a857af81c85') in 0.026709 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 18.227395 seconds.
+  path: Assets/Horror_Mansion/Controllers
+  artifactKey: Guid(f23454663b3c16945848505e18effe93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Controllers using Guid(f23454663b3c16945848505e18effe93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454befb8745deed7696348cfa2c5c996') in 0.009640 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 49.485568 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1079f156ec58bafdabb9415a1e5c1dc9') in 0.002402 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003852 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FC5D0C5020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE5EB0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC653BB0A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC646D59E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D0C5020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6489D0B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC660BA660 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED1B010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63440020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC631D8050 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64676420 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC602D6010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F21FE30 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B89570 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B89570 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC645727D0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B5B2A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC655F5020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE5EB0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62CDD020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC653BB0A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Domain Reload Profiling:
+	ReloadAssembly (967ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (821ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (800ms)
+			LoadAssemblies (70ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (166ms)
+			SetupTypeCache (162ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (547ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (535ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (478ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4348 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (21.9 KB). Loaded Objects now: 4899.
+Memory consumption went from 246.5 MB to 246.5 MB.
+Total: 1.897800 ms (FindLiveObjects: 0.210200 ms CreateObjectMapping: 0.102700 ms MarkObjects: 1.568500 ms  DeleteObjects: 0.015800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003345 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FC5D0C5020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6564F700 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5C8CBDE0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D2AFF10 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62B6F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC607B2020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6564F700 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED1B010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC627D5010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62E9E020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63472030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC602D6010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F21FE30 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6566C240 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F3BFA40 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64676420 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC607B2020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC641D2020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64C4CB30 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.022 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1022ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (846ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (182ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (550ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (492ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4348 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (22.0 KB). Loaded Objects now: 4902.
+Memory consumption went from 246.5 MB to 246.5 MB.
+Total: 2.200900 ms (FindLiveObjects: 0.349900 ms CreateObjectMapping: 0.157200 ms MarkObjects: 1.677300 ms  DeleteObjects: 0.015700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 682.692217 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9947b54bc395ed32d47faa1a24301ff') in 0.023435 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 105.260990 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90a823be3ae200cadc786805a98f5cb') in 0.002262 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 129.907838 seconds.
+  path: Assets/Horror_Mansion/Scripts/NewBehaviourScript.cs
+  artifactKey: Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/NewBehaviourScript.cs using Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24aabba4309ea1af99619df5047cd750') in 0.008787 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.647643 seconds.
+  path: Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs
+  artifactKey: Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs using Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff33107ca29cc1af4b8680f067eba5d') in 0.010030 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.561481 seconds.
+  path: Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs
+  artifactKey: Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs using Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2565dc682f8fbf3708141e0d1bb7b9') in 0.003492 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 167.514927 seconds.
+  path: Assets/Horror_Mansion/Scripts/PlayerController.cs
+  artifactKey: Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scripts/PlayerController.cs using Guid(6cea10cc58662b74f9a43a1894a7fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998e970abb5801908a3160d0834b6168') in 0.009313 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012187 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FCA9578020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9404210 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B89570 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA952F080 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62B6F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC654C5A90 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9353020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA97B2020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65665170 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F06C020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64920990 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC602D6010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64ECD7F0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B89570 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B89570 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63C4CFF0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62DB5010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5EA48FA0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC648EF170 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9309820 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64B447B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.442 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1443ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1160ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (705ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (588ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (22.0 KB). Loaded Objects now: 4906.
+Memory consumption went from 246.6 MB to 246.6 MB.
+Total: 3.419700 ms (FindLiveObjects: 0.419100 ms CreateObjectMapping: 0.158200 ms MarkObjects: 2.821500 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003806 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FCA9578020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63EB3010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F2A9020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62B6F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA95690B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9353020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64E86890 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA8D7FDA0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA95CBB10 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64920990 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC602D6010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA99E82B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC602D6010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64C89750 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC342C9FD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA95690B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA89E4020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64B447B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1005ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (829ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (174ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (542ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (36ms)
-				ProcessInitializeOnLoadAttributes (488ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (482ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4360 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (0.7 MB). Loaded Objects now: 4875.
-Memory consumption went from 235.1 MB to 234.5 MB.
-Total: 2.120800 ms (FindLiveObjects: 0.205900 ms CreateObjectMapping: 0.100800 ms MarkObjects: 1.597700 ms  DeleteObjects: 0.215600 ms)
+Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (21.9 KB). Loaded Objects now: 4909.
+Memory consumption went from 246.4 MB to 246.4 MB.
+Total: 2.221500 ms (FindLiveObjects: 0.250100 ms CreateObjectMapping: 0.131300 ms MarkObjects: 1.823100 ms  DeleteObjects: 0.016500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005318 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FCA9578020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63EB3010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F2A9020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62B6F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5FBAB030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9353020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC657E08B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5FEEF020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA8C1E080 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64920990 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5C965030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA99E82B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CFE03E0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5C965030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5E74D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9071630 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5FBAB030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC62739020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64B447B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.049 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1050ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (170ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (562ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (491ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (21.9 KB). Loaded Objects now: 4912.
+Memory consumption went from 246.6 MB to 246.6 MB.
+Total: 2.317500 ms (FindLiveObjects: 0.244700 ms CreateObjectMapping: 0.424000 ms MarkObjects: 1.630900 ms  DeleteObjects: 0.017200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -309,17 +971,317 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 51.813392 seconds.
-  path: Assets/External/Behavior Design - Behavior Trees for Everyone/Camera Pilot.url
-  artifactKey: Guid(6df5754f0a1172e43b7fb193b268ea4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 197.943449 seconds.
+  path: Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs
+  artifactKey: Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/External/Behavior Design - Behavior Trees for Everyone/Camera Pilot.url using Guid(6df5754f0a1172e43b7fb193b268ea4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f5c81296d14fa028cd2d33c0306118') in 0.058319 seconds 
-Number of asset objects unloaded after import = 1
+Start importing Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs using Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7221c2b510b9841a24d71e4518c07f') in 0.021703 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006753 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FC64B5DE20 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC645DBF90 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC653BB0A0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65061040 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA919E420 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC654C5A90 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA961F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC655AA120 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5EFBFCD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC642C0030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC646A9EA0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64CCDD20 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65096CD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65651710 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC65B89570 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64170080 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63375020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64CE9BD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F1CAB40 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CD15B10 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6469C020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.492 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1492ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1212ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (301ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (722ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (599ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (22.0 KB). Loaded Objects now: 4915.
+Memory consumption went from 246.6 MB to 246.6 MB.
+Total: 2.020600 ms (FindLiveObjects: 0.222600 ms CreateObjectMapping: 0.107300 ms MarkObjects: 1.665200 ms  DeleteObjects: 0.024500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.205635 seconds.
-  path: Assets/External/Behavior Design - Behavior Trees for Everyone/GFXfather.com.url
-  artifactKey: Guid(ebc9574b3961fcb43b4b3d93dc0e076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 7.267906 seconds.
+  path: Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs
+  artifactKey: Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/External/Behavior Design - Behavior Trees for Everyone/GFXfather.com.url using Guid(ebc9574b3961fcb43b4b3d93dc0e076a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84db9c44569e6306ca53614dae8b4961') in 0.009497 seconds 
-Number of asset objects unloaded after import = 1
+Start importing Assets/Horror_Mansion/Scripts/FirstPersonCamera.cs using Guid(2f981614169e7034581e4e2fd088584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cce0dd44f02219bca1e631a8b89155a') in 0.010486 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003252 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FCA9578020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC645DBF90 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED5D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA97F4010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA919E420 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA945D300 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA961F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCABFB6020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D293460 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCAC29AD10 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC646A9EA0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64E05010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9862010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED5D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED5D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64170080 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63375020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC3958B150 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5D2BFF20 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CD15B10 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC648D79B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1019ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (841ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (173ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (558ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (497ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (21.9 KB). Loaded Objects now: 4918.
+Memory consumption went from 246.6 MB to 246.6 MB.
+Total: 2.018700 ms (FindLiveObjects: 0.218600 ms CreateObjectMapping: 0.126900 ms MarkObjects: 1.655200 ms  DeleteObjects: 0.017300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003363 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001FCA9578020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC63EB3010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED5D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCAC32F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA919E420 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64B38670 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA961F020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC657E08B0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5EFBFCD0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC6080E020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC646A9EA0 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64E05010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9862010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED5D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5ED5D020 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64170080 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FCA9474030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC3958B150 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC64B38670 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5CD15B10 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001FC5F164010 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1037ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (862ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (494ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4347 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (22.0 KB). Loaded Objects now: 4919.
+Memory consumption went from 246.6 MB to 246.6 MB.
+Total: 2.181800 ms (FindLiveObjects: 0.230400 ms CreateObjectMapping: 0.118700 ms MarkObjects: 1.811100 ms  DeleteObjects: 0.020800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
