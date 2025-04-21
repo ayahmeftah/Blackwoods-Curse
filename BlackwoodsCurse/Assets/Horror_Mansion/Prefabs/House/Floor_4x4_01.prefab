@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6387712282366435724}
   - component: {fileID: 3358067071757281673}
   - component: {fileID: 8020103127443625195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor_4x4_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c79a6199c27c6a545af88ea37e05c0e3, type: 2}
+  - {fileID: 2100000, guid: 27bcf29cebbe3364eaf6b1bb7a933239, type: 2}
   - {fileID: 2100000, guid: a14cad23ac2ca0240b2861c8f371dc38, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
