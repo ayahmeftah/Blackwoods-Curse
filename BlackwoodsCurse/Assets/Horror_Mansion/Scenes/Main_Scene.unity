@@ -62620,7 +62620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f0b11f145cb6a419e18b642a7325af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Image: {fileID: 21300000, guid: 19cb5b631ae482848b7641b7b7ea3d5c, type: 3}
+  _Image: {fileID: 21300000, guid: c578dc567ad310f4697006f3e412c4cf, type: 3}
 --- !u!4 &2047398631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4017744039411560785, guid: aa743caca34381641bfe8cfcb0781bf3, type: 3}
