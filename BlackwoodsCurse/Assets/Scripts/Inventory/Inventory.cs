@@ -40,4 +40,10 @@ public class Inventory : MonoBehaviour
     }
 }
 
+    public List<IInventoryItem> GetItems()
+    {
+        return mItems;
+    }
+
+
 }
