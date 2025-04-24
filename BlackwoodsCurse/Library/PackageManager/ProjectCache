@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638810007038762616
-    m_Hash: 2943315745
+      ticks: 638811074795902513
+    m_Hash: 327822798
   m_LockFileStatus:
     m_FilePath: C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638810007038762616
-    m_Hash: 2116796976
+      ticks: 638811074795902513
+    m_Hash: 2356807483
 m_EmbeddedPackageManifests:
   m_ManifestsStatus:
     C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/package.json:
@@ -23,8 +23,8 @@ m_EmbeddedPackageManifests:
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 638810006938076276
-      m_Hash: 1724004672
+        ticks: 638811074631294280
+      m_Hash: 2422294307
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages
