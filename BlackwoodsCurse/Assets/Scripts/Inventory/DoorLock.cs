@@ -47,7 +47,7 @@ public class DoorLock : MonoBehaviour
             {
                 isUnlocked = true;
                 txt.text = "";
-                RemoveHeldKey();
+                inventory.RemoveItemAtSlot(selector.currentSlot);
                 OpenDoor();
             }
             else
@@ -113,26 +113,6 @@ public class DoorLock : MonoBehaviour
         }
     }
 
-    private void RemoveHeldKey()
-    {
-        int selectedSlot = selector.currentSlot;
-
-        var items = inventory.GetItems();
-        if (selectedSlot >= 0 && selectedSlot < items.Count)
-        {
-            items.RemoveAt(selectedSlot);
-
-            // Clear the UI icon for the slot
-            Transform slot = hud.inventoryPanel.GetChild(selectedSlot);
-            Image itemImage = slot.Find("border/ItemImage")?.GetComponent<Image>();
-
-            if (itemImage != null)
-            {
-                itemImage.sprite = null;
-                itemImage.enabled = false;
-            }
-        }
-    }
 
     private IEnumerator ShowTempMessage(string message, string fallback, float delay)
     {

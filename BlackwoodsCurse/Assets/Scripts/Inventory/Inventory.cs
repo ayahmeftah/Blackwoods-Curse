@@ -45,5 +45,20 @@ public class Inventory : MonoBehaviour
         return mItems;
     }
 
+    public void RemoveItemAtSlot(int index)
+    {
+        if (index >= 0 && index < mItems.Count)
+        {
+            mItems.RemoveAt(index);
+
+            // Notify HUD to refresh UI
+            HUD hud = FindObjectOfType<HUD>();
+            if (hud != null)
+            {
+                hud.RefreshInventoryUI(mItems);
+            }
+        }
+    }
+
 
 }
