@@ -369,6 +369,9 @@
 "Assets/Scripts/Item_Pickup/Key2.cs"
 "Assets/Scripts/Item_Pickup/Knife.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/SecretBookTrigger.cs"
+"Assets/Scripts/SparkleActivator.cs"
+"Assets/Scripts/StudyBookcaseMove.cs"
 "Assets/Scripts/TVFlickerText.cs"
 -langversion:9.0
 /deterministic
