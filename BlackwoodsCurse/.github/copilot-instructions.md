@@ -2,7 +2,7 @@
 - Project name: BlackwoodsCurse
 - Unity version: Unity 2021.3.39f1
 - Active game object:
-  - Name: Main_Flask
+  - Name: Wall_4m_01 (22)
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
