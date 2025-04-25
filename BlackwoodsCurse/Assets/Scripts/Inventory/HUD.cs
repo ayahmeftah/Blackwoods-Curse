@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class HUD : MonoBehaviour
 {
@@ -44,4 +47,25 @@ public class HUD : MonoBehaviour
     {
         txt.text = "";
     }
+
+    public void RefreshInventoryUI(List<IInventoryItem> items)
+    {
+        for (int i = 0; i < inventoryPanel.childCount; i++)
+        {
+            Transform slot = inventoryPanel.GetChild(i);
+            Image itemImage = slot.Find("border/ItemImage")?.GetComponent<Image>();
+
+            if (i < items.Count)
+            {
+                itemImage.enabled = true;
+                itemImage.sprite = items[i].Image;
+            }
+            else
+            {
+                itemImage.sprite = null;
+                itemImage.enabled = false;
+            }
+        }
+    }
+
 }
