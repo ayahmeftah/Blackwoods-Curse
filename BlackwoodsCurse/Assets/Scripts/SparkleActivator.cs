@@ -7,12 +7,20 @@ public class SparkleActivator : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && sparkleEffect != null)
-            sparkleEffect.Play();
+        {
+            if (DrawerLock.isDrawerUnlocked) // Only play if drawer is unlocked
+            {
+                sparkleEffect.Play();
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player") && sparkleEffect != null)
+        {
+            // Always stop when leaving (no need to check if unlocked)
             sparkleEffect.Stop();
+        }
     }
 }

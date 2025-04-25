@@ -1,14 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SecretMechanismController : MonoBehaviour
+public class StudyBookcaseMove : MonoBehaviour
 {
-    public string bookObjectName = "Book";
-    public string bookcaseObjectName = "StudyBookcase";
+    public string bookcaseObjectName = "Wardrobe_01 (1)";
     public float delayBetween = 1f;
     public Text txt;
 
-    private Animator bookAnimator;
     private Animator bookcaseAnimator;
 
     private bool isPlayerNear = false;
@@ -16,19 +14,19 @@ public class SecretMechanismController : MonoBehaviour
 
     void Start()
     {
-        // Automatically find the animators by GameObject name
-        GameObject book = GameObject.Find(bookObjectName);
         GameObject bookcase = GameObject.Find(bookcaseObjectName);
 
-        if (book != null)
-            bookAnimator = book.GetComponent<Animator>();
-        else
-            Debug.LogWarning("? Book object not found!");
-
         if (bookcase != null)
+        {
             bookcaseAnimator = bookcase.GetComponent<Animator>();
+
+            // Disable Animator completely at start
+            bookcaseAnimator.enabled = false;
+        }
         else
-            Debug.LogWarning("? Bookcase object not found!");
+        {
+            Debug.LogWarning("Bookcase object not found!");
+        }
 
         if (txt != null)
             txt.text = "";
@@ -38,20 +36,39 @@ public class SecretMechanismController : MonoBehaviour
     {
         if (isPlayerNear && !hasActivated && Input.GetKeyDown(KeyCode.F))
         {
-            hasActivated = true;
-            if (txt != null) txt.text = "";
+            if (DrawerLock.isDrawerUnlocked) // Only allow if drawer is unlocked
+            {
+                hasActivated = true;
 
-            if (bookAnimator != null)
-                bookAnimator.SetTrigger("Pull");
+                if (txt != null)
+                    txt.text = "";
 
-            if (bookcaseAnimator != null)
-                Invoke(nameof(TriggerBookcaseOpen), delayBetween);
+                if (bookcaseAnimator != null)
+                {
+                    // Enable animator now that we're ready
+                    bookcaseAnimator.enabled = true;
+
+                    // Give it a frame to initialize
+                    Invoke(nameof(TriggerBookcaseRotate), 0.01f);
+                }
+            }
+            else
+            {
+                Debug.Log("Drawer is still locked! Cannot pull the book yet.");
+                if (txt != null)
+                    txt.text = "The drawer is still locked...";
+            }
         }
     }
 
-    void TriggerBookcaseOpen()
+    void TriggerBookcaseRotate()
     {
-        bookcaseAnimator?.SetTrigger("Open");
+        Debug.Log("Triggering bookcase rotation...");
+        if (bookcaseAnimator != null)
+        {
+            bookcaseAnimator.SetBool("AllowOpen", true);
+            bookcaseAnimator.SetTrigger("Pull");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -59,7 +76,7 @@ public class SecretMechanismController : MonoBehaviour
         if (other.CompareTag("Player") && !hasActivated)
         {
             isPlayerNear = true;
-            if (txt != null)
+            if (txt != null && DrawerLock.isDrawerUnlocked)
                 txt.text = "Press F to pull";
         }
     }

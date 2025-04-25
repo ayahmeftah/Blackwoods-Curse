@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DrawerLock : MonoBehaviour
 {
+    public static bool isDrawerUnlocked = false; // <-- GLOBAL FLAG FOR OTHER SCRIPTS
+
     public string requiredKeyName = "drawerKey"; // Name of the item needed to unlock
     public Text txt;                              // UI prompt
     public InventorySelector selector;
@@ -39,6 +41,9 @@ public class DrawerLock : MonoBehaviour
         closedPos = drawerPart.localPosition;
         openPos = closedPos + slideOffset;
 
+        // Ensure drawer starts locked
+        isDrawerUnlocked = false;
+
         // Ensure item colliders are disabled at start
         if (flashlightCollider != null)
             flashlightCollider.enabled = false;
@@ -62,6 +67,7 @@ public class DrawerLock : MonoBehaviour
             {
                 isUnlocked = true;
                 txt.text = "";
+                isDrawerUnlocked = true; // UPDATE GLOBAL FLAG
                 RemoveHeldKey();
                 OpenDrawer();
             }
