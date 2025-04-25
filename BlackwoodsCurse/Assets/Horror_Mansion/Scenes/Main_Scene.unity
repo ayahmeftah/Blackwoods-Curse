@@ -15810,11 +15810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3804410468124099725, guid: dd43d0a7f3705754ebf89ec9d5f6ffef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.158
+      value: 6.078
       objectReference: {fileID: 0}
     - target: {fileID: 3804410468124099725, guid: dd43d0a7f3705754ebf89ec9d5f6ffef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 260.6163
+      value: 259.523
       objectReference: {fileID: 0}
     - target: {fileID: 3804410468124099725, guid: dd43d0a7f3705754ebf89ec9d5f6ffef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21364,7 +21364,7 @@ MonoBehaviour:
   selector: {fileID: 1172960773}
   hud: {fileID: 818042738}
   doorOpenSound: {fileID: 1483724210}
-  smooth: 1
+  smooth: 1.5
   DoorOpenAngle: 90
   rotationTolerance: 1
 --- !u!1001 &639037836
@@ -38907,11 +38907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3695292271955389219, guid: cf6e5b6e69d4b66469a885a38d3c4cd8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.642
+      value: 6.5620003
       objectReference: {fileID: 0}
     - target: {fileID: 3695292271955389219, guid: cf6e5b6e69d4b66469a885a38d3c4cd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 260.575
+      value: 259.48172
       objectReference: {fileID: 0}
     - target: {fileID: 3695292271955389219, guid: cf6e5b6e69d4b66469a885a38d3c4cd8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -46549,7 +46549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483724208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 274.78015, y: 12.594969, z: 260.12375}
+  m_LocalPosition: {x: 274.922, y: 11.531, z: 262.818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46567,7 +46567,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 183715a14d22ed54ea6fb99289ec7e13, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -64065,6 +64065,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6139497804277657844, guid: 730ad49cb45eff64a86cc0c46e2a277c, type: 3}
   m_PrefabInstance: {fileID: 2023135721}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2023300580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d39038fb7425d0d438efb81bd6dd4f01, type: 3}
+  m_PrefabInstance: {fileID: 1560074168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2023300583
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023300580}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2026639923
 PrefabInstance:
   m_ObjectHideFlags: 0

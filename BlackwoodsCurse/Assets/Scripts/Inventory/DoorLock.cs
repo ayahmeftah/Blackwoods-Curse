@@ -12,7 +12,7 @@ public class DoorLock : MonoBehaviour
     public HUD hud;
     public AudioSource doorOpenSound;
 
-
+    private Coroutine messageCoroutine;
     private bool isPlayerNear = false;
     private bool isUnlocked = false;
     private bool isOpened = false;
@@ -47,13 +47,18 @@ public class DoorLock : MonoBehaviour
             {
                 isUnlocked = true;
                 txt.text = "";
-                RemoveHeldKey(); // ← remove the currently held key
+                RemoveHeldKey();
                 OpenDoor();
             }
             else
             {
-                txt.text = "wrong key";
+                // Wrong key logic
+                if (messageCoroutine != null)
+                    StopCoroutine(messageCoroutine);
+
+                messageCoroutine = StartCoroutine(ShowTempMessage("Wrong Key", "Unlock F", 1.5f));
             }
+
         }
 
         // Rotate door toward open state if it's supposed to be open
@@ -95,7 +100,7 @@ public class DoorLock : MonoBehaviour
             if (isUnlocked)
                 txt.text = "";
             else
-                txt.text = "Unlock 'F'";
+                txt.text = "Unlock F";
         }
     }
 
@@ -129,6 +134,18 @@ public class DoorLock : MonoBehaviour
         }
     }
 
+    private IEnumerator ShowTempMessage(string message, string fallback, float delay)
+    {
+        txt.text = message;
+        yield return new WaitForSeconds(delay);
 
+        // Only reset if the player is still nearby
+        if (isPlayerNear && !isUnlocked && !isOpened)
+        {
+            txt.text = fallback;
+        }
+
+        messageCoroutine = null;
+    }
 
 }

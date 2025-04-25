@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.39f1 (fb3b7b32f191) revision 16464763'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32535 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16237 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61218
+50992
 Successfully changed project path to: C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24280] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 3288571178 [EditorId] 3288571178 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12736] Host "[IP] 10.1.201.190 [Port] 0 [Flags] 2 [Guid] 470899684 [EditorId] 470899684 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NT3NS6F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24280] Host "[IP] 192.168.100.198 [Port] 0 [Flags] 2 [Guid] 3288571178 [EditorId] 3288571178 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AMNMGIF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12736] Host "[IP] 10.1.201.190 [Port] 0 [Flags] 2 [Guid] 470899684 [EditorId] 470899684 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NT3NS6F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 50.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 201.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
@@ -60,244 +60,100 @@ Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
     Vendor:   NVIDIA
-    VRAM:     7949 MB
+    VRAM:     7957 MB
     Driver:   32.0.15.6094
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004377 seconds.
+Registered in 0.021051 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 51.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 160.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.574 seconds
+- Completed reload, in  1.360 seconds
 Domain Reload Profiling:
-	ReloadAssembly (575ms)
-		BeginReloadAssembly (119ms)
+	ReloadAssembly (1360ms)
+		BeginReloadAssembly (219ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (360ms)
-			LoadAssemblies (118ms)
+		EndReloadAssembly (908ms)
+			LoadAssemblies (213ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (102ms)
+			SetupTypeCache (177ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (198ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (544ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
+				RefreshPlugins (161ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (100ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (128ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007782 seconds.
+Registered in 0.018920 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001A44BBAFF80 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 51.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 157.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.249 seconds
+- Completed reload, in  2.747 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1249ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (2748ms)
+		BeginReloadAssembly (262ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (1075ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (2280ms)
+			LoadAssemblies (211ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (250ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (658ms)
+			SetupTypeCache (531ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (127ms)
+			SetupLoadedEditorAssemblies (1372ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (52ms)
-				ProcessInitializeOnLoadAttributes (536ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (158ms)
+				BeforeProcessingInitializeOnLoad (200ms)
+				ProcessInitializeOnLoadAttributes (943ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (20ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3580 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (47.1 KB). Loaded Objects now: 4054.
-Memory consumption went from 218.2 MB to 218.2 MB.
-Total: 2.119600 ms (FindLiveObjects: 0.178100 ms CreateObjectMapping: 0.086300 ms MarkObjects: 1.792300 ms  DeleteObjects: 0.062300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 30001.427653 seconds.
-  path: Assets/Horror_Mansion/Other/textures
-  artifactKey: Guid(8c4e7bd3817d55b46993f387fe84941a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/textures using Guid(8c4e7bd3817d55b46993f387fe84941a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d5940370a28d25d581d5518d0e34e8') in 0.017806 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book
-  artifactKey: Guid(c92206b27d28fc94e9b2ccdf4aa6a02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book using Guid(c92206b27d28fc94e9b2ccdf4aa6a02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266c8ae5beae2f4a3be5b9609be62b4d') in 0.006664 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.040902 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book/source
-  artifactKey: Guid(1656e2ab29d23b440b87fcabb6baa683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book/source using Guid(1656e2ab29d23b440b87fcabb6baa683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e17859b52b4a32fc03e3e4c747de899') in 0.002064 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.920934 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book/source/book.zip
-  artifactKey: Guid(9b15cb1449315774f952de00ca36150f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book/source/book.zip using Guid(9b15cb1449315774f952de00ca36150f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa00bbd9f1f61aea0d6cabb8e049d4b') in 0.024548 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 16.733467 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book/textures/5556ddy_NORM253.png
-  artifactKey: Guid(10fa695bfc7c16d488480eb733140a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book/textures/5556ddy_NORM253.png using Guid(10fa695bfc7c16d488480eb733140a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df90bd868acabf0031d8b0a8b6c51c3b') in 0.044936 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book/textures/book1_2019-02-24_23-55-08_complete.rpf_converted.jpeg
-  artifactKey: Guid(1e0791c79db40614eb805342810540b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book/textures/book1_2019-02-24_23-55-08_complete.rpf_converted.jpeg using Guid(1e0791c79db40614eb805342810540b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd6bfd74a6322be48cb6121246dbcde') in 0.027254 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book/textures/internal_ground_ao_texture.jpeg
-  artifactKey: Guid(3af1dc5ba57610b489e4caa64b176de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book/textures/internal_ground_ao_texture.jpeg using Guid(3af1dc5ba57610b489e4caa64b176de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1708ca3a7f4aa0b5302343fb966cc9') in 0.040491 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.991297 seconds.
-  path: Assets/Horror_Mansion/Other/Sparkling Book/source/book
-  artifactKey: Guid(f48dbfc9c32e5ff41bd1cbaf2d24eaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Other/Sparkling Book/source/book using Guid(f48dbfc9c32e5ff41bd1cbaf2d24eaec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4836fe27ea68709b4dfd18c1a4477b06') in 0.002074 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 65.216849 seconds.
-  path: Assets/Horror_Mansion/Sparkling Book/book/book.fbx
-  artifactKey: Guid(393bba79e477fae41a803bd18cacd4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Sparkling Book/book/book.fbx using Guid(393bba79e477fae41a803bd18cacd4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9b5482a19e62c699d8f2ffa92a1b81') in 0.120470 seconds 
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 618.480648 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(009bf3762ecfa2149ab59b6ec4f4d544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/Player.cs using Guid(009bf3762ecfa2149ab59b6ec4f4d544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7653aafabddea79e2e1f214d6a36be3') in 0.013544 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 216.625934 seconds.
-  path: Assets/Scripts/SparkleActivator.cs
-  artifactKey: Guid(69e6ac2aff7eccc4f861be24f348e617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/SparkleActivator.cs using Guid(69e6ac2aff7eccc4f861be24f348e617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a221c97ffe0513a6608537841b2d88') in 0.008458 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006997 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.048 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1049ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (866ms)
-			LoadAssemblies (74ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (188ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (574ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (513ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3557 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (22.9 KB). Loaded Objects now: 4104.
-Memory consumption went from 220.7 MB to 220.7 MB.
-Total: 2.025700 ms (FindLiveObjects: 0.181100 ms CreateObjectMapping: 0.079700 ms MarkObjects: 1.742100 ms  DeleteObjects: 0.021900 ms)
+Unloading 41 unused Assets / (46.9 KB). Loaded Objects now: 4029.
+Memory consumption went from 214.6 MB to 214.6 MB.
+Total: 8.167300 ms (FindLiveObjects: 0.284500 ms CreateObjectMapping: 0.123400 ms MarkObjects: 7.636900 ms  DeleteObjects: 0.121500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -313,479 +169,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.721865 seconds.
-  path: Assets/Scripts/SparkleActivator.cs
-  artifactKey: Guid(69e6ac2aff7eccc4f861be24f348e617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 47635.423094 seconds.
+  path: Assets/Horror_Mansion/VFX/Leaves_Maple.mat
+  artifactKey: Guid(375fe6567101f1e479d50282f4529699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/SparkleActivator.cs using Guid(69e6ac2aff7eccc4f861be24f348e617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d33a5c7b85ea167e29d3ee6935fc6ef') in 0.016235 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016651 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.580 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1580ms)
-		BeginReloadAssembly (174ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1264ms)
-			LoadAssemblies (127ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (779ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (645ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3557 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (22.0 KB). Loaded Objects now: 4107.
-Memory consumption went from 220.7 MB to 220.7 MB.
-Total: 2.980700 ms (FindLiveObjects: 0.382700 ms CreateObjectMapping: 0.104900 ms MarkObjects: 2.472800 ms  DeleteObjects: 0.019200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008454 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1051ms)
-		BeginReloadAssembly (119ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (862ms)
-			LoadAssemblies (82ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (179ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (569ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (507ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3557 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (23.0 KB). Loaded Objects now: 4110.
-Memory consumption went from 220.7 MB to 220.7 MB.
-Total: 1.931200 ms (FindLiveObjects: 0.161200 ms CreateObjectMapping: 0.070300 ms MarkObjects: 1.680400 ms  DeleteObjects: 0.018500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 106.020670 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_01_A.tga
-  artifactKey: Guid(6c7ca664e14ec5047a91d82ef336c485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_01_A.tga using Guid(6c7ca664e14ec5047a91d82ef336c485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93616871351fb200f56f308f10f4c5dd') in 0.058933 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_02_A.tga
-  artifactKey: Guid(097aeaf69eec9684ab75256c941a467b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_02_A.tga using Guid(097aeaf69eec9684ab75256c941a467b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e4ef06f3af09eee43b44604724e344') in 0.014499 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_01_N.tga
-  artifactKey: Guid(11950e065ac3cb74993148a69ea356e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_01_N.tga using Guid(11950e065ac3cb74993148a69ea356e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42355b7c21794d8c3a476dbe0f336a0') in 0.022681 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_02_N.tga
-  artifactKey: Guid(bd4dd4b1358997b43a9e6275827751f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_02_N.tga using Guid(bd4dd4b1358997b43a9e6275827751f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889ed32b47d5f18e413e784ee1694990') in 0.017994 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_02_MS.tga
-  artifactKey: Guid(0449d8f6373e9d3409ca40b651a6128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Aspen_Bark_02_MS.tga using Guid(0449d8f6373e9d3409ca40b651a6128c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d84921aa813f7e4a58e7edac9c6b940') in 0.012442 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.040885 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat 1.png
-  artifactKey: Guid(df3b895e79fe0234d8d834165367fc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat 1.png using Guid(df3b895e79fe0234d8d834165367fc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fc1d567104c1bebc97eb416bca4dfd') in 0.039407 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.054905 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat 3.png
-  artifactKey: Guid(1e805d554e247c94eafca9dbdd066aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat 3.png using Guid(1e805d554e247c94eafca9dbdd066aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1835577ffa7fb38b72722dae9af340') in 0.170082 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat AO 2.png
-  artifactKey: Guid(c5c5cc6707ee66f409351171e7330f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat AO 2.png using Guid(c5c5cc6707ee66f409351171e7330f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9ff0af648da09c51dfe55179285c91') in 0.029646 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.419706 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat MET 3.png
-  artifactKey: Guid(effedf8da56e28e4da8196c42c6231a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat MET 3.png using Guid(effedf8da56e28e4da8196c42c6231a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ffd030fa0ee07e9b1b1b92f4bd6161') in 0.025736 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat NRM 2.png
-  artifactKey: Guid(e76f437783afb124caa4849872410311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat NRM 2.png using Guid(e76f437783afb124caa4849872410311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf83b1bcf6324b0b8d4b22fc7661e47f') in 0.023701 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.004586 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat NRM 3.png
-  artifactKey: Guid(01e7045408d5b42489f253a0f0c0ee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Baseball Bat/Materials/Textures/Baseball Bat NRM 3.png using Guid(01e7045408d5b42489f253a0f0c0ee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce039830fe34d7abd001ca876416ebb8') in 0.028624 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.020362 seconds.
-  path: Assets/Horror_Mansion/Textures/House/Basement_Wall/Basement_Wall_MS.tga
-  artifactKey: Guid(b8e967785db98ca44864d2b18f31f22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/House/Basement_Wall/Basement_Wall_MS.tga using Guid(b8e967785db98ca44864d2b18f31f22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfeedd42cabc080dcae8951d3dd1c058') in 0.015636 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.068831 seconds.
-  path: Assets/Horror_Mansion/Textures/Environment/Bathroom/Bathroom_AO.tga
-  artifactKey: Guid(e47f950f9b6c22c44813a40492ffeacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Environment/Bathroom/Bathroom_AO.tga using Guid(e47f950f9b6c22c44813a40492ffeacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8526907b12bc7532823d6685f9eabdbc') in 0.015438 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Horror_Mansion/Textures/Environment/Bathroom/Bathroom_N.tga
-  artifactKey: Guid(3ff0c3e6900bfca429c4c55f9ffe3f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Environment/Bathroom/Bathroom_N.tga using Guid(3ff0c3e6900bfca429c4c55f9ffe3f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c050bda2565996f95b67164a24fd4ca4') in 0.015300 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.369304 seconds.
-  path: Assets/Horror_Mansion/Textures/Environment/Bed/Bed_A.tga
-  artifactKey: Guid(1d4bdd5ba310eb44ebc37e70c8ce84dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Environment/Bed/Bed_A.tga using Guid(1d4bdd5ba310eb44ebc37e70c8ce84dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa42e516d175a5931adc4d4643e6a4ec') in 0.026721 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Billboard_Aspen_01.tga
-  artifactKey: Guid(5125c0bcc641b604fa0f17e1623e88ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Billboard_Aspen_01.tga using Guid(5125c0bcc641b604fa0f17e1623e88ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7133170eb53f501de94c1d2a62699bd') in 0.020646 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Birch/Billboard_Birch_01.tga
-  artifactKey: Guid(e9c2ccd6ed729c54e8b8538f46ddc9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Birch/Billboard_Birch_01.tga using Guid(e9c2ccd6ed729c54e8b8538f46ddc9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edeea57c75c657f80ba986fb2ae0302') in 0.016797 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Birch/Billboard_Birch_02.tga
-  artifactKey: Guid(56b5093b8bee5de4481fb16c185ad9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Birch/Billboard_Birch_02.tga using Guid(56b5093b8bee5de4481fb16c185ad9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba239cc53af1ecd9f86ba02cb8b60821') in 0.019030 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Birch/Birch_Leaves_MRO.tga
-  artifactKey: Guid(3540cd1a306324e4588f6afa0325700b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Birch/Birch_Leaves_MRO.tga using Guid(3540cd1a306324e4588f6afa0325700b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d099f8c0017ace720671d9134366e3') in 0.021075 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Maple/Billboard_Maple_02.tga
-  artifactKey: Guid(00e1b51134e904e47800c8788c97d898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Maple/Billboard_Maple_02.tga using Guid(00e1b51134e904e47800c8788c97d898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bed1d8a36d5b2ef591b11d938be665c') in 0.034057 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Birch/Birch_Leaves_N.tga
-  artifactKey: Guid(a131e5cb3c8e0b944946386149955c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Birch/Birch_Leaves_N.tga using Guid(a131e5cb3c8e0b944946386149955c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd74e517985806881b8345e6b8de818') in 0.018051 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Aspen/Billboard_Aspen_02.tga
-  artifactKey: Guid(bc8d3a0634e6c854b90a54b5c6dfa91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Aspen/Billboard_Aspen_02.tga using Guid(bc8d3a0634e6c854b90a54b5c6dfa91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a87b2d7a14779a19d8e95e323dff9f') in 0.028956 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.223149 seconds.
-  path: Assets/Horror_Mansion/Textures/Decals/Blood_Decals/Blood_Decals_A.tga
-  artifactKey: Guid(e072cdee78c93ee4887af17061967f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Decals/Blood_Decals/Blood_Decals_A.tga using Guid(e072cdee78c93ee4887af17061967f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3c97773ff564adaefc28c66df22800') in 0.016878 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001822 seconds.
-  path: Assets/Horror_Mansion/Materials/External_Models_Materials/Old_Board/board-rusty-e_u1_v1.png
-  artifactKey: Guid(233fe8de68abb1544acc4970229b7cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Materials/External_Models_Materials/Old_Board/board-rusty-e_u1_v1.png using Guid(233fe8de68abb1544acc4970229b7cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a9d606599632d08f2a19f42156aa99') in 0.031116 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Horror_Mansion/Textures/Props/Bone/Bone_N.tga
-  artifactKey: Guid(a850cb1914285f6478d413627ac4d1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Props/Bone/Bone_N.tga using Guid(a850cb1914285f6478d413627ac4d1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee36355459002f97f2f7cec2d826c9b') in 0.018243 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Horror_Mansion/Textures/Props/Books/Books_MS.tga
-  artifactKey: Guid(b857c56683d4fec42a9b9f4710870b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Props/Books/Books_MS.tga using Guid(b857c56683d4fec42a9b9f4710870b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2ef0c20f81ee595443612f8e3ac850') in 0.016445 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Horror_Mansion/Textures/Props/Books/Books_N.tga
-  artifactKey: Guid(c2b7442940f814b4faaa13d2b0b3c77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Props/Books/Books_N.tga using Guid(c2b7442940f814b4faaa13d2b0b3c77e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6308bb85cdf9d2dd5d2c53db7df287ef') in 0.014549 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Horror_Mansion/Textures/Props/Bone/Bone_MS.tga
-  artifactKey: Guid(4f8a2795873b002419e443062065ff1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Props/Bone/Bone_MS.tga using Guid(4f8a2795873b002419e443062065ff1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f307242d416299614d61494bfcbd71') in 0.014433 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.212589 seconds.
-  path: Assets/Horror_Mansion/Textures/Vegetation/Bushes_01/Bushes_01_N.tga
-  artifactKey: Guid(f6669d09a9b24f943aa15b5fdc30f02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Vegetation/Bushes_01/Bushes_01_N.tga using Guid(f6669d09a9b24f943aa15b5fdc30f02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08431415bc015fb0dd7728d5537dd9bd') in 0.019900 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife 2.png
-  artifactKey: Guid(2d76b9b6d56d6a2498406ac0102cc1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife 2.png using Guid(2d76b9b6d56d6a2498406ac0102cc1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8048a8eaa7f7dd61a4b9468a832f7c2b') in 0.032312 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife AO 2.png
-  artifactKey: Guid(5829af22d6c908042817a74d48689b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife AO 2.png using Guid(5829af22d6c908042817a74d48689b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e12d7ae106a6629b7b2e785060e3a8') in 0.028454 seconds 
+Start importing Assets/Horror_Mansion/VFX/Leaves_Maple.mat using Guid(375fe6567101f1e479d50282f4529699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ff2d2bce0adf5457c5d734a92ab628') in 0.212133 seconds 
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife AO 1.png
-  artifactKey: Guid(952f31cde7363084381c163a8fda75f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Horror_Mansion/Scenes/Key1Image.png
+  artifactKey: Guid(c578dc567ad310f4697006f3e412c4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife AO 1.png using Guid(952f31cde7363084381c163a8fda75f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d806f3d1ed98212e9dfb9850583096') in 0.025648 seconds 
-Number of asset objects unloaded after import = 2
+Start importing Assets/Horror_Mansion/Scenes/Key1Image.png using Guid(c578dc567ad310f4697006f3e412c4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b04c9cba7bf2cd923f85e47783281c') in 0.189790 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife NRM 1.png
-  artifactKey: Guid(2caf8e6cbc9f8514186b009937f88699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.002449 seconds.
+  path: Assets/Horror_Mansion/VFX/Fire.tga
+  artifactKey: Guid(e18ba14394531e94f8a32ef6b952b166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife NRM 1.png using Guid(2caf8e6cbc9f8514186b009937f88699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97bb1e27fd6b563cf1d70be4997ebe3a') in 0.029076 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife AO 3.png
-  artifactKey: Guid(3e667b9d9a8978b48abea00e841bcf6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife AO 3.png using Guid(3e667b9d9a8978b48abea00e841bcf6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3fa3614f7d5bd1aee03373b560b92c') in 0.028706 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife NRM 2.png
-  artifactKey: Guid(b039b1b96371f5244b95442d2bdcf479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Butcher Knife/Materials/Textures/Butcher Knife NRM 2.png using Guid(b039b1b96371f5244b95442d2bdcf479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de81cca30998bd3f38a7fa14787fbee4') in 0.027589 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.120192 seconds.
-  path: Assets/Horror_Mansion/Textures/Environment/Carpet/Carpet_MS.tga
-  artifactKey: Guid(49ed44a6a3b58f0429c019e4b82e41db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Environment/Carpet/Carpet_MS.tga using Guid(49ed44a6a3b58f0429c019e4b82e41db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905e6da55ffbff93be31dd8d3b26183e') in 0.019753 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Horror_Mansion/Textures/House/Celling/Celling_N.tga
-  artifactKey: Guid(d15d8565273956d4799d3736d7084502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/House/Celling/Celling_N.tga using Guid(d15d8565273956d4799d3736d7084502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1eee0ac18af414a73cc0b16b1413c2') in 0.021968 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1002_Diffuse.png
-  artifactKey: Guid(df75330c95dd65a47b2e3acc52bb09d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1002_Diffuse.png using Guid(df75330c95dd65a47b2e3acc52bb09d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd623aaebd09b653b80572c017704c186') in 0.018054 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1001_Specular.png
-  artifactKey: Guid(2266e4206ead48e47a7a25eb27ea134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1001_Specular.png using Guid(2266e4206ead48e47a7a25eb27ea134f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b06a85d3cc2542e758bae7a0cb5a2d') in 0.028144 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Horror_Mansion/Textures/Props/Chandelier/Chandelier_E.tga
-  artifactKey: Guid(2a48b502f41d8e44aaca4104eb443419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Props/Chandelier/Chandelier_E.tga using Guid(2a48b502f41d8e44aaca4104eb443419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7fed7603eb9f6c39c5ea4dfc8dc713') in 0.016404 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Horror_Mansion/Textures/House/Celling/Celling_MS.tga
-  artifactKey: Guid(e9fb5bce7343caf4eb12f35c8eebe99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/House/Celling/Celling_MS.tga using Guid(e9fb5bce7343caf4eb12f35c8eebe99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e26c4ec9e80cf033126261b0465efe') in 0.017944 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Horror_Mansion/Textures/Props/Chandelier/Chandelier_AO.tga
-  artifactKey: Guid(80915c1b701cc464dbb90e10f5e92919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/Props/Chandelier/Chandelier_AO.tga using Guid(80915c1b701cc464dbb90e10f5e92919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabd986455acdf800806c6bf65e529e2') in 0.016739 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Cloth/Textures/Cloth AO.png
-  artifactKey: Guid(88d61d0f27af814488f786cbdfb3c1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Cloth/Textures/Cloth AO.png using Guid(88d61d0f27af814488f786cbdfb3c1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7cd6f9fbe41275dcc809589f1a8dcb4') in 0.015829 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1001_Glossiness.png
-  artifactKey: Guid(0b8bf3231a461454cad7a059dc7890d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/Characters/Player/Materials/Ch31_1001_Glossiness.png using Guid(0b8bf3231a461454cad7a059dc7890d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7821a40005e5640401ee77fcec38fc3a') in 0.025039 seconds 
+Start importing Assets/Horror_Mansion/VFX/Fire.tga using Guid(e18ba14394531e94f8a32ef6b952b166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6ceae12516f53907892f88f2ceb536') in 0.090750 seconds 
 Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
