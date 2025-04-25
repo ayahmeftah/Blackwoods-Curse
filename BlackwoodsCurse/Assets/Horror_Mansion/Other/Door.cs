@@ -10,7 +10,8 @@ public class Door : MonoBehaviour
     public float rotationTolerance = 1.0f; // Tolerance for stopping rotation
     private Quaternion defaultRot;
     private Quaternion openRot;
-    public Text txt;
+    public Text txt; 
+        
 
     void Start()
     {
@@ -39,11 +40,11 @@ public class Door : MonoBehaviour
         {
             if (open)
             {
-                txt.text = "Close E";
+                txt.text = "Close F";
             }
             else
             {
-                txt.text = "Open E";
+                txt.text = "Open F";
             }
         }
     }
@@ -54,11 +55,11 @@ public class Door : MonoBehaviour
         {
             if (!open)
             {
-                txt.text = "Close E";
+                txt.text = "Close F";
             }
             else
             {
-                txt.text = "Open E";
+                txt.text = "Open F";
             }
             trig = true;
         }
@@ -75,7 +76,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerStay(Collider coll)
     {
-        if (coll.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (coll.CompareTag("Player") && Input.GetKeyDown(KeyCode.F))
         {
             ePressed = true;
         }
