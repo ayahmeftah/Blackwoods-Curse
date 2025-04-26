@@ -100,6 +100,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -112,24 +113,24 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/log4netPlastic.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Logger.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.MQTTnet.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.MQTTnet.Extensions.ManagedClient.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Newtonsoft.Json.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.ProjectData.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Synchronizer.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.dll"
--r:"C:/GameDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.collab-proxy@2.3.1/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Logger.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.MQTTnet.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.MQTTnet.Extensions.ManagedClient.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Newtonsoft.Json.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.ProjectData.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.Synchronizer.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.SynchronizerModel.dll"
+-r:"C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Packages/com.merry-yellow.code-assist/Editor/ExternalReferences/Meryel.UnityCodeAssist.YamlDotNet.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
