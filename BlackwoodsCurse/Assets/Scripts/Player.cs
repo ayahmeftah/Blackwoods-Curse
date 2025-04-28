@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
         Vector3 targetVelocity = movement * MoveSpeed;
 
-        Debug.Log(moveHorizontal + " " + moveForward);
+        //Debug.Log(moveHorizontal + " " + moveForward);
 
         // Apply movement to the Rigidbody
         Vector3 velocity = rb.velocity;
