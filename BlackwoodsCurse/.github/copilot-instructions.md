@@ -6,9 +6,9 @@
   - Tags:
     - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController
   - Layers:
-    - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
+    - Default, TransparentFX, Ignore Raycast, Ground, Water, UI, ParkourPlatform
 - Active game object:
-  - Name: RespawnPoint
+  - Name: Dining_Table
   - Tag: Untagged
-  - Layer: Default
+  - Layer: Ground
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
