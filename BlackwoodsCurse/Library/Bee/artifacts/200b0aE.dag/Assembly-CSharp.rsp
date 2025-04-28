@@ -350,6 +350,7 @@
 "Assets/Horror_Mansion/Other/Rotate.cs"
 "Assets/Horror_Mansion/Other/SimpleCameraController.cs"
 "Assets/Scripts/CarpetParkourTrigger.cs"
+"Assets/Scripts/FallDetectionHandler.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/Player.cs"
 -langversion:9.0
