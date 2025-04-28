@@ -6,9 +6,9 @@
   - Tags:
     - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController
   - Layers:
-    - Default, TransparentFX, Ignore Raycast, Ground, Water, UI, ParkourPlatform
+    - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
 - Active game object:
-  - Name: Dining_Table
+  - Name: Floor_4x4_01 (3)
   - Tag: Untagged
   - Layer: Ground
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
