@@ -1,3 +1,4 @@
+using NavKeypad;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ public class StudyBookcaseMove : MonoBehaviour
 
     private bool isPlayerNear = false;
     private bool hasActivated = false;
+
+    public Keypad keypadScript;
 
     void Start()
     {
@@ -68,6 +71,7 @@ public class StudyBookcaseMove : MonoBehaviour
         {
             bookcaseAnimator.SetBool("AllowOpen", true);
             bookcaseAnimator.SetTrigger("Pull");
+            Invoke(nameof(AllowKeypadInput), 1.0f); // wait 1 second after animation starts
         }
     }
 
@@ -90,4 +94,11 @@ public class StudyBookcaseMove : MonoBehaviour
                 txt.text = "";
         }
     }
+
+    private void AllowKeypadInput()
+    {
+        if (keypadScript != null)
+            keypadScript.EnableInput();
+    }
+
 }

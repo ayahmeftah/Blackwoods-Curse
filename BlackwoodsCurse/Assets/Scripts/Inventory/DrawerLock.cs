@@ -25,6 +25,7 @@ public class DrawerLock : MonoBehaviour
     private bool isUnlocked = false;
     private bool isOpened = false;
     private bool pickupEnabled = false;
+    public bool PickupEnabled => pickupEnabled;
 
     private Vector3 closedPos;
     private Vector3 openPos;
@@ -84,7 +85,7 @@ public class DrawerLock : MonoBehaviour
 
         if (isOpened && !pickupEnabled && IsFullyOpened)
         {
-            EnableItemPickup();
+            StartCoroutine(WaitAndEnablePickup(.3f)); // Wait 1 second
         }
     }
 
@@ -95,12 +96,6 @@ public class DrawerLock : MonoBehaviour
         txt.text = "";
         if (drawerOpenSound != null)
             drawerOpenSound.Play();
-
-        // Enable item pickup after drawer is fully open
-        if (flashlightCollider != null)
-            flashlightCollider.enabled = true;
-        if (knifeCollider != null)
-            knifeCollider.enabled = true;
     }
 
     private bool PlayerIsHoldingKey(string keyName)
@@ -162,14 +157,16 @@ public class DrawerLock : MonoBehaviour
         }
     }
 
-    private void EnableItemPickup()
+    private IEnumerator WaitAndEnablePickup(float waitTime)
     {
-        pickupEnabled = true;
+        pickupEnabled = true; // prevents multiple coroutine calls
+        yield return new WaitForSeconds(waitTime);
 
         if (knifeCollider != null)
             knifeCollider.enabled = true;
 
-        // flashlightCollider stays disabled for now
+        if (flashlightCollider != null)
+            flashlightCollider.enabled = true;
     }
 
 }

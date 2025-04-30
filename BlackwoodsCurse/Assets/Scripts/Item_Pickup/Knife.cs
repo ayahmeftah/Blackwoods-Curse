@@ -47,7 +47,7 @@ public class Knife : MonoBehaviour, IInventoryItem
 
     private bool CanPickup()
     {
-        return drawerLock != null && drawerLock.IsFullyOpened && isPlayerNear;
+        return drawerLock != null && drawerLock.IsFullyOpened && drawerLock.PickupEnabled && isPlayerNear;
     }
 
     private void OnTriggerEnter(Collider other)
