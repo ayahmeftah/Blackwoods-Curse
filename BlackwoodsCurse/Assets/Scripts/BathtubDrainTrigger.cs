@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
 
 public class BathtubDrainTrigger : MonoBehaviour
 {
@@ -11,27 +11,22 @@ public class BathtubDrainTrigger : MonoBehaviour
 
     public string requiredItemName = "Knife";
 
-    public Animator waterAnimator;       // Optional: plays water draining
-    public GameObject crowbar;           // The object to reveal
-    public AudioSource drainSound;       // Optional: sound effect
+    public Renderer waterRenderer;
+    public float fadeDuration = 1.5f;
+
+    public AudioSource drainSound;
+    public GameObject crowbar;
 
     private bool isDrained = false;
     private bool isPlayerNear = false;
+    private bool isShowingTempMessage = false;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !isDrained)
         {
             isPlayerNear = true;
-
-            if (IsHoldingRequiredItem())
-            {
-                hud.txt.text = "Break F";
-            }
-            else
-            {
-                hud.txt.text = "Something's clogging the drain...";
-            }
+            UpdateMessage();
         }
     }
 
@@ -46,6 +41,13 @@ public class BathtubDrainTrigger : MonoBehaviour
 
     void Update()
     {
+        // Update the on-screen message live when player is near
+        if (isPlayerNear && !isDrained && !isShowingTempMessage)
+        {
+            UpdateMessage();
+        }
+
+        // Handle 'F' key press
         if (isPlayerNear && !isDrained && Input.GetKeyDown(KeyCode.F))
         {
             if (IsHoldingRequiredItem())
@@ -54,8 +56,24 @@ public class BathtubDrainTrigger : MonoBehaviour
             }
             else
             {
-                hud.txt.text = "You need something sharp...";
+                // Show "You need something sharp..." temporarily
+                StopAllCoroutines();
+                StartCoroutine(ShowTempMessage("You need something sharp...", 1.5f));
             }
+        }
+    }
+
+    void UpdateMessage()
+    {
+        if (isDrained || isShowingTempMessage) return;
+
+        if (IsHoldingRequiredItem())
+        {
+            hud.txt.text = "Press F to break the drain";
+        }
+        else
+        {
+            hud.txt.text = "Something's clogging the drain...";
         }
     }
 
@@ -71,20 +89,50 @@ public class BathtubDrainTrigger : MonoBehaviour
         isDrained = true;
         hud.HideMessage();
 
-        // Play animation or drain effect
-        if (waterAnimator != null)
-            waterAnimator.SetTrigger("Drain");
-
         if (drainSound != null)
             drainSound.Play();
 
-        // Reveal crowbar after 1.5 seconds
-        Invoke(nameof(RevealCrowbar), 1.5f);
+        if (waterRenderer != null)
+            StartCoroutine(FadeOutWater());
+
+        Invoke(nameof(RevealCrowbar), fadeDuration);
+    }
+
+    private System.Collections.IEnumerator FadeOutWater()
+    {
+        Material mat = waterRenderer.material;
+        Color originalColor = mat.color;
+        float elapsed = 0f;
+
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(1f, 0f, elapsed / fadeDuration);
+            mat.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        mat.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
     }
 
     void RevealCrowbar()
     {
         if (crowbar != null)
-            crowbar.SetActive(true);
+        {
+            var crowbarScript = crowbar.GetComponent<Crowbar>();
+            if (crowbarScript != null)
+                crowbarScript.canBePickedUp = true;
+        }
+    }
+
+    private System.Collections.IEnumerator ShowTempMessage(string message, float duration)
+    {
+        isShowingTempMessage = true;
+        hud.txt.text = message;
+
+        yield return new WaitForSeconds(duration);
+
+        isShowingTempMessage = false;
+        UpdateMessage();
     }
 }

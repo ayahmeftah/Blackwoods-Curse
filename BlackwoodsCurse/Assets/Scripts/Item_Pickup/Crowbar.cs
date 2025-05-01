@@ -4,26 +4,16 @@ using UnityEngine;
 
 public class Crowbar : MonoBehaviour, IInventoryItem
 {
-    public string Name
-    {
-        get
-        {
-            return "Crowbar";
-        }
-    }
+    public string itemName = "Crowbar";
+    public Sprite itemIcon;
 
-    public Sprite _Image = null;
-    public Sprite Image
-    {
-        get
-        {
-            return _Image;
-        }
-    }
+    public bool canBePickedUp = false; // only becomes true after water drains
+
+    public string Name => itemName;
+    public Sprite Image => itemIcon;
 
     public void OnPickup()
     {
         gameObject.SetActive(false);
     }
-
 }

@@ -15,7 +15,7 @@ C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-62485
+49925
 Successfully changed project path to: C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/GameDev/Blackwoods-Curse/BlackwoodsCurse
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17752] Host "[IP] 10.1.201.190 [Port] 0 [Flags] 2 [Guid] 3521524451 [EditorId] 3521524451 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NT3NS6F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15020] Host "[IP] 10.1.201.190 [Port] 0 [Flags] 2 [Guid] 4263831312 [EditorId] 4263831312 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NT3NS6F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17752] Host "[IP] 10.1.201.190 [Port] 0 [Flags] 2 [Guid] 3521524451 [EditorId] 3521524451 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NT3NS6F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15020] Host "[IP] 10.1.201.190 [Port] 0 [Flags] 2 [Guid] 4263831312 [EditorId] 4263831312 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NT3NS6F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 207.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 147.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
@@ -68,92 +68,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.037247 seconds.
+Registered in 0.011489 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 215.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 289.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.521 seconds
+- Completed reload, in  1.961 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1526ms)
-		BeginReloadAssembly (228ms)
+	ReloadAssembly (1961ms)
+		BeginReloadAssembly (334ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1032ms)
-			LoadAssemblies (222ms)
+		EndReloadAssembly (1329ms)
+			LoadAssemblies (331ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
+			SetupTypeCache (341ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (636ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (786ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (216ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (286ms)
-				ProcessInitializeOnLoadMethodAttributes (120ms)
+				RefreshPlugins (290ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (153ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.022057 seconds.
+Registered in 0.065816 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000024BEF1FA080 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-0000019E6ADB1030 doesn't match image C:\GameDev\Blackwoods-Curse\BlackwoodsCurse\Library\ScriptAssemblies\Assembly-CSharp.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 221.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 142.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  3.337 seconds
+- Completed reload, in  2.381 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3338ms)
-		BeginReloadAssembly (323ms)
+	ReloadAssembly (2382ms)
+		BeginReloadAssembly (200ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (2797ms)
-			LoadAssemblies (294ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1942ms)
+			LoadAssemblies (177ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (870ms)
+			SetupTypeCache (458ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (1517ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (1151ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (222ms)
-				BeforeProcessingInitializeOnLoad (222ms)
-				ProcessInitializeOnLoadAttributes (969ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
-				AfterProcessingInitializeOnLoad (45ms)
+				RefreshPlugins (143ms)
+				BeforeProcessingInitializeOnLoad (176ms)
+				ProcessInitializeOnLoadAttributes (768ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3586 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (20.5 KB). Loaded Objects now: 4066.
+Unloading 3589 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (20.5 KB). Loaded Objects now: 4069.
 Memory consumption went from 226.0 MB to 226.0 MB.
-Total: 7.738200 ms (FindLiveObjects: 0.338100 ms CreateObjectMapping: 0.150800 ms MarkObjects: 7.198100 ms  DeleteObjects: 0.050000 ms)
+Total: 3.395000 ms (FindLiveObjects: 0.296100 ms CreateObjectMapping: 0.138200 ms MarkObjects: 2.927100 ms  DeleteObjects: 0.032700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,70 +167,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 483199.842215 seconds.
-  path: Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_Angle_01.prefab
-  artifactKey: Guid(79dec926f2a89cd4f847c2926a044b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_Angle_01.prefab using Guid(79dec926f2a89cd4f847c2926a044b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab454a3041c338f296f23d2ddebc2c3') in 0.342418 seconds 
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Horror_Mansion/Models/House/Veranda_Roof_2m_01.fbx
-  artifactKey: Guid(59af8629438e33340858c4f8efc05b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Models/House/Veranda_Roof_2m_01.fbx using Guid(59af8629438e33340858c4f8efc05b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c7757ab63614ad9a9fd2799a38ba68') in 0.166876 seconds 
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Horror_Mansion/Textures/House/Foundation/Foundation_N.tga
-  artifactKey: Guid(dd59cd810430a7541a8ade9488051c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/House/Foundation/Foundation_N.tga using Guid(dd59cd810430a7541a8ade9488051c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc4b50be56eeaaadc359b83b84259aa') in 0.063611 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Horror_Mansion/Textures/House/Foundation/Foundation_A.tga
-  artifactKey: Guid(a34b6c6b747d43e4088bfa2b5a217df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/Textures/House/Foundation/Foundation_A.tga using Guid(a34b6c6b747d43e4088bfa2b5a217df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a743af29e98356d1b5002497f86378b0') in 0.024650 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Crowbar/Crowbar 03.prefab
-  artifactKey: Guid(d04addb4c5864f74a849520754bfbefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Crowbar/Crowbar 03.prefab using Guid(d04addb4c5864f74a849520754bfbefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46b6c3e271ebaab698be805968ede02') in 0.497971 seconds 
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Crowbar/Crowbar 02.prefab
-  artifactKey: Guid(c3a5d657b4700b34ab2efb911e85a3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Horror_Mansion/PBRMeleeWeaponsPack/Weapons/Crowbar/Crowbar 02.prefab using Guid(c3a5d657b4700b34ab2efb911e85a3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f620b4c2ccf0925e2357165e6757625') in 0.025581 seconds 
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Keypad/Materials/Standard/exampleScene-floorMaterial-standard.mat
-  artifactKey: Guid(0da15503245e91f46a9381aae3dd01fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Keypad/Materials/Standard/exampleScene-floorMaterial-standard.mat using Guid(0da15503245e91f46a9381aae3dd01fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921403e0422eea0ca125569b57619736') in 0.032528 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Keypad/Materials/Standard/keypad_buttonMaterial_standard.mat
-  artifactKey: Guid(c1998dc853e2baa44b36104bd5327835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Keypad/Materials/Standard/keypad_buttonMaterial_standard.mat using Guid(c1998dc853e2baa44b36104bd5327835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a721525dff98b753cc299a0f18c95155') in 0.042965 seconds 
-Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
