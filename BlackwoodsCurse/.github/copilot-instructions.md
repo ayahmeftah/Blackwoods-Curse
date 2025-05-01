@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
 - Active game object:
-  - Name: Floor_4x4_01 (3)
+  - Name: SafeStartPlatform
   - Tag: Untagged
   - Layer: Ground
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

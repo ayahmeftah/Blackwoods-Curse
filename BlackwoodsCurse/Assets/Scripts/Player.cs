@@ -41,11 +41,13 @@ public class Player : MonoBehaviour
 
         // Set the raycast to be slightly beneath the player's feet
         playerHeight = GetComponent<CapsuleCollider>().height * transform.localScale.y;
-        raycastDistance = (playerHeight / 2) + 0.2f;
+        raycastDistance = (playerHeight / 2) + 0.7f;
 
         // Hides the mouse
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        rb.drag = 0;
     }
 
     void Update()
@@ -74,6 +76,15 @@ public class Player : MonoBehaviour
             groundCheckTimer -= Time.deltaTime;
         }
 
+        // Adjust drag based on whether player is grounded
+        if (isGrounded)
+        {
+            rb.drag = 5f;  // Add friction when on ground
+        }
+        else
+        {
+            rb.drag = 0f;  // No drag in air for smooth jump
+        }
     }
 
     void FixedUpdate()

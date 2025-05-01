@@ -11,6 +11,8 @@ public class Door : MonoBehaviour
     private Quaternion defaultRot;
     private Quaternion openRot;
     public Text txt;
+    public bool isLocked = false; // default not locked
+
 
     void Start()
     {
@@ -35,34 +37,35 @@ public class Door : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, defaultRot, Time.deltaTime * smooth);
         }
 
-        if (trig)
+        if (trig && !isLocked)
         {
             if (open)
-            {
                 txt.text = "Close E";
-            }
             else
-            {
                 txt.text = "Open E";
-            }
         }
-    }
 
+    }
     private void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("Player"))
         {
-            if (!open)
+            trig = true;
+
+            if (isLocked)
             {
-                txt.text = "Close E";
+                txt.text = "Door is locked!";
             }
             else
             {
-                txt.text = "Open E";
+                if (!open)
+                    txt.text = "Open E";
+                else
+                    txt.text = "Close E";
             }
-            trig = true;
         }
     }
+
 
     private void OnTriggerExit(Collider coll)
     {
@@ -77,7 +80,25 @@ public class Door : MonoBehaviour
     {
         if (coll.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
-            ePressed = true;
+            if (isLocked)
+            {
+                txt.text = "Door is locked!";
+            }
+            else
+            {
+                ePressed = true;
+            }
         }
     }
+
+    public void CloseAndLockDoor(bool instant = false)
+    {
+        open = false;
+        isLocked = true;
+        if (instant)
+        {
+            transform.rotation = defaultRot;
+        }
+    }
+
 }
