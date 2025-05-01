@@ -72,6 +72,15 @@ private IEnumerator StartSupernaturalEvent()
     // Wait a bit while they float (adjust time if needed)
     yield return new WaitForSeconds(1f);
 
+    // Activate float-to-target movement
+foreach (GameObject obj in objectsToFloat)
+{
+    FloatToTarget ft = obj.GetComponent<FloatToTarget>();
+    if (ft != null)
+        ft.activateFloat = true;
+}
+
+
     // Freeze furniture in place
     foreach (GameObject obj in objectsToFloat)
     {
