@@ -372,6 +372,7 @@
 "Assets/Keypad/Scripts/KeypadButton.cs"
 "Assets/Keypad/Scripts/KeypadInteractionFPV.cs"
 "Assets/Keypad/Scripts/SlidingDoor.cs"
+"Assets/Scripts/DialogSignalTrigger.cs"
 "Assets/Scripts/Inventory/DoorLock.cs"
 "Assets/Scripts/Inventory/DrawerLock.cs"
 "Assets/Scripts/Inventory/HUD.cs"
