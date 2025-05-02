@@ -1,0 +1,589 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.39f1 (fb3b7b32f191) revision 16464763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32603 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.39f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker16
+-projectPath
+C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse
+-logFile
+Logs/AssetImportWorker16.log
+-srvPort
+51245
+Successfully changed project path to: C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse
+C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28396] Host "[IP] 192.168.52.1 [Port] 0 [Flags] 2 [Guid] 216229927 [EditorId] 216229927 [Version] 1048832 [Id] WindowsEditor(7,MAYAR-DESKTOP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [28396] Host "[IP] 192.168.52.1 [Port] 0 [Flags] 2 [Guid] 216229927 [EditorId] 216229927 [Version] 1048832 [Id] WindowsEditor(7,MAYAR-DESKTOP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 62.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GamesDev/Blackwoods-Curse/BlackwoodsCurse/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12115 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002386 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 46.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.332 seconds
+Domain Reload Profiling:
+	ReloadAssembly (332ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (233ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (55ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (14ms)
+			SetupLoadedEditorAssemblies (144ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (47ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005447 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.034 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1034ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (11ms)
+		EndReloadAssembly (905ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (618ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (48ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (503ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4326 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (116.2 KB). Loaded Objects now: 4804.
+Memory consumption went from 246.1 MB to 246.0 MB.
+Total: 2.864300 ms (FindLiveObjects: 0.258700 ms CreateObjectMapping: 0.139300 ms MarkObjects: 2.341000 ms  DeleteObjects: 0.124300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 915034.126221 seconds.
+  path: Assets/Horror_Mansion/Scenes/Slot.png
+  artifactKey: Guid(308b032137bc54544bf8b8a204439fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Scenes/Slot.png using Guid(308b032137bc54544bf8b8a204439fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9fd6c70fa21a27222c3e7bdbf3e4e7') in 0.163280 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 118.713647 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Chair.fbx
+  artifactKey: Guid(38c7d4416fb942840a8b65d2888aca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Chair.fbx using Guid(38c7d4416fb942840a8b65d2888aca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6def19dbff3aabf9e8ad0207727826b1') in 0.068987 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Table_Console.fbx
+  artifactKey: Guid(61324ae5ce99d324db10b65b440d77a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Table_Console.fbx using Guid(61324ae5ce99d324db10b65b440d77a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974c683d643ae6a3038689a173f98823') in 0.042381 seconds 
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Fabric_Sofa.fbx
+  artifactKey: Guid(0d8b5280092727442add3f802c0b6a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Fabric_Sofa.fbx using Guid(0d8b5280092727442add3f802c0b6a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d52a0fa020df17bc80db2c7a779e6a') in 0.032128 seconds 
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Sofa.fbx
+  artifactKey: Guid(76ac8da180a88b24d8f58ec19b04afba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Sofa.fbx using Guid(76ac8da180a88b24d8f58ec19b04afba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db790b69819975e5176751af2ca1d84') in 0.032378 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Sofa_Leather.fbx
+  artifactKey: Guid(a73641ad583337a4fb5baa3aa1afa3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Sofa_Leather.fbx using Guid(a73641ad583337a4fb5baa3aa1afa3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62598723281e836ec171d460fc44e9ee') in 0.044503 seconds 
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Coffee_Table.fbx
+  artifactKey: Guid(ed42499daa1982748af183e9fcc3c17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Coffee_Table.fbx using Guid(ed42499daa1982748af183e9fcc3c17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1631867a66fd8e165a9b1180febf357') in 0.030408 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Fabric_Bookcase_01.fbx
+  artifactKey: Guid(93fb1a4f048a1d146b0d623c71086928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Fabric_Bookcase_01.fbx using Guid(93fb1a4f048a1d146b0d623c71086928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b5d9c298dd77011075bbbc8334fe74') in 0.025860 seconds 
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Dresser_02.fbx
+  artifactKey: Guid(869bf5b214972924297b38b6058a970b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Dresser_02.fbx using Guid(869bf5b214972924297b38b6058a970b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd37f4941b3091425d6db8f1d42e335c') in 0.037267 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Cupboard_Dishes.fbx
+  artifactKey: Guid(3e332c9eab061c24488d1f11d745d76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Cupboard_Dishes.fbx using Guid(3e332c9eab061c24488d1f11d745d76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0efbca211498c584799eca7d27f45a8') in 0.101576 seconds 
+Number of asset objects unloaded after import = 84
+========================================================================
+Received Import Request.
+  Time since last request: 4.062390 seconds.
+  path: Assets/Horror_Mansion/Models/House/Basement_Column_Wood_02.fbx
+  artifactKey: Guid(657dcce0b3c092b4688151cccfcb515d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Basement_Column_Wood_02.fbx using Guid(657dcce0b3c092b4688151cccfcb515d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c01fe9cc505bbeeb5fa29ec0a2ed1d8c') in 0.029482 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Models/House/Floor_4x2_01.fbx
+  artifactKey: Guid(ce770ee305387794db1d6a5daf437162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Floor_4x2_01.fbx using Guid(ce770ee305387794db1d6a5daf437162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66827dca3126f2caef939dcc0c261f7f') in 0.088783 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Horror_Mansion/Models/House/Roof_Tower.fbx
+  artifactKey: Guid(c4156014842bbd948b926187ac3d5b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Roof_Tower.fbx using Guid(c4156014842bbd948b926187ac3d5b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af9b29bacad843e21ae4ed262a515a3') in 0.072463 seconds 
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Horror_Mansion/Models/House/Dormer_Window_01.fbx
+  artifactKey: Guid(234491ed545a6074a85214ac2c10a07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Dormer_Window_01.fbx using Guid(234491ed545a6074a85214ac2c10a07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42e3ee0b75343e0f377a0157939d86f') in 0.058068 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Horror_Mansion/Models/House/Roof_2x2.fbx
+  artifactKey: Guid(b5b21683289eca143b10d6df8f0fc3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Roof_2x2.fbx using Guid(b5b21683289eca143b10d6df8f0fc3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1050f13434ceca13790984b5e066aa0a') in 0.029163 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_Interior_0,5m_02.fbx
+  artifactKey: Guid(ec9274de5c9287c45a6e40d85be71e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_Interior_0,5m_02.fbx using Guid(ec9274de5c9287c45a6e40d85be71e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5aed5e6decc97e9f44ad0b1129b41a') in 0.028344 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Models/House/Column_Wall_01.fbx
+  artifactKey: Guid(c42614ac022324142a201cf05ff7511d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Column_Wall_01.fbx using Guid(c42614ac022324142a201cf05ff7511d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e383919af057ccc8d96811a7d3f6c9') in 0.028036 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Models/House/Veranda_Roof_Angle_01.fbx
+  artifactKey: Guid(85f530661810fb94ebb0fd99057a31ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Veranda_Roof_Angle_01.fbx using Guid(85f530661810fb94ebb0fd99057a31ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ffdd66872aaf3336b56db2915d21d9') in 0.032055 seconds 
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Models/House/Front_Porch.fbx
+  artifactKey: Guid(5ff702fb444a5054890ad17256214ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Front_Porch.fbx using Guid(5ff702fb444a5054890ad17256214ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2746fa12d97a17870191b4c441b9f0') in 0.049038 seconds 
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Horror_Mansion/Models/House/Basement_Wall_4m_02.fbx
+  artifactKey: Guid(50321caa7d9b8ad45b883698f176b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Basement_Wall_4m_02.fbx using Guid(50321caa7d9b8ad45b883698f176b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4249fc5315af4d02b6faacf2188de106') in 0.024751 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Horror_Mansion/Models/House/Wall_Interior_2m_01.fbx
+  artifactKey: Guid(1dccc2043c8d55e4ca059e7c1d055cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Wall_Interior_2m_01.fbx using Guid(1dccc2043c8d55e4ca059e7c1d055cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a62eabc4e21a68210525837f25a8ea') in 0.031056 seconds 
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Horror_Mansion/Models/House/Floor_4x4_01.fbx
+  artifactKey: Guid(560868f74752513428faa82fe35dd115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Floor_4x4_01.fbx using Guid(560868f74752513428faa82fe35dd115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a58bebcdd1d4318ee6c3a7aa29d2646') in 0.031905 seconds 
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 13.432577 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Furniture/Dresser_01.prefab
+  artifactKey: Guid(46a01ff690a697b4887cc6ef8ef5b9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Furniture/Dresser_01.prefab using Guid(46a01ff690a697b4887cc6ef8ef5b9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd0daf6a021cda6bc656eded4c5803c') in 0.059249 seconds 
+Number of asset objects unloaded after import = 66
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Furniture/Dresser_02.prefab
+  artifactKey: Guid(9c2b44f6577bf2f4a994d9ebae7ba6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Furniture/Dresser_02.prefab using Guid(9c2b44f6577bf2f4a994d9ebae7ba6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68192baccbc22feb86a3a7964fc95603') in 0.043395 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Furniture/Fabric_Bookcase_01.prefab
+  artifactKey: Guid(e2f8c3114c0b35f44877b40c90cc3ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Furniture/Fabric_Bookcase_01.prefab using Guid(e2f8c3114c0b35f44877b40c90cc3ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562091e10477c6cc39964ead3c173645') in 0.044122 seconds 
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 4.658523 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Basement_Column_Wood.prefab
+  artifactKey: Guid(a452ea42776772c47bf3ed0431f0ece1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Basement_Column_Wood.prefab using Guid(a452ea42776772c47bf3ed0431f0ece1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2780a5014353d5e83a8976332c44589') in 0.064890 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_Angle_01.prefab
+  artifactKey: Guid(79dec926f2a89cd4f847c2926a044b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_Angle_01.prefab using Guid(79dec926f2a89cd4f847c2926a044b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab454a3041c338f296f23d2ddebc2c3') in 0.088643 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Basement_Wall_4m_01.prefab
+  artifactKey: Guid(c2448e6fdfa44ee40b24ecf1f93895d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Basement_Wall_4m_01.prefab using Guid(c2448e6fdfa44ee40b24ecf1f93895d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae2932f97cacd9f5723aaae78eed4ae') in 0.026142 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Dormer_Window_03.prefab
+  artifactKey: Guid(49bf5deed3017134db0b7c00cae86144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Dormer_Window_03.prefab using Guid(49bf5deed3017134db0b7c00cae86144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ceefb1a165a1d16e49d2715f3f8ce3') in 0.042011 seconds 
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Chimney_01.prefab
+  artifactKey: Guid(349d5e3a32445914abbdcdf03ac7c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Chimney_01.prefab using Guid(349d5e3a32445914abbdcdf03ac7c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd946f164ce2356d4367790ea07a9f4f6') in 0.035227 seconds 
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_4m_01.prefab
+  artifactKey: Guid(f0292e9b6987cc44d81f04ce7b988161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_4m_01.prefab using Guid(f0292e9b6987cc44d81f04ce7b988161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e233605aca61daddc9abdef0aa3844ab') in 0.031860 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_2m_01.prefab
+  artifactKey: Guid(7eaab7ad68ff7f940a36a0fe60abe526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Veranda_Roof_2m_01.prefab using Guid(7eaab7ad68ff7f940a36a0fe60abe526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '254b2b1c0c15742d3f278043c2bc8ff5') in 0.028894 seconds 
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Roof_Module_Angle_01.prefab
+  artifactKey: Guid(218fa1d9dd345304a824de4bd0fc8e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Roof_Module_Angle_01.prefab using Guid(218fa1d9dd345304a824de4bd0fc8e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb51ad6df59ddca51b22089afee6def') in 0.031628 seconds 
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Quoin_Block_4m_01.prefab
+  artifactKey: Guid(e6552b0b2270ca74cbafdb2456267aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Quoin_Block_4m_01.prefab using Guid(e6552b0b2270ca74cbafdb2456267aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e8c8550edf62b5e0531fe009c4efd5') in 0.020730 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Wall_Windows_02.prefab
+  artifactKey: Guid(011e409a06df27a458a0ed794692c11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Wall_Windows_02.prefab using Guid(011e409a06df27a458a0ed794692c11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e91e06b7c475441d0b648826f5d6cd4') in 0.043687 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 4.150711 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_02.prefab
+  artifactKey: Guid(08b2575be31cff74e95887fb58db71ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_02.prefab using Guid(08b2575be31cff74e95887fb58db71ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82bf4596a7642b0a44df7252a3e40fd') in 0.033479 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Electricity_Meter.prefab
+  artifactKey: Guid(4a339c726ec912948bf4e2fa7463000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Electricity_Meter.prefab using Guid(4a339c726ec912948bf4e2fa7463000a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29fc1e1875c539913ebaa7bd1f1cf63e') in 0.062357 seconds 
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_Pack_03.prefab
+  artifactKey: Guid(4fc1317f737de09449ca48fc243297b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_Pack_03.prefab using Guid(4fc1317f737de09449ca48fc243297b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef365b79d5cd0cb1ce429d9ca87cb79b') in 0.059691 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Cutlery.prefab
+  artifactKey: Guid(939e3e196efc23948a5148b4cf2c5a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Cutlery.prefab using Guid(939e3e196efc23948a5148b4cf2c5a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d98be31ee62922125b8872956e191e9') in 0.023367 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Broken_Plate_02.prefab
+  artifactKey: Guid(f260ee7a7c9527648bef1fa53ea3f785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Broken_Plate_02.prefab using Guid(f260ee7a7c9527648bef1fa53ea3f785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047397c227ca1bed891f2d54a1a4f720') in 0.023136 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Magnifier.prefab
+  artifactKey: Guid(a0d1497c7aa018743937aae68bc9f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Magnifier.prefab using Guid(a0d1497c7aa018743937aae68bc9f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b967429023c70c3b260d495c7f752e80') in 0.029595 seconds 
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Candle_Stand_01.prefab
+  artifactKey: Guid(a61df0f60bb415443ba3c18af4c0f2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Candle_Stand_01.prefab using Guid(a61df0f60bb415443ba3c18af4c0f2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d200ee2e55a4122cef2c133de62864') in 0.039028 seconds 
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Pelvis_Bones.prefab
+  artifactKey: Guid(bb8626292d236924c9cdd92d31731539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Pelvis_Bones.prefab using Guid(bb8626292d236924c9cdd92d31731539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad7684fa6ac53eab361928c64f1cd73') in 0.022995 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Picture_08.prefab
+  artifactKey: Guid(c4769731a52f2344ab37cf78dc462b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Picture_08.prefab using Guid(c4769731a52f2344ab37cf78dc462b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e17d496ec4ad5d8b4fcc64f6e214d9b4') in 0.020963 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_04.prefab
+  artifactKey: Guid(5ef2bf278a598534dbcb4e791bcd5176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_04.prefab using Guid(5ef2bf278a598534dbcb4e791bcd5176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3bc9912a77668ea1f9ba022736c97a') in 0.020976 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 1.335435 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Plate_01.prefab
+  artifactKey: Guid(4e672ccc8c0e58a448c09d5188add8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Plate_01.prefab using Guid(4e672ccc8c0e58a448c09d5188add8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf19762bc3626b88ccd0ddd30ce84cd0') in 0.022415 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Suitcase_01.prefab
+  artifactKey: Guid(cf6e5b6e69d4b66469a885a38d3c4cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Suitcase_01.prefab using Guid(cf6e5b6e69d4b66469a885a38d3c4cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf2891770eecde833bf65211a79cdcb') in 0.022745 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Suitcase_03.prefab
+  artifactKey: Guid(bbd24fa897005704a9e132eed7d5edcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Suitcase_03.prefab using Guid(bbd24fa897005704a9e132eed7d5edcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e34234eba9cf0c296026c08a09cd33') in 0.021103 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Towel_Holder_01.prefab
+  artifactKey: Guid(47f2212a2ac05fb4ca8d26fc7b036a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Towel_Holder_01.prefab using Guid(47f2212a2ac05fb4ca8d26fc7b036a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b2b8185997f170fe672b2b836a2b41') in 0.023536 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Scalpel.prefab
+  artifactKey: Guid(b9b1da6f04f8bc649af640f3b1fe29be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Scalpel.prefab using Guid(b9b1da6f04f8bc649af640f3b1fe29be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe81328fcf73861d571195e4980fa7b') in 0.029947 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Suitcase_04.prefab
+  artifactKey: Guid(0184fee55bb58a44bba873cafe04a94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Suitcase_04.prefab using Guid(0184fee55bb58a44bba873cafe04a94e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07843c68c93c2dee6132735cb8f013a6') in 0.017298 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Table_Clock.prefab
+  artifactKey: Guid(8b9a97f2b8dcc2048bb41d0469500f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Table_Clock.prefab using Guid(8b9a97f2b8dcc2048bb41d0469500f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eaa27cb3373031a94d81132eea5ac1f') in 0.020166 seconds 
+Number of asset objects unloaded after import = 35
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
