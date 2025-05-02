@@ -379,6 +379,7 @@
 "Assets/Scripts/Item_Pickup/Key.cs"
 "Assets/Scripts/Item_Pickup/Key2.cs"
 "Assets/Scripts/Item_Pickup/Knife.cs"
+"Assets/Scripts/Item_Pickup/Magnet.cs"
 "Assets/Scripts/Item_Pickup/Rope.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/SafeDoor.cs"
