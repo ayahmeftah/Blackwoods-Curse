@@ -60,5 +60,13 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void RefreshUI()
+    {
+    HUD hud = FindObjectOfType<HUD>();
+    if (hud != null)
+    {
+        hud.RefreshInventoryUI(mItems);
+    }
+    }
 
 }
