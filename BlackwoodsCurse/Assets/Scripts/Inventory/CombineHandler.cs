@@ -14,6 +14,8 @@ public class CombineHandler : MonoBehaviour
     private GameObject nearbyObject = null;
 
 
+
+
     void Update()
     {
         if (canCombine && Input.GetKeyDown(KeyCode.X))
@@ -46,15 +48,18 @@ public class CombineHandler : MonoBehaviour
 
                 inventory.RemoveItemAtSlot(selectedIndex);
 
-                // Add combined item at selectedIndex position
-                GameObject combined = Instantiate(ropeMagnetPrefab);
-                IInventoryItem combinedItem = combined.GetComponent<IInventoryItem>();
-                inventory.GetItems().Insert(selectedIndex, combinedItem);
-                inventory.RefreshUI();
+                // Add combined item via Inventory.AddItem()
+GameObject combined = Instantiate(ropeMagnetPrefab);
+IInventoryItem combinedItem = combined.GetComponent<IInventoryItem>();
+inventory.AddItem(combinedItem); // use the AddItem method to avoid direct list access
+
                 if (nearbyObject != null)
                 {
                     Destroy(nearbyObject);
                     nearbyObject = null;
+                    nearbyItem = "";
+canCombine = false;
+
                 }
 
 
@@ -66,6 +71,8 @@ public class CombineHandler : MonoBehaviour
             {
                 StartCoroutine(ShowTemporaryMessage("Can't Combine", 7f));
             }
+
+            
         }
     }
 
@@ -89,6 +96,8 @@ public class CombineHandler : MonoBehaviour
 
             }
         }
+       
+
     }
 
     void OnTriggerExit(Collider other)
@@ -100,6 +109,7 @@ public class CombineHandler : MonoBehaviour
             nearbyObject = null;
             hud.HideMessage();
         }
+
     }
 
     IEnumerator ShowTemporaryMessage(string msg, float duration)
