@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class CandlePickup : MonoBehaviour
 {
-    public Transform holdPoint; // Assigned from player’s hand/head
-    public float lightDistance = 2f;
+    public Transform holdPoint; //assigned to player’s hand
+    public float lightDistance = 2.5f;
     private bool isHolding = false;
     private bool inRange = false;
-    public CandlePuzzleManager puzzleManager;  // assign it in Inspector
+    public CandlePuzzleManager puzzleManager;  
+    public Transform flameTip; 
+
 
     void Start()
     {
@@ -51,16 +53,37 @@ public class CandlePickup : MonoBehaviour
             inRange = false;
     }
 
+// void TryLightNearbyCandle()
+// {
+//     if (!isHolding) return;
+
+//     Vector3 origin = flameTip.position;
+//     Vector3 direction = flameTip.forward;
+
+//     Debug.DrawRay(origin, direction * lightDistance, Color.red, 1f); // Optional for debugging
+
+//     if (Physics.Raycast(origin, direction, out RaycastHit hit, lightDistance))
+//     {
+//         BigCandle candle = hit.collider.GetComponentInParent<BigCandle>();
+//         if (candle != null && !candle.IsLit)
+//         {
+//             candle.LightCandle();
+//             puzzleManager.CandleLit(candle.candleIndex);
+//         }
+//     }
+// }
 void TryLightNearbyCandle()
 {
-    // Temporarily disable collider of the held candle
-    Collider ownCollider = GetComponent<Collider>();
-    if (ownCollider != null) ownCollider.enabled = false;
+    if (!isHolding || flameTip == null) return;
 
-    Vector3 rayOrigin = Camera.main.transform.position;
-    Vector3 rayDirection = Camera.main.transform.forward;
+    Vector3 origin = flameTip.position;
 
-    if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, lightDistance))
+    // Use the forward direction of the candle based on its world rotation
+    Vector3 direction = flameTip.TransformDirection(Vector3.forward);
+
+    Debug.DrawRay(origin, direction * lightDistance, Color.red, 2f);
+
+    if (Physics.Raycast(origin, direction, out RaycastHit hit, lightDistance))
     {
         Debug.Log("Ray hit: " + hit.collider.name);
 
@@ -71,9 +94,6 @@ void TryLightNearbyCandle()
             puzzleManager.CandleLit(candle.candleIndex);
         }
     }
-
-    // Re-enable collider after raycast
-    if (ownCollider != null) ownCollider.enabled = true;
 }
 
 

@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
 - Active game object:
-  - Name: Bay_Window
+  - Name: Dresser
   - Tag: Untagged
-  - Layer: Default
+  - Layer: Ignore Raycast
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
