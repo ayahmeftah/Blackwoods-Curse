@@ -1,0 +1,461 @@
+Unity Editor version:    2021.3.39f1 (fb3b7b32f191)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.3.1 (Build 24D70)
+Darwin version:          24.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+/Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+49589
+Successfully changed project path to: /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse
+/Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8512391232] Host "[IP] 192.168.100.223 [Port] 0 [Flags] 2 [Guid] 1685783193 [EditorId] 1685783193 [Version] 1048832 [Id] OSXEditor(0,Manars-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8512391232] Host "[IP] 192.168.100.223 [Port] 0 [Flags] 2 [Guid] 1685783193 [EditorId] 1685783193 [Version] 1048832 [Id] OSXEditor(0,Manars-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 92.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.39f1 (fb3b7b32f191)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000318 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 98.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Domain Reload Profiling:
+	ReloadAssembly (672ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (465ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (103ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002396 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0x3289c8000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1203e0000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d109a00 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x10e5a6000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x310028000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x320008000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328a28000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d115c00 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d11bc00 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b10000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b80000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x3200d0000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b10000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b40000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b40000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/MerryYellow.CodeAssist.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d117000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d11ca00 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x10e917400 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x10e917400 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150090000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b40000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328ec8000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b48000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328ec8000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328b48000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x328fd0000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d11d200 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d12a200 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x329080000 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12d12a200 doesn't match image /Users/manaralsatrawi/GameDev/Blackwoods-Curse/BlackwoodsCurse/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 84.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.174 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1175ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (898ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3516 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (296.9 KB). Loaded Objects now: 3988.
+Memory consumption went from 208.4 MB to 208.1 MB.
+Total: 2.682584 ms (FindLiveObjects: 0.135708 ms CreateObjectMapping: 0.045959 ms MarkObjects: 2.433125 ms  DeleteObjects: 0.066917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 227467.059296 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Candle_03.prefab
+  artifactKey: Guid(b7d839374fd231044b6a2de0ae085b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Candle_03.prefab using Guid(b7d839374fd231044b6a2de0ae085b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071129a42f878044029a0885448d7690') in 0.849062 seconds 
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/Horror_Mansion/VFX/Candle_Flame.tga
+  artifactKey: Guid(e9500962a9f2fac4c9546485d7ca2bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/VFX/Candle_Flame.tga using Guid(e9500962a9f2fac4c9546485d7ca2bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a312a6a8c1b67439a66572689bed0e0') in 0.585708 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1280.615268 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Piece_Paper_05.fbx
+  artifactKey: Guid(0d9061de6ae76934d8385b5060537c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Piece_Paper_05.fbx using Guid(0d9061de6ae76934d8385b5060537c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5345274a8a1d2e24827299a984830a5a') in 0.089783 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Toilet_Paper_Holder.fbx
+  artifactKey: Guid(392c2d619e8126742bfc93daecd5a4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Toilet_Paper_Holder.fbx using Guid(392c2d619e8126742bfc93daecd5a4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b186b4fd9749e126f8d34df401e2b3') in 0.050341 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.986036 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Piece_Paper_01.prefab
+  artifactKey: Guid(09693c6ba58e8974eb65e3b38afce556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Piece_Paper_01.prefab using Guid(09693c6ba58e8974eb65e3b38afce556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880e565faa69611be436876f5ba94e0a') in 0.018327 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Piece_Paper_03.prefab
+  artifactKey: Guid(a19199dd3798d8245b092412ef7abe11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Piece_Paper_03.prefab using Guid(a19199dd3798d8245b092412ef7abe11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd164ad4437f858e0f84a4efd9f2f3415') in 0.014367 seconds 
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Piece_Paper_04.fbx
+  artifactKey: Guid(5d535974ae7ebc54590646447d9af781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Piece_Paper_04.fbx using Guid(5d535974ae7ebc54590646447d9af781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0824e81c74e977e5c3be82dfa7aead') in 0.021921 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Piece_Paper_02.fbx
+  artifactKey: Guid(a068d8a00003caf4a8fda99540d04734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Piece_Paper_02.fbx using Guid(a068d8a00003caf4a8fda99540d04734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8c9a7cddd262055dbb0787ab1bc0b5') in 0.026465 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 11.185311 seconds.
+  path: Assets/Horror_Mansion/Materials/External_Models_Materials/Basement_stairs/Concrete012_2K_Normal.jpeg
+  artifactKey: Guid(963d6ec99734c8f48b3567e6683292fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Materials/External_Models_Materials/Basement_stairs/Concrete012_2K_Normal.jpeg using Guid(963d6ec99734c8f48b3567e6683292fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdb4557d96121cd965c0fdfc58ed3cf') in 0.953075 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Horror_Mansion/Materials/External_Models_Materials/Piano/piano_metallic.png
+  artifactKey: Guid(389381bd3a51910419c59b658f0cbf6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Materials/External_Models_Materials/Piano/piano_metallic.png using Guid(389381bd3a51910419c59b658f0cbf6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd52c00791d8400d992a5a80164623bd8') in 0.148640 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Horror_Mansion/Materials/Environment/Fireplace_no_Emissive.mat
+  artifactKey: Guid(3ce77bcf86ccb9d45a08aa10a5e0cdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Materials/Environment/Fireplace_no_Emissive.mat using Guid(3ce77bcf86ccb9d45a08aa10a5e0cdff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739f0d00f49ff72990320d0bb7a05463') in 0.085637 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Horror_Mansion/Materials/External_Models_Materials/Piano/piano_ambientOcclusion.png
+  artifactKey: Guid(02a294e67579bcd4eb1665a4c855bff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Materials/External_Models_Materials/Piano/piano_ambientOcclusion.png using Guid(02a294e67579bcd4eb1665a4c855bff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f861bfd04fbe8611fc37f937377f9a65') in 0.009973 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.006238 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/External_Models/Piano.fbx
+  artifactKey: Guid(cfdeef70524e37f4cacc90cb5ab4efc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/External_Models/Piano.fbx using Guid(cfdeef70524e37f4cacc90cb5ab4efc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62176d2c50ddfd02446de118f44a6f41') in 0.044490 seconds 
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 45.066518 seconds.
+  path: Assets/Horror_Mansion/Models/Furniture/Bookcase_02.fbx
+  artifactKey: Guid(ce92ab51ee25cb6448276a7704e179dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Furniture/Bookcase_02.fbx using Guid(ce92ab51ee25cb6448276a7704e179dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178c8b85da28a01f54a8c38b2aeffb58') in 0.072983 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_02.prefab
+  artifactKey: Guid(08b2575be31cff74e95887fb58db71ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_02.prefab using Guid(08b2575be31cff74e95887fb58db71ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8ca027957496c99483758e355f4b6e') in 0.030905 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.002691 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_06.prefab
+  artifactKey: Guid(3d8a4ab3e09dd4f449bc0deb55ae6263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_06.prefab using Guid(3d8a4ab3e09dd4f449bc0deb55ae6263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc8565f2e2521b0ed6a64dd916adc9e') in 0.029698 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.010691 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_02.fbx
+  artifactKey: Guid(b4732278e5c18654290190ccdba7ef11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_02.fbx using Guid(b4732278e5c18654290190ccdba7ef11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a99fe9788d4703d268f8185543b3f2') in 0.036374 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.004313 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_03.prefab
+  artifactKey: Guid(ab68ea192ae3d5744be2121d205b0708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_03.prefab using Guid(ab68ea192ae3d5744be2121d205b0708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e95eca48ce49f70ef17d430d98c9f27') in 0.027378 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.005185 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_06.fbx
+  artifactKey: Guid(d47937bea1463b148a3a2b921b5861fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_06.fbx using Guid(d47937bea1463b148a3a2b921b5861fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19568a2ec02d2ccf02731513e62825b1') in 0.042585 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_05.fbx
+  artifactKey: Guid(01db77b75a9ab8540956c78059b5a714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_05.fbx using Guid(01db77b75a9ab8540956c78059b5a714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4924ee48a6f5e6604d7ce73a4f57a8a') in 0.042400 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 2.607353 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Props/Books_09.prefab
+  artifactKey: Guid(2900691ab23931842b6fcecf9f0ba4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Props/Books_09.prefab using Guid(2900691ab23931842b6fcecf9f0ba4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85b0c426cdc547e98a26f2fe29e238e') in 0.033522 seconds 
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.008857 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_12.fbx
+  artifactKey: Guid(f8a4b34335a285144891ac811912fa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_12.fbx using Guid(f8a4b34335a285144891ac811912fa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1916efada21b11eebfb9411c80474401') in 0.081098 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.002554 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_Pack_02.fbx
+  artifactKey: Guid(21b5786d2713a164d9277903bd4a9bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_Pack_02.fbx using Guid(21b5786d2713a164d9277903bd4a9bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c420b11ac6997ee80179eede1997e306') in 0.051330 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Books_Pack_05.fbx
+  artifactKey: Guid(30eda5fbf0ae4ff4a93cc5b06e9f85b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Books_Pack_05.fbx using Guid(30eda5fbf0ae4ff4a93cc5b06e9f85b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b57c3b99db281715a093478d4500a3') in 0.096522 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 39.562102 seconds.
+  path: Assets/Horror_Mansion/Models/Props/Broken_Plate_01.fbx
+  artifactKey: Guid(289e275102999cd48bacbab962a7441d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/Props/Broken_Plate_01.fbx using Guid(289e275102999cd48bacbab962a7441d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b826377d07c3f7607d4e11d2c1b7626d') in 0.064146 seconds 
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.004985 seconds.
+  path: Assets/Horror_Mansion/Prefabs/Character.prefab
+  artifactKey: Guid(3da0b556d1b96ff4da3c8af42fa20c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/Character.prefab using Guid(3da0b556d1b96ff4da3c8af42fa20c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9390d99c82dbc03ca317c90464d35dab') in 0.823892 seconds 
+Number of asset objects unloaded after import = 338
+========================================================================
+Received Import Request.
+  Time since last request: 7.927498 seconds.
+  path: Assets/Horror_Mansion/Models/House/Basement_Column_Wood_02.fbx
+  artifactKey: Guid(657dcce0b3c092b4688151cccfcb515d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Models/House/Basement_Column_Wood_02.fbx using Guid(657dcce0b3c092b4688151cccfcb515d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c77de1afa62aa536496c5bf57d71ca3') in 0.041918 seconds 
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.001579 seconds.
+  path: Assets/Horror_Mansion/Prefabs/House/Basement_Wall_4m_02.prefab
+  artifactKey: Guid(03174c36310fd0a4798d693c9e6b48cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Horror_Mansion/Prefabs/House/Basement_Wall_4m_02.prefab using Guid(03174c36310fd0a4798d693c9e6b48cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d8da7d251defc936da76014eb638e9') in 0.030597 seconds 
+Number of asset objects unloaded after import = 14
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
