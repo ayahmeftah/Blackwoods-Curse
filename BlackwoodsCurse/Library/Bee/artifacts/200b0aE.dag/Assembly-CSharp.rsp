@@ -358,6 +358,7 @@
 "Assets/Scripts/FloatToTarget.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/ResetDiningState.cs"
 -langversion:9.0
 /deterministic
 /optimize+

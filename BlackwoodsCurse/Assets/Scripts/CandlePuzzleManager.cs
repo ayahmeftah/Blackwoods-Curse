@@ -8,6 +8,8 @@ public class CandlePuzzleManager : MonoBehaviour
     public List<int> correctOrder = new List<int> { 0, 1, 2 }; // Expected lighting order
 
     private List<int> currentOrder = new List<int>();
+    public ResetDiningState roomRestorer;
+
 
     public void CandleLit(int index)
     {
@@ -34,7 +36,7 @@ public class CandlePuzzleManager : MonoBehaviour
         if (currentOrder.Count == correctOrder.Count)
         {
             Debug.Log("Puzzle solved! Unlock door or trigger next event here.");
-            // TODO: Add success logic (e.g., unlock door, play sound, etc.)
+            roomRestorer.RestoreRoom();
         }
     }
 

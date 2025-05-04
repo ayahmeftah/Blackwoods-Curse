@@ -26419,8 +26419,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc2d5537035484feeb5317b76aa1f666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  candles: []
+  candles:
+  - {fileID: 764855458}
+  - {fileID: 2135906575}
+  - {fileID: 2081606114}
   correctOrder: 000000000100000002000000
+  roomRestorer: {fileID: 1020057084}
 --- !u!1001 &854631713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31087,6 +31091,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1020057082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020057083}
+  - component: {fileID: 1020057084}
+  m_Layer: 0
+  m_Name: DiningRoomRestarter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020057083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020057082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 276.69315, y: 5.829774, z: 253.44289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020057084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020057082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6904ec01d51b94bb1b3f4b1ef321ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingObjects:
+  - obj: {fileID: 1350023182}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - obj: {fileID: 364523246}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - obj: {fileID: 1084548187}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - obj: {fileID: 1309011176}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - obj: {fileID: 3238363}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - obj: {fileID: 1716973512}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  - obj: {fileID: 807364187}
+    originalPosition: {x: 0, y: 0, z: 0}
+    originalRotation: {x: 0, y: 0, z: 0, w: 0}
+  blackVoid: {fileID: 1026850142}
+  startPlatform: {fileID: 2088949436}
+  roomDoor: {fileID: 532404894}
+  diningFloorGroup: {fileID: 484569532}
+  smallCandle: {fileID: 8573230692690769271}
 --- !u!1001 &1021199800
 PrefabInstance:
   m_ObjectHideFlags: 0

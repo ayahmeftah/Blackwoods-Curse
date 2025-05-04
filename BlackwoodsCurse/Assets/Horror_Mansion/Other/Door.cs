@@ -100,5 +100,10 @@ public class Door : MonoBehaviour
             transform.rotation = defaultRot;
         }
     }
+    public void ForceOpen()
+{
+    open = true;
+}
+
 
 }

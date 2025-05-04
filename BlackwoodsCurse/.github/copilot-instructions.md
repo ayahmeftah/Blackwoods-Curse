@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
 - Active game object:
-  - Name: Dresser
+  - Name: Chair-5
   - Tag: Untagged
-  - Layer: Ignore Raycast
+  - Layer: Ground
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
