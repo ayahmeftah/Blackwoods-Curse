@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cakeslice;
+
 
 public class CombineHandler : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class CombineHandler : MonoBehaviour
     private string nearbyItem = ""; // "Rope" or "Magnet"
     private GameObject nearbyObject = null;
 
+    public List<Outline> vaseOutlines; // Assign 3 outline components in Inspector
 
 
 
@@ -52,6 +55,13 @@ public class CombineHandler : MonoBehaviour
 GameObject combined = Instantiate(ropeMagnetPrefab);
 IInventoryItem combinedItem = combined.GetComponent<IInventoryItem>();
 inventory.AddItem(combinedItem); // use the AddItem method to avoid direct list access
+
+                foreach (var outline in vaseOutlines)
+{
+    if (outline != null)
+        outline.enabled = true;
+}
+
 
                 if (nearbyObject != null)
                 {
@@ -118,4 +128,14 @@ canCombine = false;
         yield return new WaitForSeconds(duration);
         hud.HideMessage();
     }
+
+    public void DisableVaseGlow()
+{
+    foreach (var outline in vaseOutlines)
+    {
+        if (outline != null)
+            outline.enabled = false;
+    }
+}
+
 }
