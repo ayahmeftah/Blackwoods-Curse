@@ -391,6 +391,7 @@
 "Assets/Scripts/Parkour/DiningDoorLock.cs"
 "Assets/Scripts/Parkour/FloatToTarget.cs"
 "Assets/Scripts/Parkour/ParkourFallDetection.cs"
+"Assets/Scripts/Parkour/ParkourFallTrigger.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/SafeDoor.cs"
 "Assets/Scripts/SparkleActivator.cs"

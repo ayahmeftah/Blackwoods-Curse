@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
 - Active game object:
-  - Name: Chair_LOD1
+  - Name: ParkourStartPlatform
   - Tag: Untagged
   - Layer: Ground
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

@@ -9,6 +9,8 @@ public class CarpetParkourTrigger : MonoBehaviour
     public GameObject diningRoomDoor;
     public GameObject voidPlane;
     public GameObject safeStartPlatform;
+    public ParkourFallDetection fallDetectionHandler;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,6 +21,11 @@ public class CarpetParkourTrigger : MonoBehaviour
 
             // disable this trigger so it doesn't get retriggered
             GetComponent<Collider>().enabled = false;
+        }
+            // Start fall detection after short delay
+        if (fallDetectionHandler != null)
+        {
+            fallDetectionHandler.ActivateDetectionWithDelay();
         }
     }
 
