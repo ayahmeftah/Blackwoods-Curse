@@ -41,13 +41,11 @@ public class BathtubDrainTrigger : MonoBehaviour
 
     void Update()
     {
-        // Update the on-screen message live when player is near
         if (isPlayerNear && !isDrained && !isShowingTempMessage)
         {
             UpdateMessage();
         }
 
-        // Handle 'F' key press
         if (isPlayerNear && !isDrained && Input.GetKeyDown(KeyCode.F))
         {
             if (IsHoldingRequiredItem())
@@ -56,7 +54,6 @@ public class BathtubDrainTrigger : MonoBehaviour
             }
             else
             {
-                // Show "You need something sharp..." temporarily
                 StopAllCoroutines();
                 StartCoroutine(ShowTempMessage("You need something sharp...", 1.5f));
             }
@@ -115,16 +112,6 @@ public class BathtubDrainTrigger : MonoBehaviour
         mat.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
     }
 
-    void RevealCrowbar()
-    {
-        if (crowbar != null)
-        {
-            var crowbarScript = crowbar.GetComponent<Crowbar>();
-            if (crowbarScript != null)
-                crowbarScript.canBePickedUp = true;
-        }
-    }
-
     private System.Collections.IEnumerator ShowTempMessage(string message, float duration)
     {
         isShowingTempMessage = true;
@@ -135,4 +122,39 @@ public class BathtubDrainTrigger : MonoBehaviour
         isShowingTempMessage = false;
         UpdateMessage();
     }
+
+    void RevealCrowbar()
+{
+    if (crowbar != null)
+    {
+        var crowbarScript = crowbar.GetComponent<Crowbar>();
+        if (crowbarScript != null)
+        {
+            crowbarScript.canBePickedUp = true;
+            Debug.Log("Crowbar is now pickable.");
+        }
+        else
+        {
+            Debug.LogError("Crowbar script not found!");
+        }
+    }
+    else
+    {
+        Debug.LogError("Crowbar object is null!");
+    }
+}
+
+
+void ActivateCollider()
+{
+    Collider col = crowbar.GetComponent<Collider>();
+    if (col != null)
+    {
+        col.enabled = false;
+        col.enabled = true;
+    }
+}
+
+
+
 }
