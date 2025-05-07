@@ -11508,19 +11508,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 4
   eraseRenderer: 0
---- !u!65 &354369744
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354369740}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28933167, y: 0.51522213, z: 0.28933147}
-  m_Center: {x: 0, y: 0.25761107, z: 0}
 --- !u!4 &355681649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6139497804277657844, guid: 730ad49cb45eff64a86cc0c46e2a277c, type: 3}
@@ -19503,9 +19490,9 @@ MonoBehaviour:
   hud: {fileID: 818042738}
   ropeMagnetPrefab: {fileID: 8711719367938138466, guid: 482dffed8b4d0462ab08821a78cdb3cc, type: 3}
   vaseOutlines:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 354369743}
+  - {fileID: 354369742}
+  - {fileID: 354369741}
 --- !u!1 &573601154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1983184077178841970, guid: 1828ac2a1d6164c4ca214263561a46e3, type: 3}
@@ -31946,6 +31933,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5389793335934393101, guid: 63b68f173ba887042bfcb5acbf221a94, type: 3}
   m_PrefabInstance: {fileID: 982279934}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &984119999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8201011291967204180, guid: 8e593afa8c38ae84fa6f2c5030d04ea5, type: 3}
+  m_PrefabInstance: {fileID: 277550685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &984120001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984119999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6129a7270576d0e44b45519b45c207e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredKeyName: BedroomKey
+  txt: {fileID: 862983491}
+  selector: {fileID: 1172960773}
+  hud: {fileID: 818042738}
+  doorOpenSound: {fileID: 1483724210}
+  smooth: 1.5
+  DoorOpenAngle: 90
+  rotationTolerance: 1
 --- !u!1001 &984770224
 PrefabInstance:
   m_ObjectHideFlags: 0
