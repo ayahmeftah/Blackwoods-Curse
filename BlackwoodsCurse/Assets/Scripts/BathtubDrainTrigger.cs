@@ -131,18 +131,19 @@ public class BathtubDrainTrigger : MonoBehaviour
         if (crowbarScript != null)
         {
             crowbarScript.canBePickedUp = true;
-            Debug.Log("Crowbar is now pickable.");
+            Debug.Log("🛠️ Crowbar is now pickable!");
+
+            // ✅ Manually trigger the PickupHandler to refresh the message
+            PickupHandler pickupHandler = FindObjectOfType<PickupHandler>();
+            if (pickupHandler != null)
+            {
+                pickupHandler.ForceRefreshPickupMessage(crowbar.gameObject);
+            }
         }
-        else
-        {
-            Debug.LogError("Crowbar script not found!");
-        }
-    }
-    else
-    {
-        Debug.LogError("Crowbar object is null!");
     }
 }
+
+
 
 
 void ActivateCollider()
