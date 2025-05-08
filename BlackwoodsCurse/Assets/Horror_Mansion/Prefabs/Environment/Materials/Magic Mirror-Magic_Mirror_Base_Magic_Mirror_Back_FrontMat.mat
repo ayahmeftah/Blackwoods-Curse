@@ -4,21 +4,13 @@
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
-<<<<<<<< HEAD:BlackwoodsCurse/Assets/Horror_Mansion/Materials/Materials/Mirror_Render_textue 1.mat
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mirror_Render_textue 1
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Magic Mirror-Magic_Mirror_Base_Magic_Mirror_Back_FrontMat
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-========
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: GPVFX_Dispel Burst
-  m_Shader: {fileID: 10720, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
->>>>>>>> main:BlackwoodsCurse/Assets/Horror_Mansion/Models/Furniture/External_Models/Flasks/VFX/VFX_Materials/GPVFX_Dispel Burst.mat
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -49,11 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-<<<<<<<< HEAD:BlackwoodsCurse/Assets/Horror_Mansion/Materials/Materials/Mirror_Render_textue 1.mat
-        m_Texture: {fileID: 8400000, guid: f3d39d0db46283e4cbdaa13cd5f7dc05, type: 2}
-========
-        m_Texture: {fileID: 2800000, guid: eb3bc93c000e047278105dc2af4f2fea, type: 3}
->>>>>>>> main:BlackwoodsCurse/Assets/Horror_Mansion/Models/Furniture/External_Models/Flasks/VFX/VFX_Materials/GPVFX_Dispel Burst.mat
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -75,7 +63,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -87,5 +75,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
