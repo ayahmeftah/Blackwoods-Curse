@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:BlackwoodsCurse/Assets/Scripts/Parkour/CarpetParkourTrigger.cs.meta
+guid: b8fff45373f174b218227876b5a79d2e
+========
+guid: 1ce547d5384ce3a41b7142cab8ab41dd
+>>>>>>>> main:BlackwoodsCurse/Assets/Fungus/Scripts/Commands/Collection/ForEach.cs.meta.orig
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
