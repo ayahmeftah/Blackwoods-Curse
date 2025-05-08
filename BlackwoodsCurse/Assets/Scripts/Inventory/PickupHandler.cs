@@ -12,6 +12,7 @@ public class PickupHandler : MonoBehaviour
 
     void Update()
     {
+        // If the player presses F and is near an item
         if (currentItem != null && Input.GetKeyDown(KeyCode.F))
         {
             List<IInventoryItem> items = inventory.GetItems();
@@ -19,7 +20,15 @@ public class PickupHandler : MonoBehaviour
             bool hasRope = items.Exists(i => i.Name == "Rope");
             bool hasMagnet = items.Exists(i => i.Name == "Magnet");
 
-            // Only allow pickup if player does NOT already have the other item
+            // 🛠️ Crowbar check: make sure it's pickable before adding
+            if (currentItem is Crowbar crowbar && !crowbar.canBePickedUp)
+            {
+                Debug.Log("❌ Crowbar is not ready to be picked up.");
+                hud.txt.text = "You can't pick this up yet.";
+                return;
+            }
+
+            // 🔄 Rope & Magnet combination logic
             if ((currentItem.Name == "Rope" && hasMagnet) || 
                 (currentItem.Name == "Magnet" && hasRope))
             {
@@ -27,9 +36,10 @@ public class PickupHandler : MonoBehaviour
                 return;
             }
 
-            // Pickup normally
+            // ✅ Pickup normally
             inventory.AddItem(currentItem);
             hud.HideMessage();
+            currentItem.OnPickup(); // Calls OnPickup() on the item to deactivate it
             currentItem = null;
         }
     }
@@ -49,9 +59,17 @@ public class PickupHandler : MonoBehaviour
 
             int selectedIndex = selector.currentSlot;
 
+            // 🛠️ Crowbar logic: block pickup if not yet ready
+            if (currentItem is Crowbar crowbar && !crowbar.canBePickedUp)
+            {
+                hud.txt.text = "You can't pick this up yet.";
+                Debug.Log("❌ Crowbar is not yet pickable.");
+                return;
+            }
+
+            // 🔄 Rope & Magnet logic
             if ((itemName == "Rope" && hasMagnet) || (itemName == "Magnet" && hasRope))
             {
-                // Can't pick up, only combine
                 if (selectedIndex >= items.Count)
                 {
                     hud.txt.text = "Empty Box";
@@ -85,4 +103,22 @@ public class PickupHandler : MonoBehaviour
             hud.HideMessage();
         }
     }
+
+    public void ForceRefreshPickupMessage(GameObject item)
+{
+    var inventoryItem = item.GetComponent<IInventoryItem>();
+
+    if (inventoryItem != null)
+    {
+        currentItem = inventoryItem;
+
+        // If it's the crowbar and it's now pickable, show the message
+        if (inventoryItem is Crowbar crowbar && crowbar.canBePickedUp)
+        {
+            hud.txt.text = "Pickup F";
+            Debug.Log("🪓 Crowbar is now ready to be picked up!");
+        }
+    }
+}
+
 }
