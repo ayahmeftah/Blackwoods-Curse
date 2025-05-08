@@ -13,21 +13,26 @@ public class Inventory : MonoBehaviour
     public event EventHandler<InventoryEventArgs> ItemAdded;
 
     // Method to add an item to the inventory
-    public void AddItem(IInventoryItem item)
+   public void AddItem(IInventoryItem item)
 {
+    if (item == null || (item as MonoBehaviour) == null)
+        return; // prevent adding destroyed items
+
     if (mItems.Count < SLOTS)
     {
         Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-        if (collider.enabled)
+
+        if (collider == null || collider.enabled)
         {
-            collider.enabled = false;
+            if (collider != null)
+                collider.enabled = false;
 
             mItems.Add(item);
             item.OnPickup();
 
             if (ItemAdded != null)
             {
-                ItemAdded(this, new InventoryEventArgs(item, mItems.Count - 1)); // send slot index too
+                ItemAdded(this, new InventoryEventArgs(item, mItems.Count - 1));
             }
         }
     }
@@ -60,5 +65,13 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void RefreshUI()
+    {
+    HUD hud = FindObjectOfType<HUD>();
+    if (hud != null)
+    {
+        hud.RefreshInventoryUI(mItems);
+    }
+    }
 
 }
