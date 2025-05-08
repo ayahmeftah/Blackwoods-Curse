@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:BlackwoodsCurse/Assets/Scripts/Parkour/ParkourFallDetection.cs.meta
+guid: d4324ece80157417886845fd0618cb06
+========
+guid: 8b824adc1837bb94fb5687ef329d85d0
+>>>>>>>> main:BlackwoodsCurse/Assets/Scripts/BloodMirrorTrigger.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

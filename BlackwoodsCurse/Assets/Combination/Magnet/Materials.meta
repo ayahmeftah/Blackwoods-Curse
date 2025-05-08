@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:BlackwoodsCurse/Assets/Materials.meta
+guid: f109a86cd2bbcc14c85b4594f0642968
+========
 guid: 2ce6cd6e1b92c4294adf34b8700df2fc
+>>>>>>>> main:BlackwoodsCurse/Assets/Combination/Magnet/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
