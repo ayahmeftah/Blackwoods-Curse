@@ -49599,8 +49599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trapdoorScript: {fileID: 194897959}
   trapdoorHinge: {fileID: 194897958}
+  hud: {fileID: 818042738}
   closeSpeed: 0.8
   slamSound: {fileID: 1484593988}
+  messageDuration: 2
 --- !u!65 &1484593990
 BoxCollider:
   m_ObjectHideFlags: 0
