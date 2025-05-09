@@ -12,6 +12,13 @@ public class GrimmActivator : MonoBehaviour
         if (!grimmEnabled && keyObject != null && !keyObject.activeInHierarchy)
         {
             grimmObject.SetActive(true); // Enable Grimm
+
+            GrimmFungusTrigger fungusTrigger = grimmObject.GetComponent<GrimmFungusTrigger>();
+            if (fungusTrigger != null)
+            {
+                fungusTrigger.BeginDialogue();
+            }
+
             grimmEnabled = true;         // Prevent multiple triggers
         }
     }
