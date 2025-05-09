@@ -7857,6 +7857,7 @@ GameObject:
   - component: {fileID: 243696201}
   - component: {fileID: 243696200}
   - component: {fileID: 243696199}
+  - component: {fileID: 243696203}
   m_Layer: 0
   m_Name: Mirror5
   m_TagString: Untagged
@@ -7872,7 +7873,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243696198}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -7943,6 +7944,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &243696203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243696198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e453611d9e15904390b5bb9359e62e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAngle: 90
+  player: {fileID: 6880547551848465273}
+  interactionDistance: 3
+  instructionText: {fileID: 0}
 --- !u!1001 &250525084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84073,6 +84090,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3da0b556d1b96ff4da3c8af42fa20c10, type: 3}
+--- !u!4 &6880547551848465273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6410351758700275962, guid: 3da0b556d1b96ff4da3c8af42fa20c10, type: 3}
+  m_PrefabInstance: {fileID: 6880547551848465272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6892606905289624776
 PrefabInstance:
   m_ObjectHideFlags: 0
