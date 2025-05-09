@@ -91,6 +91,5 @@ public class Trapdoor : MonoBehaviour
     public void BoxHasMoved()
     {
         isBoxMoved = true;
-        Debug.Log("🔓 Box moved — trapdoor now active");
     }
 }

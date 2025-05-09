@@ -31,13 +31,13 @@ public class TrapdoorCloser : MonoBehaviour
         {
             hasClosed = true;
 
-            // 🔊 Play the sound at the very beginning
+            //Play the sound at the very beginning
             if (slamSound != null) 
             {
                 slamSound.Play();
             }
 
-            // 🚪 Show the message "Door is Locked"
+            //Show the message "Door is Locked"
             hud.txt.text = "The door is locked.";
             StartCoroutine(HideMessageAfterDelay());
 
