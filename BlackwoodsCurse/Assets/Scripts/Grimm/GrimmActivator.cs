@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class GrimmActivator : MonoBehaviour
 {
-    public GameObject keyObject;   // Drag the key GameObject here
-    public GameObject grimmObject; // Drag the Grimm GameObject here
+    public GameObject keyObject;   // Assign the Key GameObject
+    public GameObject grimmObject; // Assign the Grimm GameObject
 
     private bool grimmEnabled = false;
 
@@ -11,15 +11,13 @@ public class GrimmActivator : MonoBehaviour
     {
         if (!grimmEnabled && keyObject != null && !keyObject.activeInHierarchy)
         {
-            grimmObject.SetActive(true); // Enable Grimm
+            grimmObject.SetActive(true);
 
             GrimmFungusTrigger fungusTrigger = grimmObject.GetComponent<GrimmFungusTrigger>();
             if (fungusTrigger != null)
-            {
                 fungusTrigger.BeginDialogue();
-            }
 
-            grimmEnabled = true;         // Prevent multiple triggers
+            grimmEnabled = true;
         }
     }
 }

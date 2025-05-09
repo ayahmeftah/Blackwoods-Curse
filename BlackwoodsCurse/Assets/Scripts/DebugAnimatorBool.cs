@@ -8,7 +8,7 @@ public class DebugAnimatorBool : MonoBehaviour
     {
         if (animator != null)
         {
-            Debug.Log("isWalking: " + animator.GetBool("isWalking"));
+            //Debug.Log("isWalking: " + animator.GetBool("isWalking"));
         }
     }
 }

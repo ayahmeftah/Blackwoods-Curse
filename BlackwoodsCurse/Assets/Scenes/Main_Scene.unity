@@ -9931,7 +9931,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319796807}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &319796810
 Camera:
   m_ObjectHideFlags: 0
@@ -13577,7 +13577,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403988096}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &403988099
 Camera:
   m_ObjectHideFlags: 0
@@ -17596,7 +17596,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512174670}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &512174673
 Camera:
   m_ObjectHideFlags: 0
@@ -17804,7 +17804,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514916849}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &514916852
 Camera:
   m_ObjectHideFlags: 0
@@ -20032,11 +20032,6 @@ MonoBehaviour:
   - {fileID: 354369743}
   - {fileID: 354369742}
   - {fileID: 354369741}
---- !u!4 &573341062 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6410351758700275962, guid: 3da0b556d1b96ff4da3c8af42fa20c10, type: 3}
-  m_PrefabInstance: {fileID: 6880547551848465272}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &573341063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21171,7 +21166,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598758616}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &598758619
 Camera:
   m_ObjectHideFlags: 0
@@ -27343,7 +27338,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795769657}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &795769660
 Camera:
   m_ObjectHideFlags: 0
@@ -30840,6 +30835,117 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7365259050321150949, guid: 683f404348a474d43bbc0c91e5fb884a, type: 3}
   m_PrefabInstance: {fileID: 919996255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &921051073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921051078}
+  - component: {fileID: 921051077}
+  - component: {fileID: 921051076}
+  - component: {fileID: 921051075}
+  - component: {fileID: 921051079}
+  m_Layer: 6
+  m_Name: GrimmStairsBarrier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &921051075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921051073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &921051076
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921051073}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4ff09064d766c22409e0b783839341ad, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &921051077
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921051073}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &921051078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921051073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 270.565, y: 5.757, z: 262.2054}
+  m_LocalScale: {x: 0.2639, y: 1, z: 1.8907616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921051079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921051073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c564549c026425b40b73ae1f96e5c078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrierObject: {fileID: 921051073}
 --- !u!1001 &921234403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36778,7 +36884,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105153488}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1105153491
 Camera:
   m_ObjectHideFlags: 0
@@ -37883,6 +37989,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5780607818933875334, guid: 713fc9245d6b68c4cbf9f006526c3337, type: 3}
   m_PrefabInstance: {fileID: 1124694105}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1127369523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127369527}
+  - component: {fileID: 1127369526}
+  - component: {fileID: 1127369525}
+  - component: {fileID: 1127369524}
+  - component: {fileID: 1127369528}
+  m_Layer: 0
+  m_Name: StairsCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1127369524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127369523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1127369525
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127369523}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4ff09064d766c22409e0b783839341ad, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1127369526
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127369523}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1127369527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127369523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 269.834, y: 5.994, z: 262.2054}
+  m_LocalScale: {x: 0.2639, y: 1, z: 1.8907616}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127369528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127369523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b510fc0b9fc3449b63dc021ef765a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grimmObject: {fileID: 1182221071}
+  wanderTreeAsset: {fileID: 11400000, guid: 1c5c075f28df6424f9328ebd5bf967a6, type: 2}
+  followTreeAsset: {fileID: 11400000, guid: a3131b65bfbfad246ae0781d5517cb54, type: 2}
 --- !u!4 &1127489446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6139497804277657844, guid: 730ad49cb45eff64a86cc0c46e2a277c, type: 3}
@@ -39678,7 +39897,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182221071}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
   m_Name: 
@@ -39753,19 +39972,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1182221081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182221071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b9a3edc70ad8524d969da378044ded4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1182221080}
 --- !u!114 &1182221082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39778,7 +39984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c4d2aec8b2f624db651808503871a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleDelay: 0.25
 --- !u!114 &1182221084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39793,8 +39998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowchart: {fileID: 1732030946}
   blockName: GrimmIntro
-  wanderTree: {fileID: 1182221085}
-  followTree: {fileID: 1182221077}
+  grimmObject: {fileID: 1182221071}
+  wanderTreeAsset: {fileID: 11400000, guid: 1c5c075f28df6424f9328ebd5bf967a6, type: 2}
   navAgent: {fileID: 1182221075}
 --- !u!114 &1182221085
 MonoBehaviour:
@@ -39803,7 +40008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182221071}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
   m_Name: 
@@ -42585,11 +42790,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292997038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22edbb4e729abce4793e561ba4f61671, type: 3}
+  m_Script: {fileID: 11500000, guid: a605e567e633b1446aa8ac261bdafa3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 573341062}
-  offset: {x: 1, y: 0, z: 0}
+  followTree: {fileID: 1182221077}
+  player: {fileID: 573341044}
 --- !u!1 &1294374717
 GameObject:
   m_ObjectHideFlags: 0
@@ -44177,7 +44382,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339564183}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1339564186
 Camera:
   m_ObjectHideFlags: 0
@@ -57797,8 +58002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 677.6667
-    y: 179.33333
+    x: 678.3333
+    y: 178.66666
     width: 112.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -57838,10 +58043,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1732030945}
-  selectedCommands:
-  - {fileID: 1732030948}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -57993,7 +58196,7 @@ MonoBehaviour:
   itemId: 3
   indentLevel: 0
   storyText: Who finds a scary looking mansion and thinks "Oh! That place is definitely
-    cursed...In I go!"
+    cursed...Let me take a closer look just to make sure."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -69062,7 +69265,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031006886}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &2031006889
 Camera:
   m_ObjectHideFlags: 0
@@ -88278,7 +88481,7 @@ PrefabInstance:
     - target: {fileID: 4948540988507224931, guid: 604bba92a3f9a0b41b7b265cee2c107d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8f08dd611b0a6c446b2568c1e4a6af32, type: 2}
+      objectReference: {fileID: -1948321426114879319, guid: b45fbdf0754c983448681bc4a73cccb6, type: 3}
     - target: {fileID: 8255974342320173563, guid: 604bba92a3f9a0b41b7b265cee2c107d, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25

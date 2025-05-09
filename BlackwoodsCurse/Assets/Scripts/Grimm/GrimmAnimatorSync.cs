@@ -6,9 +6,6 @@ public class GrimmAnimatorSync : MonoBehaviour
     private Animator animator;
     private NavMeshAgent agent;
 
-    private float idleCheckTimer = 0f;
-    public float idleDelay = 0.25f; // how long Grimm must be still before going idle
-
     void Start()
     {
         animator = GetComponent<Animator>();
