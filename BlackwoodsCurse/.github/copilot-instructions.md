@@ -4,11 +4,11 @@
 - Active scene:
   - Name: Main_Scene
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Weapon, Cloth
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Weapon, Cloth, BigCandle, Candle
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
 - Active game object:
-  - Name: ParkourStartPlatform
+  - Name: FlameTip
   - Tag: Untagged
-  - Layer: Ground
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
