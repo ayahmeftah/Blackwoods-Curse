@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CarpetStoreroomTrigger : MonoBehaviour
 {
     public GameObject storeroomDoor;
+    public Timer timer;  // Reference to the Timer script
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,12 @@ public class CarpetStoreroomTrigger : MonoBehaviour
                 {
                     doorScript.CloseAndLockDoor(true);
                 }
+            }
+
+            // Start the timer
+            if (timer != null)
+            {
+                timer.StartTimer();
             }
 
             // disable this trigger so it doesn't get retriggered

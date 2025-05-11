@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-//Script for Mirror1
 public class Mirror2Rotation : MonoBehaviour
 {
     public float angleRotationY = 6.36f;
     public Transform player;
     public float interactionDistance = 3f;
     public MirrorController mirrorController;
+    public Text txt;
 
     private bool isPlayerNearby = false;
     private bool isRotated = false;
@@ -26,7 +27,12 @@ public class Mirror2Rotation : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         isPlayerNearby = distance <= interactionDistance;
 
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && mirrorController.isFirstMirrorRotated == true)
+        if (isPlayerNearby && mirrorController.isFirstMirrorFullyRotated && !isRotated)
+        {
+            txt.text = "Rotate Mirror2 R";
+        }
+
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && mirrorController.isFirstMirrorFullyRotated && !isRotated)
         {
             ToggleRotation();
         }
@@ -34,33 +40,11 @@ public class Mirror2Rotation : MonoBehaviour
 
     void ToggleRotation()
     {
-        // If the mirror is already rotated to the target, do nothing
         if (isRotated) return;
 
-        // Rotate to the target position and prevent further toggling
         transform.rotation = targetRotation;
         isRotated = true;
-
         mirrorController.RotateSecondMirror();
+        Debug.Log("Mirror2 Rotated!");
     }
-
-    void OnGUI()
-    {
-        if (isPlayerNearby && !isRotated)
-        {
-            GUIStyle style = new GUIStyle(GUI.skin.label);
-            style.fontSize = 26;
-            style.fontStyle = FontStyle.Bold;
-            style.alignment = TextAnchor.MiddleCenter;
-            style.normal.textColor = Color.white;
-
-            float width = 400;
-            float height = 50;
-            float x = (Screen.width - width) / 2;
-            float y = (Screen.height - height) / 2;
-
-            GUI.Label(new Rect(x, y, width, height), "Rotate Mirror R", style);
-        }
-    }
-
 }

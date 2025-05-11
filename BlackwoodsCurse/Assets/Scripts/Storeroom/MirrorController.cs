@@ -9,29 +9,51 @@ public class MirrorController : MonoBehaviour
     public bool isFourthMirrorRotated = false;
     public bool isFifthMirrorRotated = false;
 
+    //Flags
+    public bool isFirstMirrorFullyRotated = false; // New flag
+
     // Methods to set the state
     public void RotateFirstMirror()
     {
         isFirstMirrorRotated = true;
     }
 
+    public void CompleteFirstMirrorRotation()
+    {
+        isFirstMirrorFullyRotated = true; // Only allow Mirror 2 after it's fully rotated
+        Debug.Log("First Mirror has been fully rotated!");
+    }
+
     public void RotateSecondMirror()
     {
-        isSecondMirrorRotated = true;
+        if (isFirstMirrorFullyRotated)
+        {
+            isSecondMirrorRotated = true;
+            Debug.Log("Second Mirror is now allowed to rotate.");
+        }
     }
-     
+
     public void RotateThirdMirror()
     {
-        isThirdMirrorRotated = true;
+        if (isSecondMirrorRotated == true)
+        {
+            isThirdMirrorRotated = true;
+        }
     }
 
     public void RotateFourthMirror()
     {
-        isFourthMirrorRotated = true;
+        if (isThirdMirrorRotated)
+        {
+            isFourthMirrorRotated = true;
+        }
     }
 
     public void RotateFifthMirror()
     {
-        isFifthMirrorRotated = true;
+        if (isFourthMirrorRotated)
+        {
+            isFifthMirrorRotated = true;
+        }
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 //Script for Mirror7
 public class Mirror3Rotation : MonoBehaviour
@@ -7,9 +8,11 @@ public class Mirror3Rotation : MonoBehaviour
     public Transform player;
     public float interactionDistance = 3f;
     public MirrorController mirrorController;
+    public Text txt;
 
     private bool isPlayerNearby = false;
     private bool isRotated = false;
+    private bool canRotate = false; // This flag will control the rotation
     private Quaternion originalRotation;
     private Quaternion targetRotation;
 
@@ -26,7 +29,15 @@ public class Mirror3Rotation : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         isPlayerNearby = distance <= interactionDistance;
 
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && mirrorController.isSecondMirrorRotated == true)
+        // Check if the second mirror is rotated and the player is nearby
+        if (isPlayerNearby && mirrorController.isSecondMirrorRotated && !canRotate)
+        {
+            txt.text = "Rotate Mirror3 R";
+            canRotate = true; // Allow rotation once this is true
+        }
+
+        // Now check for input only if canRotate is true
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && canRotate && !isRotated)
         {
             ToggleRotation();
         }
@@ -42,24 +53,5 @@ public class Mirror3Rotation : MonoBehaviour
         isRotated = true;
 
         mirrorController.RotateThirdMirror();
-    }
-
-    void OnGUI()
-    {
-        if (isPlayerNearby && !isRotated)
-        {
-            GUIStyle style = new GUIStyle(GUI.skin.label);
-            style.fontSize = 26;
-            style.fontStyle = FontStyle.Bold;
-            style.alignment = TextAnchor.MiddleCenter;
-            style.normal.textColor = Color.white;
-
-            float width = 400;
-            float height = 50;
-            float x = (Screen.width - width) / 2;
-            float y = (Screen.height - height) / 2;
-
-            GUI.Label(new Rect(x, y, width, height), "Rotate Mirror R", style);
-        }
     }
 }

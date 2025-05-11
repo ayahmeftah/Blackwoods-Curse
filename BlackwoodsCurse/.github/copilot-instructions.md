@@ -2,7 +2,7 @@
 - Project name: BlackwoodsCurse
 - Unity version: Unity 2021.3.39f1
 - Active game object:
-  - Name: LightSource
-  - Tag: Untagged
+  - Name: Mirror1
+  - Tag: Mirror
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
