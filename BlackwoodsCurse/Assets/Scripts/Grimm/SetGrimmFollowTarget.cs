@@ -1,21 +1,20 @@
 using UnityEngine;
 using BehaviorDesigner.Runtime;
-
 public class SetGrimmFollowTarget : MonoBehaviour
 {
-    public BehaviorTree followTree; // Assign Grimm's FollowPlayer behavior tree
-    public GameObject player;       // Drag your Player GameObject here
+    public BehaviorTree behaviorTree; // Not ExternalBehaviorTree
+    public GameObject player;
 
     void Start()
     {
-        if (followTree != null && player != null)
+        if (behaviorTree != null && player != null)
         {
-            followTree.SetVariableValue("targetPlayer", player);
-            Debug.Log("Assigned player to Grimm's follow target.");
+            behaviorTree.SetVariableValue("targetPlayer", player);
+            Debug.Log("[Grimm Follow] Assigned player: " + player.name);
         }
         else
         {
-            Debug.LogWarning("Missing followTree or player reference.");
+            Debug.LogWarning("[Grimm Follow] Missing references.");
         }
     }
 }

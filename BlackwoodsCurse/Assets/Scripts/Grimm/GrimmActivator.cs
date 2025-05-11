@@ -13,6 +13,10 @@ public class GrimmActivator : MonoBehaviour
         {
             grimmObject.SetActive(true);
 
+            BehaviorDesigner.Runtime.BehaviorTree tree = grimmObject.GetComponent<BehaviorDesigner.Runtime.BehaviorTree>();
+            if (tree != null)
+                tree.DisableBehavior(); // prevent accidental early execution
+
             GrimmFungusTrigger fungusTrigger = grimmObject.GetComponent<GrimmFungusTrigger>();
             if (fungusTrigger != null)
                 fungusTrigger.BeginDialogue();

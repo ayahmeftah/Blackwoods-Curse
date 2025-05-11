@@ -8,61 +8,40 @@ public class GrimmFungusTrigger : MonoBehaviour
     public Flowchart flowchart;
     public string blockName = "GrimmIntro";
 
-    [Header("Grimm Setup")]
-    public GameObject grimmObject;                 
-    public ExternalBehaviorTree wanderTreeAsset;    
+    public GrimmBehaviorManager grimmManager;
     public NavMeshAgent navAgent;
+    public GameObject downstairsArea;
 
-    private BehaviorTree wanderTree;
     private bool hasStarted = false;
 
     public void BeginDialogue()
     {
-        if (grimmObject == null || wanderTreeAsset == null)
+        if (grimmManager == null || downstairsArea == null)
         {
-            Debug.LogError("Missing Grimm GameObject or wanderTreeAsset!");
+            Debug.LogError("[GrimmFungusTrigger] Missing grimmManager or downstairsArea.");
             return;
         }
 
-        BehaviorTree[] allTrees = grimmObject.GetComponents<BehaviorTree>();
-        foreach (var tree in allTrees)
-        {
-            if (tree.ExternalBehavior == wanderTreeAsset)
-            {
-                wanderTree = tree;
-                break;
-            }
-        }
+        // Stop Grimm during dialogue
+        GrimmState.fungusDialogueActive = true; // set this to block AI
 
-        if (wanderTree == null)
-        {
-            Debug.LogError("Wander BehaviorTree not found on Grimm!");
-            return;
-        }
-
-        wanderTree.DisableBehavior();
-
-        if (navAgent != null)
-        {
-            navAgent.isStopped = true;
-            navAgent.velocity = Vector3.zero;
-        }
-
+        // Just start the dialogue — do not enable AI yet
         flowchart.ExecuteBlock(blockName);
         hasStarted = true;
     }
 
-    void Update()
+    private void Update()
     {
         if (hasStarted && flowchart.GetExecutingBlocks().Count == 0)
         {
-            Debug.Log("Enabling wander tree now");
-            wanderTree.EnableBehavior();
+            GrimmState.fungusDialogueActive = false; // let AI resume
 
             if (navAgent != null)
                 navAgent.isStopped = false;
 
-            Destroy(this);
+            grimmManager.SwitchToWander(downstairsArea); // ONLY this
+
+            Destroy(this); // Fungus done, cleanup
         }
     }
 }

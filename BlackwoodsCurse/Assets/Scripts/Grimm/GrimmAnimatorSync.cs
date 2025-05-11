@@ -35,5 +35,11 @@ public class GrimmAnimatorSync : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+
+        if (!agent.hasPath && agent.velocity.sqrMagnitude < 0.01f)
+        {
+            agent.Warp(transform.position); // Snap-stop Grimm
+        }
+
     }
 }
