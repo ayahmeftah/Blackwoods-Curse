@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class MirrorRotation : MonoBehaviour
+//Script for Mirror4
+public class Mirror6Rotation : MonoBehaviour
 {
-    public float rotationAngle = 90f;        
-    public Transform player;                
-    public float interactionDistance = 3f;  
+    public float angleRotationY = -12.752f;
+    public Transform player;
+    public float interactionDistance = 3f;
+    public MirrorController mirrorController;
 
     private bool isPlayerNearby = false;
     private bool isRotated = false;
@@ -14,7 +16,7 @@ public class MirrorRotation : MonoBehaviour
     void Start()
     {
         originalRotation = transform.rotation;
-        targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, rotationAngle, 0));
+        targetRotation = Quaternion.Euler(transform.eulerAngles.x, angleRotationY, transform.eulerAngles.z);
     }
 
     void Update()
@@ -24,7 +26,7 @@ public class MirrorRotation : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         isPlayerNearby = distance <= interactionDistance;
 
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R))
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && mirrorController.isFifthMirrorRotated == true)
         {
             ToggleRotation();
         }
@@ -32,17 +34,19 @@ public class MirrorRotation : MonoBehaviour
 
     void ToggleRotation()
     {
-        if (isRotated)
-            transform.rotation = originalRotation;
-        else
-            transform.rotation = targetRotation;
+        // If the mirror is already rotated to the target, do nothing
+        if (isRotated) return;
 
-        isRotated = !isRotated;
+        // Rotate to the target position and prevent further toggling
+        transform.rotation = targetRotation;
+        isRotated = true;
+
+        mirrorController.RotateFifthMirror();
     }
 
     void OnGUI()
     {
-        if (isPlayerNearby)
+        if (isPlayerNearby && !isRotated)
         {
             GUIStyle style = new GUIStyle(GUI.skin.label);
             style.fontSize = 26;
@@ -58,5 +62,4 @@ public class MirrorRotation : MonoBehaviour
             GUI.Label(new Rect(x, y, width, height), "Rotate Mirror R", style);
         }
     }
-
 }

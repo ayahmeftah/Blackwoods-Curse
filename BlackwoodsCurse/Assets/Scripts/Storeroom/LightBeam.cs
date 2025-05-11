@@ -8,6 +8,8 @@ public class LightBeam
     GameObject lightOjb;
     LineRenderer light;
     List<Vector3> lightIndices = new List<Vector3>();
+    public GameObject storeroomDoor;
+    bool destroy = false;
 
     public LightBeam(Vector3 pos, Vector3 dir, Material material)
     {
@@ -21,8 +23,8 @@ public class LightBeam
         this.light.startWidth = 0.1f;
         this.light.endWidth = 0.1f;
         this.light.material = material;
-        this.light.startColor = Color.white;
-        this.light.endColor = Color.white;
+        this.light.startColor = Color.yellow;
+        this.light.endColor = Color.yellow;
 
         CastRay(pos, dir, light);
     }
@@ -65,6 +67,14 @@ public class LightBeam
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
 
             CastRay(pos, dir, light);
+        }
+        else if (hitInfo.collider.gameObject.tag == "LightDestination")
+        {
+            StoreroomDoor doorScript = storeroomDoor.GetComponent<StoreroomDoor>();
+            if (doorScript != null)
+            {
+                destroy = true;
+            }
         }
         else
         {
