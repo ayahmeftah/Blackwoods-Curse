@@ -1,12 +1,12 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CarpetStoreroomTrigger : MonoBehaviour
 {
     public GameObject storeroomDoor;
-    public Timer timer;  // Reference to the Timer script
+    public Timer timer;      
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,7 +27,7 @@ public class CarpetStoreroomTrigger : MonoBehaviour
                 timer.StartTimer();
             }
 
-            // disable this trigger so it doesn't get retriggered
+            // Disable this trigger so it doesn't get retriggered
             GetComponent<Collider>().enabled = false;
         }
     }

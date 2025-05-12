@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +7,7 @@ public class Mirror5Rotation : MonoBehaviour
 {
     public float angleRotationY = 194.78f;
     public Transform player;
-    public float interactionDistance = 3f;
+    public float interactionDistance = 2.55f;
     public MirrorController mirrorController;
     public Text txt;
 
@@ -16,10 +17,16 @@ public class Mirror5Rotation : MonoBehaviour
     private Quaternion originalRotation;
     private Quaternion targetRotation;
 
+    private Timer timer;
+    private bool isFlashing = false;
+
     void Start()
     {
         originalRotation = transform.rotation;
         targetRotation = Quaternion.Euler(transform.eulerAngles.x, angleRotationY, transform.eulerAngles.z);
+
+        // Find the Timer instance
+        timer = GameObject.FindObjectOfType<Timer>();
     }
     void Update()
     {
@@ -29,16 +36,26 @@ public class Mirror5Rotation : MonoBehaviour
         isPlayerNearby = distance <= interactionDistance;
 
         // Check if the fourth mirror is rotated and the player is nearby
-        if (isPlayerNearby && mirrorController.isFourthMirrorRotated && !canRotate)
+        if (isPlayerNearby == true && mirrorController.isFourthMirrorRotated && !canRotate)
         {
-            txt.text = "Rotate Mirror5 R";
-            canRotate = true; // Allow rotation once this is true
+            txt.text = "Rotate Mirror R\nBreak Mirror B";
+            canRotate = true; 
+        }
+
+        if (isRotated == true || isPlayerNearby == false)
+        {
+            txt.text = ""; // Clear the text
         }
 
         // Now check for input only if canRotate is true
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && canRotate && !isRotated)
         {
             ToggleRotation();
+        }
+
+        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.B) && canRotate && !isRotated && !isFlashing)
+        {
+            ReduceTimer();
         }
     }
 
@@ -52,5 +69,25 @@ public class Mirror5Rotation : MonoBehaviour
         isRotated = true;
 
         mirrorController.RotateFifthMirror();
+    }
+
+    void ReduceTimer()
+    {
+        if (timer != null)
+        {
+            timer.ReduceTime(3); // Call the reduce time method
+
+            // Flash the timer in red
+            StartCoroutine(FlashTimer());
+        }
+    }
+
+    IEnumerator FlashTimer()
+    {
+        isFlashing = true;
+        timer.HighlightTimer(Color.red); // Change to red
+        yield return new WaitForSeconds(1f); // Keep red for 1 second
+        timer.HighlightTimer(Color.white); // Revert back to normal
+        isFlashing = false;
     }
 }

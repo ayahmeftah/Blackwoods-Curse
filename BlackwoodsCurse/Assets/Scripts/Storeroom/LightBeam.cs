@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LightBeam
 {
@@ -60,17 +61,48 @@ public class LightBeam
 
     void checkHit(RaycastHit hitInfo, Vector3 direction, LineRenderer light)
     {
-        if (hitInfo.collider.gameObject.tag == "Mirror")
+        if (hitInfo.collider.gameObject.CompareTag("Mirror"))
         {
             Vector3 pos = hitInfo.point;
             Vector3 dir = Vector3.Reflect(direction, hitInfo.normal);
-
             CastRay(pos, dir, light);
+        }
+        else if (hitInfo.collider.gameObject.CompareTag("LightDestination"))
+        {
+            OnLightDestinationHit();
+            lightIndices.Add(hitInfo.point);
+            updateLight();
         }
         else
         {
             lightIndices.Add(hitInfo.point);
             updateLight();
         }
+    }
+
+    // This is the logic when the beam reaches the destination
+    void OnLightDestinationHit()
+    {
+        Debug.Log("Light reached the destination!");
+
+        // Destroy the light beam
+        GameObject.Destroy(lightOjb);
+
+        // Stop the timer
+        Timer timer = GameObject.FindObjectOfType<Timer>();
+        if (timer != null)
+        {
+            timer.StopTimer();
+        }
+
+        // Open the door
+        StoreroomDoor door = GameObject.FindObjectOfType<StoreroomDoor>();
+        if (door != null)
+        {
+            door.ForceOpen();
+        }
+
+        // Call the Coroutine on MonoBehaviour
+        ShootLight.Instance.DisplayMessage();
     }
 }

@@ -30,9 +30,10 @@ public class StoreroomDoor : MonoBehaviour
         }
 
         if (open && Quaternion.Angle(transform.rotation, openRot) > rotationTolerance)
-        {
+        {   
             transform.rotation = Quaternion.Slerp(transform.rotation, openRot, Time.deltaTime * smooth);
         }
+        
         else if (!open && Quaternion.Angle(transform.rotation, defaultRot) > rotationTolerance)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, defaultRot, Time.deltaTime * smooth);
@@ -103,5 +104,10 @@ public class StoreroomDoor : MonoBehaviour
     public void ForceOpen()
     {
         open = true;
+        isLocked = false;
+        if (Quaternion.Angle(transform.rotation, openRot) > rotationTolerance)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, openRot, Time.deltaTime * smooth);
+        }
     }
 }

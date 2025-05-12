@@ -1,11 +1,13 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
+//For Mirror1
 public class Mirror2Rotation : MonoBehaviour
 {
     public float angleRotationY = 6.36f;
     public Transform player;
-    public float interactionDistance = 3f;
+    public float interactionDistance = 2.55f;
     public MirrorController mirrorController;
     public Text txt;
 
@@ -14,10 +16,16 @@ public class Mirror2Rotation : MonoBehaviour
     private Quaternion originalRotation;
     private Quaternion targetRotation;
 
+    private Timer timer;
+    private bool isFlashing = false;
+
     void Start()
     {
         originalRotation = transform.rotation;
         targetRotation = Quaternion.Euler(transform.eulerAngles.x, angleRotationY, transform.eulerAngles.z);
+
+        // Find the Timer instance
+        timer = GameObject.FindObjectOfType<Timer>();
     }
 
     void Update()
@@ -27,14 +35,24 @@ public class Mirror2Rotation : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         isPlayerNearby = distance <= interactionDistance;
 
-        if (isPlayerNearby && mirrorController.isFirstMirrorFullyRotated && !isRotated)
+        if (isPlayerNearby == true && mirrorController.isFirstMirrorFullyRotated == true && isRotated == false)
         {
-            txt.text = "Rotate Mirror2 R";
+            txt.text = "Rotate Mirror R\nBreak Mirror B";
+        }
+
+        if (isRotated == true || isPlayerNearby == false)
+        {
+            txt.text = ""; // Clear the text
         }
 
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && mirrorController.isFirstMirrorFullyRotated && !isRotated)
         {
             ToggleRotation();
+        }
+
+        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.B) && mirrorController.isFirstMirrorFullyRotated && !isRotated && !isFlashing)
+        {
+            ReduceTimer();
         }
     }
 
@@ -46,5 +64,25 @@ public class Mirror2Rotation : MonoBehaviour
         isRotated = true;
         mirrorController.RotateSecondMirror();
         Debug.Log("Mirror2 Rotated!");
+    }
+
+    void ReduceTimer()
+    {
+        if (timer != null)
+        {
+            timer.ReduceTime(3); // Call the reduce time method
+
+            // Flash the timer in red
+            StartCoroutine(FlashTimer());
+        }
+    }
+
+    IEnumerator FlashTimer()
+    {
+        isFlashing = true;
+        timer.HighlightTimer(Color.red); // Change to red
+        yield return new WaitForSeconds(1f); // Keep red for 1 second
+        timer.HighlightTimer(Color.white); // Revert back to normal
+        isFlashing = false;
     }
 }
