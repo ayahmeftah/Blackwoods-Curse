@@ -3855,7 +3855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -7403,7 +7403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226608069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9193, y: -0.45, z: -3.661}
+  m_LocalPosition: {x: -2.9193, y: -0.597, z: -3.661}
   m_LocalScale: {x: 1.4715102, y: 0.057468947, z: 1.557989}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8801,7 +8801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -12323,15 +12323,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 373808708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a39051121b0f9140ad4b66618a72ec4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e8087173b025e84aa4f97394e4aad52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seekManager: {fileID: 493123247}
-  barrierManager: {fileID: 1922886606}
+  grimm: {fileID: 493123233}
+  destination: {fileID: 1676704167}
+  wanderArea: {fileID: 891185377}
+  upstairsBarrier: {fileID: 1218989992}
+  downstairsBarrier: {fileID: 1127369529}
   goUpstairs: 1
-  opposingFollowTrigger: {fileID: 750799972}
-  upstairsArrivalTrigger: {fileID: 1676704167}
-  downstairsArrivalTrigger: {fileID: 829596690}
+  opposingTrigger: {fileID: 750799972}
 --- !u!1 &373881569
 GameObject:
   m_ObjectHideFlags: 0
@@ -13563,7 +13564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -14494,7 +14495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -16941,7 +16942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: ff405d9104421bb44a1e040607b386bb, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5897647148852539114, guid: ff405d9104421bb44a1e040607b386bb, type: 3}
       propertyPath: m_Layer
@@ -16985,7 +16986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493123233}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
   m_Name: 
@@ -16997,7 +16998,7 @@ MonoBehaviour:
   logTaskChanges: 0
   group: 0
   resetValuesOnRestart: 0
-  externalBehavior: {fileID: 0}
+  externalBehavior: {fileID: 11400000, guid: 1c5c075f28df6424f9328ebd5bf967a6, type: 2}
   mBehaviorSource:
     behaviorName: Behavior
     behaviorDescription: 
@@ -17006,7 +17007,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"wanderTarget","IsShared":true}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -17054,8 +17055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowchart: {fileID: 1732030946}
   blockName: GrimmIntro
-  seekManager: {fileID: 493123247}
   navAgent: {fileID: 493123236}
+  downstairsWanderArea: {fileID: 813267459}
   upstairsTriggerToEnable: {fileID: 373808708}
   downstairsTriggerToDisable: {fileID: 750799972}
 --- !u!114 &493123238
@@ -17111,15 +17112,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021b5d2d808130f41b0f7df14ab16cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviorTree: {fileID: 493123234}
-  seekTree: {fileID: 11400000, guid: a3131b65bfbfad246ae0781d5517cb54, type: 2}
-  wanderTree: {fileID: 11400000, guid: 1c5c075f28df6424f9328ebd5bf967a6, type: 2}
-  upstairsTarget: {fileID: 1676704167}
-  downstairsTarget: {fileID: 829596690}
+  agent: {fileID: 493123236}
+  upstairsArrivalTarget: {fileID: 1676704167}
+  downstairsArrivalTarget: {fileID: 829596690}
   upstairsWanderArea: {fileID: 891185377}
   downstairsWanderArea: {fileID: 813267459}
-  upstairsArrivalTrigger: {fileID: 373808708}
-  downstairsArrivalTrigger: {fileID: 750799972}
+  behaviorTree: {fileID: 493123234}
+  wanderTree: {fileID: 11400000, guid: 1c5c075f28df6424f9328ebd5bf967a6, type: 2}
 --- !u!1001 &493307415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19896,7 +19895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -26855,15 +26854,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 750799972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a39051121b0f9140ad4b66618a72ec4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e8087173b025e84aa4f97394e4aad52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seekManager: {fileID: 493123247}
-  barrierManager: {fileID: 1922886606}
+  grimm: {fileID: 493123233}
+  destination: {fileID: 829596690}
+  wanderArea: {fileID: 813267459}
+  upstairsBarrier: {fileID: 1218989992}
+  downstairsBarrier: {fileID: 750799974}
   goUpstairs: 0
-  opposingFollowTrigger: {fileID: 373808708}
-  upstairsArrivalTrigger: {fileID: 1676704167}
-  downstairsArrivalTrigger: {fileID: 829596690}
+  opposingTrigger: {fileID: 373808708}
 --- !u!1001 &755629892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28328,7 +28328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -29256,7 +29256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -29388,15 +29388,13 @@ GameObject:
   - component: {fileID: 829596694}
   - component: {fileID: 829596693}
   - component: {fileID: 829596692}
-  - component: {fileID: 829596695}
-  - component: {fileID: 829596696}
   m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &829596691
 Transform:
   m_ObjectHideFlags: 0
@@ -29475,37 +29473,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829596690}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &829596695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829596690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4412772f2b025a347957add73de9cbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barrierManager: {fileID: 1922886606}
-  upstairsFollowTrigger: {fileID: 373808708}
-  downstairsFollowTrigger: {fileID: 750799972}
---- !u!114 &829596696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829596690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b041fe3c8682baf48855eb3ce48335cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seekManager: {fileID: 493123247}
-  isUpstairs: 0
-  upstairsArrivalTrigger: {fileID: 1676704167}
-  downstairsArrivalTrigger: {fileID: 829596690}
 --- !u!1001 &831180135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33742,7 +33709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -37858,7 +37825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6776210907159168225, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74cafe5d7bec12446965c9a3213b8d72, type: 3}
@@ -47574,7 +47541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -51392,7 +51359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -53956,7 +53923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -56947,15 +56914,13 @@ GameObject:
   - component: {fileID: 1676704171}
   - component: {fileID: 1676704170}
   - component: {fileID: 1676704169}
-  - component: {fileID: 1676704172}
-  - component: {fileID: 1676704173}
   m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1676704168
 Transform:
   m_ObjectHideFlags: 0
@@ -56964,7 +56929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676704167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6355, y: -0.4399997, z: 0.0821}
+  m_LocalPosition: {x: -0.6355, y: -0.607, z: 0.0821}
   m_LocalScale: {x: 5.181455, y: 0.057468947, z: 8.649624}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57034,37 +56999,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676704167}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1676704172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676704167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf25a77390115d4db972f3a27ba0cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barrierManager: {fileID: 1922886606}
-  downstairsFollowTrigger: {fileID: 750799972}
-  upstairsFollowTrigger: {fileID: 373808708}
---- !u!114 &1676704173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676704167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b041fe3c8682baf48855eb3ce48335cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seekManager: {fileID: 493123247}
-  isUpstairs: 1
-  upstairsArrivalTrigger: {fileID: 1676704167}
-  downstairsArrivalTrigger: {fileID: 829596690}
 --- !u!1001 &1678976272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57929,7 +57863,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697487191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0013, y: -0.44, z: -9.1087}
+  m_LocalPosition: {x: 1.0013, y: -0.602, z: -9.1087}
   m_LocalScale: {x: 2.5393116, y: 0.057468947, z: 12.278487}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58492,7 +58426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6591656903508432967, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8144ec4634ecf1409075fc85f268fb9, type: 3}
@@ -61625,7 +61559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -63220,7 +63154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -66604,7 +66538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -71677,7 +71611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder
@@ -84600,7 +84534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4874383578969292889, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 32
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5255307855120440035, guid: ff7d0db56bece5a4c816647356bf6494, type: 3}
       propertyPath: m_RootOrder

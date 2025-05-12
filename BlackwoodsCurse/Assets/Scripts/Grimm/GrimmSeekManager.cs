@@ -1,86 +1,71 @@
-using UnityEngine;
 using BehaviorDesigner.Runtime;
+using UnityEngine;
+using UnityEngine.AI;
 
 public class GrimmSeekManager : MonoBehaviour
 {
-    public BehaviorTree behaviorTree;
-    public ExternalBehaviorTree seekTree;
-    public ExternalBehaviorTree wanderTree;
+    public NavMeshAgent agent;
+    public GameObject upstairsArrivalTarget;      // Empty GameObject at arrival point
+    public GameObject downstairsArrivalTarget;    // Same for downstairs
 
-    public GameObject upstairsTarget;
-    public GameObject downstairsTarget;
     public GameObject upstairsWanderArea;
     public GameObject downstairsWanderArea;
 
-    public GameObject upstairsArrivalTrigger;
-    public GameObject downstairsArrivalTrigger;
+    public BehaviorTree behaviorTree;
+    public ExternalBehaviorTree wanderTree;
 
     public void SeekUpstairs()
     {
-        behaviorTree.DisableBehavior();
-        behaviorTree.ExternalBehavior = seekTree;
-
-        // Safely set global variable
-        SharedGameObject go = GlobalVariables.Instance.GetVariable("seekTarget") as SharedGameObject;
-        if (go != null)
+        if (agent == null || upstairsArrivalTarget == null)
         {
-            go.Value = upstairsTarget;
-            Debug.Log("[GrimmSeekManager] Set seekTarget to: " + upstairsTarget.name);
-        }
-        else
-        {
-            Debug.LogError("[GrimmSeekManager] Global variable 'seekTarget' is missing or not a GameObject.");
+            Debug.LogError("[GrimmSeekManager] Missing NavMeshAgent or upstairsArrivalTarget.");
+            return;
         }
 
-        behaviorTree.EnableBehavior();
+        agent.SetDestination(upstairsArrivalTarget.transform.position);
         GrimmState.isInTransit = true;
-        EnableArrivalTrigger(true);
-        Debug.Log("[GrimmSeekManager] Seeking upstairs target.");
+        Debug.Log("[GrimmSeekManager] Moving Grimm upstairs to: " + upstairsArrivalTarget.name);
     }
 
     public void SeekDownstairs()
     {
-        behaviorTree.DisableBehavior();
-        behaviorTree.ExternalBehavior = seekTree;
-
-        SharedGameObject go = GlobalVariables.Instance.GetVariable("seekTarget") as SharedGameObject;
-        if (go != null)
+        if (agent == null || downstairsArrivalTarget == null)
         {
-            go.Value = downstairsTarget;
-            Debug.Log("[GrimmSeekManager] Set seekTarget to: " + downstairsTarget.name);
-        }
-        else
-        {
-            Debug.LogError("[GrimmSeekManager] Global variable 'seekTarget' is missing or not a GameObject.");
+            Debug.LogError("[GrimmSeekManager] Missing NavMeshAgent or downstairsArrivalTarget.");
+            return;
         }
 
-        behaviorTree.EnableBehavior();
+        agent.SetDestination(downstairsArrivalTarget.transform.position);
         GrimmState.isInTransit = true;
-        EnableArrivalTrigger(false);
-        Debug.Log("[GrimmSeekManager] Seeking downstairs target.");
+        Debug.Log("[GrimmSeekManager] Moving Grimm downstairs to: " + downstairsArrivalTarget.name);
     }
-
 
     public void SwitchToWander(bool upstairs)
     {
+        if (behaviorTree == null || wanderTree == null) return;
+
         behaviorTree.DisableBehavior();
         behaviorTree.ExternalBehavior = wanderTree;
         behaviorTree.EnableBehavior();
-        behaviorTree.SetVariableValue("wanderTarget", upstairs ? upstairsWanderArea : downstairsWanderArea);
+
+        GameObject area = upstairs ? upstairsWanderArea : downstairsWanderArea;
+        behaviorTree.SetVariableValue("wanderTarget", area);
+
         GrimmState.isInTransit = false;
-        DisableAllArrivalTriggers();
-        Debug.Log("[GrimmSeekManager] Switched to wander (" + (upstairs ? "upstairs" : "downstairs") + ")");
+        Debug.Log("[GrimmSeekManager] Switched to wander mode. Area: " + area.name);
     }
 
-    public void EnableArrivalTrigger(bool upstairs)
+    public void TestDirectMove(GameObject target)
     {
-        if (upstairsArrivalTrigger != null) upstairsArrivalTrigger.SetActive(upstairs);
-        if (downstairsArrivalTrigger != null) downstairsArrivalTrigger.SetActive(!upstairs);
+        var agent = GetComponent<NavMeshAgent>();
+        if (agent == null || target == null)
+        {
+            Debug.LogError("[GrimmSeekManager] NavMeshAgent or target is null.");
+            return;
+        }
+
+        bool success = agent.SetDestination(target.transform.position);
+        Debug.Log("[GrimmSeekManager] Direct SetDestination to: " + target.name + " | success: " + success);
     }
 
-    public void DisableAllArrivalTriggers()
-    {
-        if (upstairsArrivalTrigger != null) upstairsArrivalTrigger.SetActive(false);
-        if (downstairsArrivalTrigger != null) downstairsArrivalTrigger.SetActive(false);
-    }
 }

@@ -16,9 +16,10 @@ public class GrimmAnimatorSync : MonoBehaviour
     {
         if (animator == null || agent == null) return;
 
-        bool isMoving = agent.hasPath &&
-                        agent.remainingDistance > agent.stoppingDistance + 0.1f &&
-                        agent.velocity.sqrMagnitude > 0.05f;
+        bool isPathActive = agent.hasPath && agent.remainingDistance > agent.stoppingDistance;
+        bool hasSpeed = agent.velocity.sqrMagnitude > 0.1f;
+
+        bool isMoving = isPathActive && hasSpeed;
 
         animator.SetBool("isWalking", isMoving);
 
@@ -29,9 +30,23 @@ public class GrimmAnimatorSync : MonoBehaviour
             animator.Play("Walking", 0, 0f);
         }
 
-        if (!agent.hasPath && agent.velocity.sqrMagnitude < 0.01f)
+        // Stop drift if idle and no path
+        if (!isMoving && !agent.pathPending && !agent.hasPath)
         {
-            agent.Warp(transform.position);
+            agent.velocity = Vector3.zero;
+
+            // Snap back to nearest NavMesh point if sliding out
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+            {
+                agent.Warp(hit.position);
+                Debug.Log("[GrimmAnimatorSync] Grimm warped back to NavMesh: " + hit.position);
+            }
+            else
+            {
+                Debug.LogWarning("[GrimmAnimatorSync] Grimm is off NavMesh and cannot be repositioned.");
+            }
+            Debug.DrawRay(agent.transform.position, Vector3.down, Color.red, 0.2f);
         }
     }
 }

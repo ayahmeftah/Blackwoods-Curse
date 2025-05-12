@@ -7,9 +7,8 @@ public class GrimmFungusTrigger : MonoBehaviour
     public Flowchart flowchart;
     public string blockName = "GrimmIntro";
 
-    public GrimmSeekManager seekManager;
     public NavMeshAgent navAgent;
-
+    public GameObject downstairsWanderArea;
     public GameObject upstairsTriggerToEnable;
     public GameObject downstairsTriggerToDisable;
 
@@ -33,7 +32,7 @@ public class GrimmFungusTrigger : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         if (!hasStarted || resumed) return;
 
@@ -42,11 +41,21 @@ public class GrimmFungusTrigger : MonoBehaviour
             GrimmState.fungusDialogueActive = false;
             resumed = true;
 
-            if (navAgent != null)
+            if (navAgent != null && downstairsWanderArea != null)
+            {
+                navAgent.Warp(downstairsWanderArea.transform.position);
                 navAgent.isStopped = false;
+            }
 
-            if (seekManager != null)
-                seekManager.SwitchToWander(false); // wander downstairs by default
+            // Assign wander behavior
+            var tree = navAgent.GetComponent<BehaviorDesigner.Runtime.BehaviorTree>();
+            if (tree != null)
+            {
+                tree.DisableBehavior();
+                tree.EnableBehavior();
+                tree.SetVariableValue("wanderTarget", downstairsWanderArea);
+                Debug.Log("[GrimmFungusTrigger] Wander target set to: " + downstairsWanderArea.name);
+            }
 
             if (upstairsTriggerToEnable != null)
                 upstairsTriggerToEnable.SetActive(true);
@@ -54,7 +63,8 @@ public class GrimmFungusTrigger : MonoBehaviour
             if (downstairsTriggerToDisable != null)
                 downstairsTriggerToDisable.SetActive(false);
 
-            Debug.Log("[GrimmFungusTrigger] Dialogue done. AI resumed. Upstairs trigger enabled.");
+            Debug.Log("[GrimmFungusTrigger] Dialogue done. Grimm warped and AI resumed.");
+            Destroy(this);
         }
     }
 }
