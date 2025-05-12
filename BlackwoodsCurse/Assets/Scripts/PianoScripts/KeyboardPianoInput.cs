@@ -26,6 +26,9 @@ public class KeyboardPianoInput : MonoBehaviour
     public List<PianoKey> pianoKeys = new List<PianoKey>();
     public AudioSource audioSource;
 
+    public PianoPuzzleManager puzzleManager;
+
+
     void Update()
     {
         if (!pianoTrigger.InPianoMode) return;
@@ -46,6 +49,9 @@ public class KeyboardPianoInput : MonoBehaviour
 
                 if (labelToFlash != null)
                     StartCoroutine(FlashKeyText(labelToFlash));
+
+                string fullNote = key.noteName + zoneSwitcher.activeZone;
+puzzleManager.NotePlayed(fullNote);
 
                 break;
             }
