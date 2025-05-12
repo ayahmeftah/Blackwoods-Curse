@@ -9,44 +9,47 @@ public class CandlePickup : MonoBehaviour
     public float lightDistance = 2f;
     private bool isHolding = false;
     private bool inRange = false;
-    public CandlePuzzleManager puzzleManager;  
-    public Transform flameTip; 
+    public CandlePuzzleManager puzzleManager;
+    public Transform flameTip;
     public Text txt;
+    public AudioSource audioSource;
+    public AudioClip lightCandleClip;
+
 
     void Start()
-{
-    // If player starts inside the collider, this detects it
-    Collider[] hits = Physics.OverlapSphere(transform.position, 1f);
-    foreach (var hit in hits)
     {
-        if (hit.CompareTag("Player"))
+
+        Collider[] hits = Physics.OverlapSphere(transform.position, 1f);
+        foreach (var hit in hits)
         {
-            inRange = true;
-            break;
+            if (hit.CompareTag("Player"))
+            {
+                inRange = true;
+                break;
+            }
+        }
+        puzzleManager = FindObjectOfType<CandlePuzzleManager>();
+
+    }
+
+
+    void Update()
+    {
+        if (inRange && Input.GetKeyDown(KeyCode.H))
+        {
+            HoldCandle();
+            txt.text = "Press L to light a candle";
+        }
+
+        if (isHolding && !inRange)
+        {
+            txt.text = "Press L to light a candle";
+        }
+        if (inRange && Input.GetKeyDown(KeyCode.L))
+        {
+            TryLightNearbyCandle();
         }
     }
-            puzzleManager = FindObjectOfType<CandlePuzzleManager>();
-
-}
-
-
-void Update()
-{
-    if (inRange && Input.GetKeyDown(KeyCode.H))
-    {
-        HoldCandle();
-        txt.text = "Press L to light a candle";
-    }
-
-    if (isHolding && !inRange)
-    {
-        txt.text = "Press L to light a candle";
-    }
-    if(inRange && Input.GetKeyDown(KeyCode.L))
-    {
-        TryLightNearbyCandle();
-    }
-}
 
 
     void HoldCandle()
@@ -60,51 +63,53 @@ void Update()
         if (rb != null) rb.isKinematic = true;
     }
 
-void OnTriggerEnter(Collider other)
-{
-    if (other.CompareTag("Player"))
+    void OnTriggerEnter(Collider other)
     {
-        inRange = true;
-        if (!isHolding)
+        if (other.CompareTag("Player"))
         {
-            txt.text = "Press H to hold the candle";
+            inRange = true;
+            if (!isHolding)
+            {
+                txt.text = "Press H to hold the candle";
+            }
         }
     }
-}
 
-void OnTriggerExit(Collider other)
-{
-    if (other.CompareTag("Player"))
+    void OnTriggerExit(Collider other)
     {
-        inRange = false;
-        txt.text = "";
-    }
-}
-
-
-void TryLightNearbyCandle()
-{
-    if (!isHolding || flameTip == null) return;
-
-    Vector3 origin = flameTip.position;
-
-    // Use the forward direction of the candle based on its world rotation
-    Vector3 direction = flameTip.TransformDirection(Vector3.forward);
-
-    Debug.DrawRay(origin, direction * lightDistance, Color.red, 2f);
-
-    if (Physics.Raycast(origin, direction, out RaycastHit hit, lightDistance))
-    {
-        Debug.Log("Ray hit: " + hit.collider.name);
-
-        BigCandle candle = hit.collider.GetComponentInParent<BigCandle>();
-        if (candle != null && !candle.IsLit)
+        if (other.CompareTag("Player"))
         {
-            candle.LightCandle();
-            puzzleManager.CandleLit(candle.candleIndex);
+            inRange = false;
+            txt.text = "";
         }
     }
-}
+
+
+    void TryLightNearbyCandle()
+    {
+        if (!isHolding || flameTip == null) return;
+
+        Vector3 origin = flameTip.position;
+
+        Vector3 direction = flameTip.TransformDirection(Vector3.forward);
+
+        Debug.DrawRay(origin, direction * lightDistance, Color.red, 2f);
+
+        if (Physics.Raycast(origin, direction, out RaycastHit hit, lightDistance))
+        {
+            Debug.Log("Ray hit: " + hit.collider.name);
+
+            BigCandle candle = hit.collider.GetComponentInParent<BigCandle>();
+            if (candle != null && !candle.IsLit)
+            {
+                candle.LightCandle();
+                puzzleManager.CandleLit(candle.candleIndex);
+                //Play candle light sound
+                if (audioSource != null && lightCandleClip != null)
+                    audioSource.PlayOneShot(lightCandleClip);
+            }
+        }
+    }
 
 
 }

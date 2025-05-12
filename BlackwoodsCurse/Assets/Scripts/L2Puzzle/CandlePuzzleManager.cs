@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 public class CandlePuzzleManager : MonoBehaviour
 {
-    public List<BigCandle> candles; // Assign in the inspector
-    public List<int> correctOrder = new List<int> { 0, 1, 2 }; // Expected lighting order
-
+    public List<BigCandle> candles;
+    public List<int> correctOrder = new List<int> { 0, 1, 2 }; // correct candle lighting order
     private List<int> currentOrder = new List<int>();
     public ResetDiningState roomRestorer;
     public Text txt;
@@ -17,28 +16,29 @@ public class CandlePuzzleManager : MonoBehaviour
         currentOrder.Add(index);
         Debug.Log($"Candle {index} lit. Current Order: {string.Join(", ", currentOrder)}");
 
-        if (currentOrder.Count > correctOrder.Count)
-        {
-            Debug.Log("Too many candles lit. Resetting.");
-            ResetPuzzle();
-            return;
-        }
-
-        for (int i = 0; i < currentOrder.Count; i++)
-        {
-            if (currentOrder[i] != correctOrder[i])
-            {
-                Debug.Log("Wrong order. Resetting.");
-                ResetPuzzle();
-                return;
-            }
-        }
-
         if (currentOrder.Count == correctOrder.Count)
         {
+            // Check full sequence
+            for (int i = 0; i < correctOrder.Count; i++)
+            {
+                if (currentOrder[i] != correctOrder[i])
+                {
+                    Debug.Log("Wrong order. Resetting.");
+
+                    if (txt != null)
+                        StartCoroutine(ShowMessage("Wrong order, please try again.", 2f));
+
+                    ResetPuzzle();
+                    return;
+                }
+            }
+
+            // If correct
             Debug.Log("Puzzle solved! Unlock door or trigger next event here.");
-                if (txt != null)
-                 txt.text = "";
+
+            if (txt != null)
+                txt.text = "Puzzle solved, you can escape to the next level.";
+
             roomRestorer.RestoreRoom();
         }
     }
@@ -50,5 +50,12 @@ public class CandlePuzzleManager : MonoBehaviour
         {
             candle.ResetCandle();
         }
+    }
+
+    private IEnumerator ShowMessage(string message, float duration)
+    {
+        txt.text = message;
+        yield return new WaitForSeconds(duration);
+        txt.text = "";
     }
 }

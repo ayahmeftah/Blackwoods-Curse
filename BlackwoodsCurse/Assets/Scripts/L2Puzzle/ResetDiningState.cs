@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class ResetDiningState : MonoBehaviour
 {
-[System.Serializable]
-public class FloatingObject
-{
-    public GameObject obj;
-    [HideInInspector] public Vector3 originalPosition;
-    [HideInInspector] public Quaternion originalRotation;
-
-    public void StoreOriginalTransform()
+    [System.Serializable]
+    public class FloatingObject
     {
-        if (obj != null)
+        public GameObject obj;
+        [HideInInspector] public Vector3 originalPosition;
+        [HideInInspector] public Quaternion originalRotation;
+        public void StoreOriginalTransform()
         {
-            originalPosition = obj.transform.position;
-            originalRotation = obj.transform.rotation;
+            if (obj != null)
+            {
+                originalPosition = obj.transform.position;
+                originalRotation = obj.transform.rotation;
+            }
         }
     }
-}
 
     public List<FloatingObject> floatingObjects;
     public GameObject blackVoid;
@@ -27,43 +26,45 @@ public class FloatingObject
     public DiningDoor roomDoor;
     public GameObject diningFloorGroup;
     public GameObject smallCandle;
+    public AudioSource audioSource;
+    public AudioClip doorOpenClip;
 
-  void Start()
-{
-    foreach (FloatingObject fo in floatingObjects)
+    void Start()
     {
-        fo.StoreOriginalTransform();
-        Debug.Log($"Stored original transform for: {fo.obj.name}");
+        foreach (FloatingObject fo in floatingObjects)
+        {
+            fo.StoreOriginalTransform();
+            Debug.Log($"Stored original transform for: {fo.obj.name}");
+        }
     }
-}
 
     public void RestoreRoom()
     {
         // 1. Return floating objects to their original position
-foreach (var item in floatingObjects)
-{
-    if (item.obj != null)
-    {
-        item.obj.transform.position = item.originalPosition;
-        item.obj.transform.rotation = item.originalRotation;
-
-        // Stop physics movement
-        Rigidbody rb = item.obj.GetComponent<Rigidbody>();
-        if (rb != null)
+        foreach (var item in floatingObjects)
         {
-            rb.velocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            // rb.isKinematic = true;  // Freeze it
-        }
+            if (item.obj != null)
+            {
+                item.obj.transform.position = item.originalPosition;
+                item.obj.transform.rotation = item.originalRotation;
 
-       
-        MonoBehaviour floatingScript = item.obj.GetComponent<FloatToTarget>(); 
-        if (floatingScript != null)
-        {
-            floatingScript.enabled = false;
+                // Stop physics movement
+                Rigidbody rb = item.obj.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.velocity = Vector3.zero;
+                    rb.angularVelocity = Vector3.zero;
+                    // rb.isKinematic = true;  // Freeze it
+                }
+
+
+                MonoBehaviour floatingScript = item.obj.GetComponent<FloatToTarget>();
+                if (floatingScript != null)
+                {
+                    floatingScript.enabled = false;
+                }
+            }
         }
-    }
-}
 
         // 2. Disable black void and starting platform
         if (blackVoid != null) blackVoid.SetActive(false);
@@ -72,13 +73,17 @@ foreach (var item in floatingObjects)
         diningFloorGroup.SetActive(true);
 
         if (smallCandle != null)
-        smallCandle.SetActive(false);
+            smallCandle.SetActive(false);
 
         // 3. Unlock and open the exit door
         if (roomDoor != null)
         {
             roomDoor.isLocked = false;
             roomDoor.ForceOpen();
+
+            //Play door open sound
+            if (audioSource != null && doorOpenClip != null)
+                audioSource.PlayOneShot(doorOpenClip);
         }
 
         Debug.Log("Room restored and normalized.");
