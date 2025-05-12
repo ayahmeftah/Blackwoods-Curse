@@ -71,6 +71,9 @@ public class StudyBookcaseMove : MonoBehaviour
         {
             bookcaseAnimator.SetBool("AllowOpen", true);
             bookcaseAnimator.SetTrigger("Pull");
+
+            GrimmState.bookcaseMoved = true;
+            
             Invoke(nameof(AllowKeypadInput), 1.0f); // wait 1 second after animation starts
         }
     }
