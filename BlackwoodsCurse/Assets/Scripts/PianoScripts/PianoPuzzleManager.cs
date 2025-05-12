@@ -17,10 +17,17 @@ public class PianoPuzzleManager : MonoBehaviour
     public Color wrongColor = Color.red;
     public Color neutralColor = Color.gray;
 
+    
+
     public TextMeshProUGUI resetMessage;
 
     private List<string> currentInput = new List<string>();
     private bool puzzleFailed = false;
+
+    public List<MeshRenderer> pictureRenderers;       // your 4 picture objects
+public List<Material> solvedMaterials;            // your 4 custom solved materials
+public List<GameObject> glowObjects;              // optional glowing borders
+
 
     public void NotePlayed(string note)
     {
@@ -46,6 +53,13 @@ public class PianoPuzzleManager : MonoBehaviour
             starImages[index].color = wrongColor;
             ShowResetMessage();
         }
+
+        if (currentInput.Count == correctSequence.Count)
+{
+    Debug.Log("Puzzle complete!");
+    UpdateWallPictures(); // 👈 this will be called
+}
+
     }
 
     void ShowResetMessage()
@@ -91,5 +105,24 @@ public class PianoPuzzleManager : MonoBehaviour
             return zone;
         return -1;
     }
+
+    void UpdateWallPictures()
+{
+    for (int i = 0; i < pictureRenderers.Count; i++)
+    {
+        if (i < solvedMaterials.Count && pictureRenderers[i] != null)
+        {
+            pictureRenderers[i].material = solvedMaterials[i];
+        }
+
+        if (i < glowObjects.Count && glowObjects[i] != null)
+        {
+            glowObjects[i].SetActive(true);
+        }
+    }
+}
+
+
+
 }
 
