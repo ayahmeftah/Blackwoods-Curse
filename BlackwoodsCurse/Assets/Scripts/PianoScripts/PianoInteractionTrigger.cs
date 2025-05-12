@@ -15,6 +15,15 @@ public class PianoInteractionTrigger : MonoBehaviour
     private bool isPlayerNear = false;
     private bool inPianoMode = false;
 
+    void Start()
+{
+    mainCamera.enabled = true;
+    pianoCamera.enabled = false;
+
+    pianoOverlay.SetActive(false);
+    piano3DModel.SetActive(false);
+}
+
     void Update()
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.P) && !inPianoMode)
