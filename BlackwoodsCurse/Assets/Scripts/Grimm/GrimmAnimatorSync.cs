@@ -40,7 +40,7 @@ public class GrimmAnimatorSync : MonoBehaviour
             if (NavMesh.SamplePosition(agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
             {
                 agent.Warp(hit.position);
-                Debug.Log("[GrimmAnimatorSync] Grimm warped back to NavMesh: " + hit.position);
+                //Debug.Log("[GrimmAnimatorSync] Grimm warped back to NavMesh: " + hit.position);
             }
             else
             {

@@ -44,7 +44,6 @@ namespace NavKeypad
         [SerializeField] private Animator safeAnimator;
         private bool animatorWasEnabled = false;
 
-
         private string currentInput;
         private bool displayingResult = false;
         private bool accessWasGranted = false;
@@ -52,6 +51,13 @@ namespace NavKeypad
         private bool allowKeypadInput = false;
 
         public Text txt;
+
+        [SerializeField] private GrimmEventManager grimmEventManager;
+        [SerializeField] private string codeHintBlockName = "GrimmCodeWarning"; // Fungus block name
+
+        private int wrongAttempts = 0;
+        private const int maxWrongAttempts = 3;
+        private bool hasTriggeredGrimmHint = false;
 
         private void Awake()
         {
@@ -140,6 +146,27 @@ namespace NavKeypad
             onAccessDenied?.Invoke();
             panelMesh.material.SetVector("_EmissionColor", screenDeniedColor * screenIntensity);
             audioSource.PlayOneShot(accessDeniedSfx);
+
+            // Count wrong attempts
+            if (!hasTriggeredGrimmHint)
+            {
+                wrongAttempts++;
+
+                if (wrongAttempts >= maxWrongAttempts)
+                {
+                    hasTriggeredGrimmHint = true;
+
+                    if (grimmEventManager != null)
+                    {
+                        Debug.Log("Grimm appears after 3 wrong attempts.");
+                        grimmEventManager.StartCodeHintDialogue(codeHintBlockName);
+                    }
+                    else
+                    {
+                        Debug.LogError("GrimmEventManager not assigned to Keypad!");
+                    }
+                }
+            }
         }
 
         private void ClearInput()
