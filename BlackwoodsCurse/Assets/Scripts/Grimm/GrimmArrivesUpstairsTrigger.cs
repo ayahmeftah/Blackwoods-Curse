@@ -2,10 +2,7 @@ using UnityEngine;
 
 public class GrimmArrivesUpstairsTrigger : MonoBehaviour
 {
-    public GrimmBehaviorManager grimmManager;
     public GrimmBarrierManager barrierManager;
-    public GameObject upstairsArea;
-
     public GameObject downstairsFollowTrigger;
     public GameObject upstairsFollowTrigger;
 
@@ -14,15 +11,9 @@ public class GrimmArrivesUpstairsTrigger : MonoBehaviour
         if (!other.CompareTag("Grimm")) return;
 
         Debug.Log("[GrimmArrivesUpstairsTrigger] ENTERED by: " + other.name);
+        GrimmState.isInTransit = false;
 
-        if (!GrimmState.fungusDialogueActive)
-        {
-            grimmManager.SwitchToWander(upstairsArea);
-        }
-
-        GrimmState.isInTransit = false; // Grimm finished his move
-
-        barrierManager?.LockGrimmUpstairs();
+        barrierManager.LockGrimmUpstairs();
 
         if (downstairsFollowTrigger != null)
         {

@@ -17,29 +17,21 @@ public class GrimmAnimatorSync : MonoBehaviour
         if (animator == null || agent == null) return;
 
         bool isMoving = agent.hasPath &&
-                agent.remainingDistance > agent.stoppingDistance + 0.1f &&
-                agent.velocity.sqrMagnitude > 0.05f;
+                        agent.remainingDistance > agent.stoppingDistance + 0.1f &&
+                        agent.velocity.sqrMagnitude > 0.05f;
 
+        animator.SetBool("isWalking", isMoving);
 
-        if (isMoving)
+        if (isMoving &&
+            animator.GetCurrentAnimatorStateInfo(0).IsName("Walking") &&
+            animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
         {
-            animator.SetBool("isWalking", true);
-
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Walking") &&
-                animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
-            {
-                animator.Play("Walking", 0, 0f); // Replay the animation from the start
-            }
-        }
-        else
-        {
-            animator.SetBool("isWalking", false);
+            animator.Play("Walking", 0, 0f);
         }
 
         if (!agent.hasPath && agent.velocity.sqrMagnitude < 0.01f)
         {
-            agent.Warp(transform.position); // Snap-stop Grimm
+            agent.Warp(transform.position);
         }
-
     }
 }

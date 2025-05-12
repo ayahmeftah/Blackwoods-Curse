@@ -1,47 +1,60 @@
 using UnityEngine;
 using Fungus;
 using UnityEngine.AI;
-using BehaviorDesigner.Runtime;
 
 public class GrimmFungusTrigger : MonoBehaviour
 {
     public Flowchart flowchart;
     public string blockName = "GrimmIntro";
 
-    public GrimmBehaviorManager grimmManager;
+    public GrimmSeekManager seekManager;
     public NavMeshAgent navAgent;
-    public GameObject downstairsArea;
+
+    public GameObject upstairsTriggerToEnable;
+    public GameObject downstairsTriggerToDisable;
 
     private bool hasStarted = false;
+    private bool resumed = false;
 
     public void BeginDialogue()
     {
-        if (grimmManager == null || downstairsArea == null)
+        GrimmState.fungusDialogueActive = true;
+
+        if (navAgent != null)
         {
-            Debug.LogError("[GrimmFungusTrigger] Missing grimmManager or downstairsArea.");
-            return;
+            navAgent.isStopped = true;
+            navAgent.velocity = Vector3.zero;
         }
 
-        // Stop Grimm during dialogue
-        GrimmState.fungusDialogueActive = true; // set this to block AI
-
-        // Just start the dialogue — do not enable AI yet
-        flowchart.ExecuteBlock(blockName);
-        hasStarted = true;
+        if (flowchart != null)
+        {
+            flowchart.ExecuteBlock(blockName);
+            hasStarted = true;
+        }
     }
 
-    private void Update()
+    void Update()
     {
-        if (hasStarted && flowchart.GetExecutingBlocks().Count == 0)
+        if (!hasStarted || resumed) return;
+
+        if (flowchart != null && flowchart.GetExecutingBlocks().Count == 0)
         {
-            GrimmState.fungusDialogueActive = false; // let AI resume
+            GrimmState.fungusDialogueActive = false;
+            resumed = true;
 
             if (navAgent != null)
                 navAgent.isStopped = false;
 
-            grimmManager.SwitchToWander(downstairsArea); // ONLY this
+            if (seekManager != null)
+                seekManager.SwitchToWander(false); // wander downstairs by default
 
-            Destroy(this); // Fungus done, cleanup
+            if (upstairsTriggerToEnable != null)
+                upstairsTriggerToEnable.SetActive(true);
+
+            if (downstairsTriggerToDisable != null)
+                downstairsTriggerToDisable.SetActive(false);
+
+            Debug.Log("[GrimmFungusTrigger] Dialogue done. AI resumed. Upstairs trigger enabled.");
         }
     }
 }

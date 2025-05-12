@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class GrimmBarrierManager : MonoBehaviour
 {
@@ -7,22 +8,30 @@ public class GrimmBarrierManager : MonoBehaviour
 
     public void DisableBoth()
     {
-        if (downstairsBarrier != null) downstairsBarrier.SetActive(false);
-        if (upstairsBarrier != null) upstairsBarrier.SetActive(false);
+        ToggleBarrier(downstairsBarrier, false);
+        ToggleBarrier(upstairsBarrier, false);
         Debug.Log("[BarrierManager] Both barriers disabled.");
     }
 
     public void LockGrimmUpstairs()
     {
-        if (downstairsBarrier != null) downstairsBarrier.SetActive(true);
-        if (upstairsBarrier != null) upstairsBarrier.SetActive(false);
+        ToggleBarrier(upstairsBarrier, true);
+        ToggleBarrier(downstairsBarrier, false);
         Debug.Log("[BarrierManager] Grimm locked upstairs.");
     }
 
     public void LockGrimmDownstairs()
     {
-        if (downstairsBarrier != null) downstairsBarrier.SetActive(false);
-        if (upstairsBarrier != null) upstairsBarrier.SetActive(true);
+        ToggleBarrier(downstairsBarrier, true);
+        ToggleBarrier(upstairsBarrier, false);
         Debug.Log("[BarrierManager] Grimm locked downstairs.");
+    }
+
+    private void ToggleBarrier(GameObject barrier, bool active)
+    {
+        if (barrier == null) return;
+        var obstacle = barrier.GetComponent<NavMeshObstacle>();
+        if (obstacle != null) obstacle.enabled = active;
+        barrier.SetActive(active);
     }
 }

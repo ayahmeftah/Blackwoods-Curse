@@ -1,9 +1,10 @@
 using UnityEngine;
+using BehaviorDesigner.Runtime;
 
 public class GrimmActivator : MonoBehaviour
 {
-    public GameObject keyObject;   // Assign the Key GameObject
-    public GameObject grimmObject; // Assign the Grimm GameObject
+    public GameObject keyObject;
+    public GameObject grimmObject;
 
     private bool grimmEnabled = false;
 
@@ -13,11 +14,11 @@ public class GrimmActivator : MonoBehaviour
         {
             grimmObject.SetActive(true);
 
-            BehaviorDesigner.Runtime.BehaviorTree tree = grimmObject.GetComponent<BehaviorDesigner.Runtime.BehaviorTree>();
+            var tree = grimmObject.GetComponent<BehaviorTree>();
             if (tree != null)
-                tree.DisableBehavior(); // prevent accidental early execution
+                tree.DisableBehavior();
 
-            GrimmFungusTrigger fungusTrigger = grimmObject.GetComponent<GrimmFungusTrigger>();
+            var fungusTrigger = grimmObject.GetComponent<GrimmFungusTrigger>();
             if (fungusTrigger != null)
                 fungusTrigger.BeginDialogue();
 
