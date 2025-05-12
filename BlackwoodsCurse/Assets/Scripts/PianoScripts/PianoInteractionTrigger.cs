@@ -4,7 +4,7 @@ public class PianoInteractionTrigger : MonoBehaviour
 {
     public HUD hud;
     public GameObject piano3DModel;
-    public GameObject pianoOverlay; // Canvas with “Back (B)”
+    public GameObject pianoOverlay; // Canvas with “Back (X)”
     public Camera mainCamera;
     public Camera pianoCamera;
     public GameObject playerController;
