@@ -1,23 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // If you're using legacy Text
-// using TMPro; // Uncomment if using TextMeshProUGUI
+using TMPro;
 
 public class KeyboardPianoInput : MonoBehaviour
 {
     public ZoneSwitcher zoneSwitcher;
+    public PianoInteractionTrigger pianoTrigger;
 
     [System.Serializable]
     public class PianoKey
     {
-        public KeyCode letterKey; // KeyCode.C, KeyCode.D, etc.
-        public string noteName;   // "C", "D", etc.
+        public KeyCode letterKey; // e.g., KeyCode.C
+        public string noteName;   // "C"
+
         public AudioClip noteSoundZone1;
         public AudioClip noteSoundZone2;
         public AudioClip noteSoundZone3;
-        public Text labelText; // ← For UnityEngine.UI.Text
-        // public TextMeshProUGUI labelText; // ← If using TMPro
+
+        public TextMeshProUGUI labelZone1;
+        public TextMeshProUGUI labelZone2;
+        public TextMeshProUGUI labelZone3;
     }
 
     public List<PianoKey> pianoKeys = new List<PianoKey>();
@@ -25,12 +28,25 @@ public class KeyboardPianoInput : MonoBehaviour
 
     void Update()
     {
+        if (!pianoTrigger.InPianoMode) return;
+
         foreach (PianoKey key in pianoKeys)
         {
             if (Input.GetKeyDown(key.letterKey))
             {
                 PlayNoteSound(key);
-                StartCoroutine(FlashKeyText(key.labelText));
+
+                TextMeshProUGUI labelToFlash = null;
+                switch (zoneSwitcher.activeZone)
+                {
+                    case 1: labelToFlash = key.labelZone1; break;
+                    case 2: labelToFlash = key.labelZone2; break;
+                    case 3: labelToFlash = key.labelZone3; break;
+                }
+
+                if (labelToFlash != null)
+                    StartCoroutine(FlashKeyText(labelToFlash));
+
                 break;
             }
         }
@@ -52,7 +68,7 @@ public class KeyboardPianoInput : MonoBehaviour
         }
     }
 
-    IEnumerator FlashKeyText(Text text)
+    IEnumerator FlashKeyText(TextMeshProUGUI text)
     {
         Color originalColor = text.color;
         text.color = Color.yellow;

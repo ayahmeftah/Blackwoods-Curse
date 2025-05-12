@@ -34663,49 +34663,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoneSwitcher: {fileID: 2082359634}
+  pianoTrigger: {fileID: 0}
   pianoKeys:
   - letterKey: 99
     noteName: C
-    noteSoundZone1: {fileID: 8300000, guid: e15cd033e8242884fa44bbbffb3635e4, type: 3}
-    noteSoundZone2: {fileID: 8300000, guid: 61bed2868b732754d8642fd8cf3ea4f1, type: 3}
-    noteSoundZone3: {fileID: 8300000, guid: 18fb463864893c4448e279b69f998d7b, type: 3}
-    labelText: {fileID: 862983491}
-  - letterKey: 0
-    noteName: 
-    noteSoundZone1: {fileID: 0}
-    noteSoundZone2: {fileID: 0}
-    noteSoundZone3: {fileID: 0}
-    labelText: {fileID: 0}
-  - letterKey: 0
-    noteName: 
-    noteSoundZone1: {fileID: 0}
-    noteSoundZone2: {fileID: 0}
-    noteSoundZone3: {fileID: 0}
-    labelText: {fileID: 0}
-  - letterKey: 0
-    noteName: 
-    noteSoundZone1: {fileID: 0}
-    noteSoundZone2: {fileID: 0}
-    noteSoundZone3: {fileID: 0}
-    labelText: {fileID: 0}
-  - letterKey: 0
-    noteName: 
-    noteSoundZone1: {fileID: 0}
-    noteSoundZone2: {fileID: 0}
-    noteSoundZone3: {fileID: 0}
-    labelText: {fileID: 0}
-  - letterKey: 0
-    noteName: 
-    noteSoundZone1: {fileID: 0}
-    noteSoundZone2: {fileID: 0}
-    noteSoundZone3: {fileID: 0}
-    labelText: {fileID: 0}
-  - letterKey: 0
-    noteName: 
-    noteSoundZone1: {fileID: 0}
-    noteSoundZone2: {fileID: 0}
-    noteSoundZone3: {fileID: 0}
-    labelText: {fileID: 0}
+    noteSoundZone1: {fileID: 8300000, guid: ea23052c66f074477b35eec364ef88ef, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: de868530b7aec43b197fb8ddc6654cc2, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: dd10d2fa501e8447fbfd58cd43b3c16e, type: 3}
+    labelZone1: {fileID: 1387571741}
+    labelZone2: {fileID: 2024583512}
+    labelZone3: {fileID: 1517475707}
+  - letterKey: 100
+    noteName: D
+    noteSoundZone1: {fileID: 8300000, guid: e8ec00d5d1f444e22ba0a3944f86d3d4, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: 465f5b6059db943f0b8bbceb466bc3a7, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: e39ea6561941240f4be8a2b113bf816d, type: 3}
+    labelZone1: {fileID: 1303041196}
+    labelZone2: {fileID: 398797521}
+    labelZone3: {fileID: 1491342405}
+  - letterKey: 101
+    noteName: E
+    noteSoundZone1: {fileID: 8300000, guid: a60c20df7de56459aa8adcd70d48dcb5, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: 8ac13b5e0b5474a868219d01b1a34d65, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: e1f79491150284b80b57d58acad169c8, type: 3}
+    labelZone1: {fileID: 983014695}
+    labelZone2: {fileID: 156422825}
+    labelZone3: {fileID: 1332971453}
+  - letterKey: 102
+    noteName: F
+    noteSoundZone1: {fileID: 8300000, guid: 7e19cb631737e4526a3be0b20fea729b, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: 202724ec705374a3dad3a90b6410392e, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: 1d2186be4fb6f4d29a406738a38e21da, type: 3}
+    labelZone1: {fileID: 1833136221}
+    labelZone2: {fileID: 1236647883}
+    labelZone3: {fileID: 550066120}
+  - letterKey: 103
+    noteName: G
+    noteSoundZone1: {fileID: 8300000, guid: fcb144ababc8648a3bdaff40b89858a7, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: f4debe2dfc014495280d55a0d6340549, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: 083e06a91c815414890e021cc938092a, type: 3}
+    labelZone1: {fileID: 1816631885}
+    labelZone2: {fileID: 148623760}
+    labelZone3: {fileID: 2054865874}
+  - letterKey: 97
+    noteName: A
+    noteSoundZone1: {fileID: 8300000, guid: 06e8276483fd140949f7ed08c3bae2ef, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: 59288c9695ea144429e2be8d096ccde9, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: 956df22c5b436497faa7807c04dd0d36, type: 3}
+    labelZone1: {fileID: 1478190498}
+    labelZone2: {fileID: 1329364210}
+    labelZone3: {fileID: 1285750171}
+  - letterKey: 98
+    noteName: B
+    noteSoundZone1: {fileID: 8300000, guid: b8ca6f8f497624a769282e9dbced1504, type: 3}
+    noteSoundZone2: {fileID: 8300000, guid: 5280e451b60f84a839d18a18dde1d027, type: 3}
+    noteSoundZone3: {fileID: 8300000, guid: eb68a0c9e3474409f8a8175500fec319, type: 3}
+    labelZone1: {fileID: 1152856925}
+    labelZone2: {fileID: 553408252}
+    labelZone3: {fileID: 652908592}
   audioSource: {fileID: 965778179}
 --- !u!82 &965778179
 AudioSource:

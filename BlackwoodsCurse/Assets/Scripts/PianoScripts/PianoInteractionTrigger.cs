@@ -80,5 +80,8 @@ public class PianoInteractionTrigger : MonoBehaviour
             hud.HideMessage();
         }
     }
+
+    public bool InPianoMode => inPianoMode;
+
 }
 
