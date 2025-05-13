@@ -13,7 +13,7 @@ public class DiningDoor : MonoBehaviour
     private Quaternion defaultRot;
     private Quaternion openRot;
     public Text txt;
-    public bool isLocked = false; // default not locked
+    public bool isLocked = true; // default is locked
     public AudioSource audioSource;
     public AudioClip doorOpenClip;
 
