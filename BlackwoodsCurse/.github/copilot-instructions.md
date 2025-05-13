@@ -4,11 +4,11 @@
 - Active scene:
   - Name: Main_Scene
   - Tags:
-    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Weapon, Cloth, BigCandle, Candle
+    - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Weapon, Cloth, BigCandle, Candle, Grimm
   - Layers:
-    - Default, TransparentFX, Ignore Raycast, Ground, Water, UI
+    - Default, TransparentFX, Ignore Raycast, Ground, Water, UI, GrimmBarrier
 - Active game object:
-  - Name: Interior_Door_01_LOD0
+  - Name: GameObject
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

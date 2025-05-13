@@ -5,20 +5,20 @@ using UnityEngine.UI;
 
 public class CandlePickup : MonoBehaviour
 {
-    public Transform holdPoint; //assigned to player’s hand
+    public Transform holdPoint; // assigned to player’s hand
     public float lightDistance = 2f;
     private bool isHolding = false;
     private bool inRange = false;
+
     public CandlePuzzleManager puzzleManager;
     public Transform flameTip;
-    public Text txt;
     public AudioSource audioSource;
     public AudioClip lightCandleClip;
 
+    private CandleMessageDisplay messageDisplay;
 
     void Start()
     {
-
         Collider[] hits = Physics.OverlapSphere(transform.position, 1f);
         foreach (var hit in hits)
         {
@@ -28,29 +28,32 @@ public class CandlePickup : MonoBehaviour
                 break;
             }
         }
+
         puzzleManager = FindObjectOfType<CandlePuzzleManager>();
+        messageDisplay = FindObjectOfType<CandleMessageDisplay>();
 
+        if (messageDisplay == null)
+            Debug.LogWarning("CandleMessageDisplay not found in scene!");
     }
-
 
     void Update()
     {
         if (inRange && Input.GetKeyDown(KeyCode.H))
         {
             HoldCandle();
-            txt.text = "Press L to light a candle";
+            messageDisplay?.ShowMessage("Press L to light a candle",5f);
         }
 
         if (isHolding && !inRange)
         {
-            txt.text = "Press L to light a candle";
+            messageDisplay?.ShowMessage("Press L to light a candle",5f);
         }
+
         if (inRange && Input.GetKeyDown(KeyCode.L))
         {
             TryLightNearbyCandle();
         }
     }
-
 
     void HoldCandle()
     {
@@ -70,7 +73,7 @@ public class CandlePickup : MonoBehaviour
             inRange = true;
             if (!isHolding)
             {
-                txt.text = "Press H to hold the candle";
+                messageDisplay?.ShowMessage("Press H to hold the candle",5f);
             }
         }
     }
@@ -80,17 +83,16 @@ public class CandlePickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inRange = false;
-            txt.text = "";
+            if (!isHolding)
+                messageDisplay?.HideMessage();
         }
     }
-
 
     void TryLightNearbyCandle()
     {
         if (!isHolding || flameTip == null) return;
 
         Vector3 origin = flameTip.position;
-
         Vector3 direction = flameTip.TransformDirection(Vector3.forward);
 
         Debug.DrawRay(origin, direction * lightDistance, Color.red, 2f);
@@ -104,12 +106,10 @@ public class CandlePickup : MonoBehaviour
             {
                 candle.LightCandle();
                 puzzleManager.CandleLit(candle.candleIndex);
-                //Play candle light sound
+
                 if (audioSource != null && lightCandleClip != null)
                     audioSource.PlayOneShot(lightCandleClip);
             }
         }
     }
-
-
 }

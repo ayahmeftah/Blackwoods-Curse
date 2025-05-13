@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CandlePuzzleManager : MonoBehaviour
 {
     public List<BigCandle> candles;
-    public List<int> correctOrder = new List<int> { 0, 1, 2 }; // correct candle lighting order
+    public List<int> correctOrder = new List<int> { 0, 1, 2 }; // Correct lighting order
     private List<int> currentOrder = new List<int>();
     public ResetDiningState roomRestorer;
-    public Text txt;
+
+    private CandleMessageDisplay messageDisplay;
+
+    private void Start()
+    {
+        messageDisplay = FindObjectOfType<CandleMessageDisplay>();
+        if (messageDisplay == null)
+        {
+            Debug.LogWarning("CandleMessageDisplay not found in scene!");
+        }
+    }
 
     public void CandleLit(int index)
     {
@@ -25,8 +34,8 @@ public class CandlePuzzleManager : MonoBehaviour
                 {
                     Debug.Log("Wrong order. Resetting.");
 
-                    if (txt != null)
-                        StartCoroutine(ShowMessage("Wrong order, please try again.", 2f));
+                    if (messageDisplay != null)
+                        messageDisplay.ShowMessage("Wrong order, please try again.", 4f);
 
                     ResetPuzzle();
                     return;
@@ -36,8 +45,8 @@ public class CandlePuzzleManager : MonoBehaviour
             // If correct
             Debug.Log("Puzzle solved! Unlock door or trigger next event here.");
 
-            if (txt != null)
-                txt.text = "Puzzle solved, you can escape to the next level.";
+            if (messageDisplay != null)
+                messageDisplay.ShowMessage("Puzzle solved, you can escape to the next level.", 5f);
 
             roomRestorer.RestoreRoom();
         }
@@ -50,12 +59,5 @@ public class CandlePuzzleManager : MonoBehaviour
         {
             candle.ResetCandle();
         }
-    }
-
-    private IEnumerator ShowMessage(string message, float duration)
-    {
-        txt.text = message;
-        yield return new WaitForSeconds(duration);
-        txt.text = "";
     }
 }
