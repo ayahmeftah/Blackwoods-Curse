@@ -75979,7 +75979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 13164360}
   textCanvasGroup: {fileID: 13164362}
-  objectMaterial: {fileID: 2100000, guid: 2a09af16042a6314e9f624df9ebc7e95, type: 2}
+  objectMaterial: {fileID: 2100000, guid: 97860637d78638643a7e1884dc54c6a8, type: 2}
 --- !u!1001 &2008899265
 PrefabInstance:
   m_ObjectHideFlags: 0
