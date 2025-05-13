@@ -52,8 +52,23 @@ public class GrimmFollowLevelTeleport : MonoBehaviour
             Debug.Log("[GrimmFollowLevelTeleport] Updated wander target to: " + wanderArea.name);
         }
 
-        if (opposingTrigger != null) opposingTrigger.SetActive(true);
+        // Reset the opposing trigger if it exists
+        if (opposingTrigger != null)
+        {
+            opposingTrigger.SetActive(true);
+            var opposingScript = opposingTrigger.GetComponent<GrimmFollowLevelTeleport>();
+            if (opposingScript != null)
+            {
+                opposingScript.ResetTrigger();
+                Debug.Log("[GrimmFollowLevelTeleport] Opposing trigger reset.");
+            }
+        }
 
         GrimmState.isInTransit = false;
+    }
+
+    public void ResetTrigger()
+    {
+        triggered = false;
     }
 }
