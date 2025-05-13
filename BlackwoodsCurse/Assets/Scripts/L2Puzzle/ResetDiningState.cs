@@ -24,6 +24,7 @@ public class ResetDiningState : MonoBehaviour
     public GameObject blackVoid;
     public GameObject startPlatform;
     public DiningDoor roomDoor;
+    public UnlockBathroomDoor unlockBathroomDoor;
     public GameObject diningFloorGroup;
     public GameObject smallCandle;
     public AudioSource audioSource;
@@ -76,10 +77,13 @@ public class ResetDiningState : MonoBehaviour
             smallCandle.SetActive(false);
 
         // 3. Unlock and open the exit door
-        if (roomDoor != null)
+        if (roomDoor != null && unlockBathroomDoor!=null)
         {
             roomDoor.isLocked = false;
             roomDoor.ForceOpen();
+
+            unlockBathroomDoor.isLocked = false;
+            unlockBathroomDoor.ForceOpen();
 
             //Play door open sound
             if (audioSource != null && doorOpenClip != null)

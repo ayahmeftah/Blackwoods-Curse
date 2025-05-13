@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI, GrimmBarrier
 - Active game object:
-  - Name: Interior_Door_01_LOD0
+  - Name: old_tv
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
