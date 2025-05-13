@@ -11,6 +11,7 @@ public class GrimmEventManager : MonoBehaviour
     public ExternalBehaviorTree wanderTree;
     public ExternalBehaviorTree codeHintTree;
     public GameObject hintFlowchart;
+    public MonoBehaviour trapdoorScript;
 
     public void StartBookcaseInvestigation()
     {
