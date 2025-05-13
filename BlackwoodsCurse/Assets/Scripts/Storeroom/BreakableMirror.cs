@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class BreakableMirror : MonoBehaviour
 {
-    public Transform player;
-    public float interactionDistance = 2.55f;
-    public Text txt;
-    public Material objectMaterial; 
+    public TextMeshProUGUI txt;
+    [SerializeField] private CanvasGroup textCanvasGroup;
+    public Material objectMaterial;
 
     private bool isPlayerNearby = false;
     private bool isBroken = false;
@@ -25,30 +24,45 @@ public class BreakableMirror : MonoBehaviour
         {
             objectMaterial = GetComponent<Renderer>().material;
         }
+
+        // Hide text at start
+        textCanvasGroup.alpha = 0f;
     }
 
     void Update()
     {
-        if (player == null) return;
-
-        float distance = Vector3.Distance(player.position, transform.position);
-        isPlayerNearby = distance <= interactionDistance;
-
-        if (isPlayerNearby && isBroken == false)
+        if (isPlayerNearby && !isBroken)
         {
+            if (Input.GetKeyDown(KeyCode.R) && !isFlashing)
+            {
+                ReduceTimer();
+            }
+
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                ChangeColorToBlack();
+                isBroken = true;
+                textCanvasGroup.alpha = 0f; // Hide after breaking
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !isBroken)
+        {
+            isPlayerNearby = true;
             txt.text = "Rotate Mirror R\nBreak Mirror B";
+            textCanvasGroup.alpha = 1f;
         }
+    }
 
-        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.R) && !isFlashing && isBroken == false)
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            ReduceTimer();
-        }
-
-        // Change to black when "B" is pressed
-        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.B) && isBroken == false)
-        {
-            ChangeColorToBlack();
-            isBroken = true;
+            isPlayerNearby = false;
+            textCanvasGroup.alpha = 0f;
         }
     }
 
@@ -56,9 +70,7 @@ public class BreakableMirror : MonoBehaviour
     {
         if (timer != null)
         {
-            timer.ReduceTime(3); // Call the reduce time method
-
-            // Flash the timer in red
+            timer.ReduceTime(3);
             StartCoroutine(FlashTimer());
         }
     }
@@ -66,9 +78,9 @@ public class BreakableMirror : MonoBehaviour
     IEnumerator FlashTimer()
     {
         isFlashing = true;
-        timer.HighlightTimer(Color.red); // Change to red
-        yield return new WaitForSeconds(1f); // Keep red for 1 second
-        timer.HighlightTimer(Color.white); // Revert back to normal
+        timer.HighlightTimer(Color.red);
+        yield return new WaitForSeconds(1f);
+        timer.HighlightTimer(Color.white);
         isFlashing = false;
     }
 

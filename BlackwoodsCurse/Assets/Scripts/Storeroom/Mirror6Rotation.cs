@@ -1,19 +1,18 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
-//Script for Mirror4
+// Script for Mirror6
 public class Mirror6Rotation : MonoBehaviour
 {
-    public float angleRotationY = -16.045f;
-    public Transform player;
-    public float interactionDistance = 2.55f;
+    public float angleRotationY = -17.034f;
     public MirrorController mirrorController;
-    public Text txt;
+    public TextMeshProUGUI txt;
+    [SerializeField] private CanvasGroup textCanvasGroup;
 
     private bool isPlayerNearby = false;
     private bool isRotated = false;
-    private bool canRotate = false; // This flag will control the rotation
+    private bool canRotate = false;
     private Quaternion originalRotation;
     private Quaternion targetRotation;
 
@@ -25,57 +24,63 @@ public class Mirror6Rotation : MonoBehaviour
         originalRotation = transform.rotation;
         targetRotation = Quaternion.Euler(transform.eulerAngles.x, angleRotationY, transform.eulerAngles.z);
 
-        // Find the Timer instance
         timer = GameObject.FindObjectOfType<Timer>();
+        textCanvasGroup.alpha = 0f; // Start with text hidden
     }
 
     void Update()
     {
-        if (player == null) return;
-
-        float distance = Vector3.Distance(player.position, transform.position);
-        isPlayerNearby = distance <= interactionDistance;
-
-        // Check if the first mirror is rotated and the player is nearby
-        if (isPlayerNearby == true && mirrorController.isFifthMirrorRotated && !canRotate)
+        if (isPlayerNearby && mirrorController.isFifthMirrorRotated && !isRotated)
         {
+            canRotate = true;
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                ToggleRotation();
+            }
+
+            if (Input.GetKeyDown(KeyCode.B) && !isFlashing)
+            {
+                ReduceTimer();
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && mirrorController.isFifthMirrorRotated && !isRotated)
+        {
+            isPlayerNearby = true;
             txt.text = "Rotate Mirror R\nBreak Mirror B";
-            canRotate = true; 
+            textCanvasGroup.alpha = 1f;
         }
-        if (isRotated == true || isPlayerNearby == false)
-        {
-            txt.text = ""; // Clear the text
-        }
+    }
 
-        // Now check for input only if canRotate is true
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.R) && canRotate && !isRotated)
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            ToggleRotation();
-        }
-
-        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.B) && canRotate && !isRotated && !isFlashing)
-        {
-            ReduceTimer();
+            isPlayerNearby = false;
+            canRotate = false;
+            textCanvasGroup.alpha = 0f;
         }
     }
 
     void ToggleRotation()
     {
-        // If the mirror is already rotated to the target, do nothing
         if (isRotated) return;
 
-        // Rotate to the target position and prevent further toggling
         transform.rotation = targetRotation;
         isRotated = true;
+        Debug.Log("Mirror6 Rotated!");
+        // Note: This one doesn't notify MirrorController. Add `mirrorController.RotateSixthMirror()` if needed.
     }
 
     void ReduceTimer()
     {
         if (timer != null)
         {
-            timer.ReduceTime(3); // Call the reduce time method
-
-            // Flash the timer in red
+            timer.ReduceTime(3);
             StartCoroutine(FlashTimer());
         }
     }
@@ -83,9 +88,9 @@ public class Mirror6Rotation : MonoBehaviour
     IEnumerator FlashTimer()
     {
         isFlashing = true;
-        timer.HighlightTimer(Color.red); // Change to red
-        yield return new WaitForSeconds(1f); // Keep red for 1 second
-        timer.HighlightTimer(Color.white); // Revert back to normal
+        timer.HighlightTimer(Color.red);
+        yield return new WaitForSeconds(1f);
+        timer.HighlightTimer(Color.white);
         isFlashing = false;
     }
 }

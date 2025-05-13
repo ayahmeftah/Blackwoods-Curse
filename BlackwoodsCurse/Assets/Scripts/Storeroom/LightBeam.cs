@@ -104,5 +104,7 @@ public class LightBeam
 
         // Call the Coroutine on MonoBehaviour
         ShootLight.Instance.DisplayMessage();
+
+        ShootLight.Instance.HideMirrorText();
     }
 }

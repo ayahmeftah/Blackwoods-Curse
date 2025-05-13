@@ -11,8 +11,8 @@ public class ShootLight : MonoBehaviour
     public TextMeshProUGUI levelCompleteText;
     public CanvasGroup levelCompleteCanvasGroup;
 
-    public CanvasGroup timerCanvasGroup;            // Reference to Timer Canvas Group
-    public CanvasGroup instructionsCanvasGroup;     // Reference to Instructions Canvas Group
+    public CanvasGroup MirrorTextCanvasGroup;
+
     public static ShootLight Instance;
 
     private void Awake()
@@ -24,6 +24,11 @@ public class ShootLight : MonoBehaviour
     {
         Destroy(GameObject.Find("Light Beam"));
         beam = new LightBeam(gameObject.transform.position, gameObject.transform.right, material);
+    }
+
+    public void HideMirrorText()
+    {
+        MirrorTextCanvasGroup.alpha = 0;
     }
 
     public void DisplayMessage()

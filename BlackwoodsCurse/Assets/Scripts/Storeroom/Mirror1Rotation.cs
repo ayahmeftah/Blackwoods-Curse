@@ -1,14 +1,14 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Mirror1Rotation : MonoBehaviour
 {
-    public float angleRotationY = 189.27f;
-    public Transform player;
-    public float interactionDistance = 2.55f;
+    public float angleRotationY = 191.757f;
     public MirrorController mirrorController;
-    public Text txt;
+    public TextMeshProUGUI txt;
+    [SerializeField] private CanvasGroup textCanvasGroup;
 
     private bool isPlayerNearby = false;
     private bool isRotated = false;
@@ -23,35 +23,42 @@ public class Mirror1Rotation : MonoBehaviour
         originalRotation = transform.rotation;
         targetRotation = Quaternion.Euler(transform.eulerAngles.x, angleRotationY, transform.eulerAngles.z);
 
-        // Find the Timer instance
         timer = GameObject.FindObjectOfType<Timer>();
+        textCanvasGroup.alpha = 0f; // Start hidden
     }
 
     void Update()
     {
-        if (player == null) return;
-
-        float distance = Vector3.Distance(player.position, transform.position);
-        isPlayerNearby = distance <= interactionDistance;
-
-        if (isPlayerNearby == true && mirrorController.isFirstMirrorRotated == false)
+        if (isPlayerNearby && !isRotated && !mirrorController.isFirstMirrorRotated)
         {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                ToggleRotation();
+            }
+
+            if (Input.GetKeyDown(KeyCode.B) && !isFlashing)
+            {
+                ReduceTimer();
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !isRotated && !mirrorController.isFirstMirrorRotated)
+        {
+            isPlayerNearby = true;
             txt.text = "Rotate Mirror R\nBreak Mirror B";
+            textCanvasGroup.alpha = 1f;
         }
+    }
 
-        if (isRotated == true || isPlayerNearby ==  false)
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            txt.text = ""; // Clear the text
-        }
-
-        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.R) && mirrorController.isFirstMirrorRotated == false)
-        {
-            ToggleRotation();
-        }
-
-        if (isPlayerNearby == true && Input.GetKeyDown(KeyCode.B) && mirrorController.isFirstMirrorRotated == false && !isFlashing)
-        {
-            ReduceTimer();
+            isPlayerNearby = false;
+            textCanvasGroup.alpha = 0f;
         }
     }
 
@@ -62,18 +69,15 @@ public class Mirror1Rotation : MonoBehaviour
         transform.rotation = targetRotation;
         isRotated = true;
         mirrorController.RotateFirstMirror();
-        Debug.Log("Mirror1 Rotated!");
-        // Notify the controller that the mirror has fully rotated
         mirrorController.CompleteFirstMirrorRotation();
+        Debug.Log("Mirror1 Rotated!");
     }
 
     void ReduceTimer()
     {
         if (timer != null)
         {
-            timer.ReduceTime(3); // Call the reduce time method
-
-            // Flash the timer in red
+            timer.ReduceTime(3);
             StartCoroutine(FlashTimer());
         }
     }
@@ -81,9 +85,9 @@ public class Mirror1Rotation : MonoBehaviour
     IEnumerator FlashTimer()
     {
         isFlashing = true;
-        timer.HighlightTimer(Color.red); // Change to red
-        yield return new WaitForSeconds(1f); // Keep red for 1 second
-        timer.HighlightTimer(Color.white); // Revert back to normal
+        timer.HighlightTimer(Color.red);
+        yield return new WaitForSeconds(1f);
+        timer.HighlightTimer(Color.white);
         isFlashing = false;
     }
 }

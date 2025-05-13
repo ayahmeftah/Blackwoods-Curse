@@ -61,7 +61,15 @@ public class Timer : MonoBehaviour
     {
         isTimerRunning = false;
         timerText.color = Color.green;
+        StartCoroutine(HideTimerAfterDelay());
     }
+
+    private IEnumerator HideTimerAfterDelay()
+    {
+        yield return new WaitForSeconds(5f); // Wait 5 seconds
+        timerCanvasGroup.alpha = 0f;         // Hide the timer UI
+    }
+
 
     // Game Over logic
     private void GameOver()
