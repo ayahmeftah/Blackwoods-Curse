@@ -32,7 +32,7 @@ public class CarpetParkourTrigger : MonoBehaviour
     private IEnumerator StartSupernaturalEvent()
     {
         // Wait before starting the supernatural event
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(3f);
 
         if (voidPlane != null) voidPlane.SetActive(true);
         if (safeStartPlatform != null) safeStartPlatform.SetActive(true);
