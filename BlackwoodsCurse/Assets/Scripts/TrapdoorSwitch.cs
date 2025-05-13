@@ -6,28 +6,31 @@ public class TrapdoorSwitch : MonoBehaviour
     public HUD hud;
     public Inventory inventory;
     public InventorySelector selector;
-    public GameObject trapdoor;      // Assign the trapdoor to open
+    public GameObject trapdoor;      // Trapdoor to open
     public float rotationAngle = -40f;
-    public AudioSource creakSound;
+
+    public GameObject wallToDestroy;
+    public AudioSource wallBreakSound;
+    public AudioSource trapdoorOpenSound; // Optional
 
     private bool playerNear = false;
     private bool isActivated = false;
     private bool wallIsBroken = false;
     private bool messageOverridden = false;
-    public GameObject wallToDestroy;
-public AudioSource wallBreakSound;
 
-
-    public void EnableSwitch()  // Call this from BreakableWall when it breaks
+    public void EnableSwitch()  // Call from wall when broken
     {
         wallIsBroken = true;
     }
 
     void Update()
     {
-        if (!playerNear || isActivated || !wallIsBroken || messageOverridden) return;
+        if (!playerNear || isActivated || !wallIsBroken) return;
 
-        hud.txt.text = "The switch seems far...";
+        if (!messageOverridden)
+        {
+            hud.txt.text = "The switch seems far...";
+        }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -40,7 +43,7 @@ public AudioSource wallBreakSound;
             }
             else
             {
-                StartCoroutine(ShowTemporaryMessage("It’s not long enough.", 2f));
+                StartCoroutine(ShowTemporaryMessage("It’s not long enough.", 1.5f));
             }
         }
     }
@@ -49,26 +52,28 @@ public AudioSource wallBreakSound;
     {
         isActivated = true;
 
-        // Rotate switch lever
+        // Rotate switch
         transform.localRotation *= Quaternion.Euler(rotationAngle, 0f, 0f);
 
+        // Open trapdoor
         if (trapdoor != null)
         {
-            // Rotate the trapdoor 90 degrees on the X-axis
             trapdoor.transform.localRotation *= Quaternion.Euler(90f, 0f, 0f);
+
+            if (trapdoorOpenSound != null)
+                trapdoorOpenSound.Play();
         }
 
-        //Trapdoor Open
-        creakSound?.Play();
-
+        // Destroy wall upstairs
         if (wallToDestroy != null)
         {
             Destroy(wallToDestroy);
 
             if (wallBreakSound != null)
-            wallBreakSound.Play();
+                wallBreakSound.Play();
         }
 
+        hud.HideMessage();
     }
 
     void OnTriggerEnter(Collider other)

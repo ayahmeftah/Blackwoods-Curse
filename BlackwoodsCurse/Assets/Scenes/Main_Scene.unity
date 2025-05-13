@@ -93617,9 +93617,9 @@ MonoBehaviour:
   selector: {fileID: 1172960773}
   trapdoor: {fileID: 194897957}
   rotationAngle: -40
-  creakSound: {fileID: 7897213208931595566}
   wallToDestroy: {fileID: 357054120}
   wallBreakSound: {fileID: 7897213208931595565}
+  trapdoorOpenSound: {fileID: 7897213208931595566}
 --- !u!54 &7897213208931595563
 Rigidbody:
   m_ObjectHideFlags: 0
