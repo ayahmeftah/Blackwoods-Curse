@@ -44,7 +44,7 @@ public class Lens : MonoBehaviour
         {
             // Show error message if wrong item is held
             hud.txt.text = "Unable to merge – wrong item";
-            messageTimer = 3f; // Stay for 3 seconds
+            messageTimer = 1.5f; // Stay for 3 seconds
             isShowingErrorMessage = true;
             return;
         }
@@ -54,7 +54,7 @@ public class Lens : MonoBehaviour
 
         // Display success message
         hud.txt.text = "Lens merged successfully!";
-        messageTimer = 3f;
+        messageTimer = 1.5f;
 
         // Destroy the lens object in the world
         Destroy(gameObject);

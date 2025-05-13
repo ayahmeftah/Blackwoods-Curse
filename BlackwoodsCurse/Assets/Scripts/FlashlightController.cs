@@ -1,114 +1,107 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class FlashlightController : MonoBehaviour
 {
-    [Header("Assign in Inspector")]
+    [Header("References")]
     public Light flashlightLight;
     public InventorySelector inventorySelector;
     public Inventory inventory;
     public HUD hud;
 
-    // Internal States
     private bool isOn = false;
     private bool hasLens = false;
     private bool isBlue = false;
-    private bool hasDisplayedMessage = false;
-    private float messageTimer = 0f;
+
+    private int lastSlot = -1;
+    private bool tMessageShown = false;
+    private Coroutine rPromptRoutine;
 
     void Start()
     {
         flashlightLight.enabled = false;
-        flashlightLight.color = Color.white;
         hud.HideMessage();
     }
 
     void Update()
     {
-        bool selected = IsFlashlightSelected();
+        int idx = inventorySelector.currentSlot;
+        List<IInventoryItem> items = inventory.GetItems();
 
-        // Display "Press T to turn flashlight on" only once, and keep it for 3 seconds
-        if (selected && !hasDisplayedMessage)
-        {
-            hud.txt.text = "Press T to turn flashlight on";
-            messageTimer = 3f;
-            hasDisplayedMessage = true;
-        }
+        bool selected = idx >= 0 && idx < items.Count && items[idx].Name == "Flashlight";
 
-        // Countdown the message timer
-        if (messageTimer > 0)
+        if (selected && idx != lastSlot && !tMessageShown)
+            StartCoroutine(ShowTMessage());
+
+        lastSlot = idx;
+
+        if (selected)
         {
-            messageTimer -= Time.deltaTime;
-            if (messageTimer <= 0)
+            if (Input.GetKeyDown(KeyCode.T))
             {
-                hud.HideMessage();
-            }
-        }
+                isOn = !isOn;
+                flashlightLight.enabled = isOn;
 
-        // === Handle flashlight toggling ===
-        if (selected && Input.GetKeyDown(KeyCode.T))
-        {
-            isOn = !isOn;
-            flashlightLight.enabled = isOn;
-
-            // If the flashlight is turned on and has a lens, show the R prompt
-            if (isOn && hasLens)
-            {
-                hud.txt.text = "Press R to use the lens";
-                messageTimer = 3f;
+                if (hasLens && isOn)
+                {
+                    ShowRPrompt();
+                }
+                else
+                {
+                    hud.HideMessage();
+                }
             }
 
-            if (!isOn)
+            if (hasLens && isOn && Input.GetKeyDown(KeyCode.R))
             {
-                hud.HideMessage();
+                isBlue = !isBlue;
+                flashlightLight.color = isBlue ? Color.cyan : Color.white;
+                ShowRPrompt();
             }
-        }
-
-        // === Handle blue light toggling ===
-        if (hasLens && isOn && Input.GetKeyDown(KeyCode.R))
-        {
-            isBlue = !isBlue;
-            flashlightLight.color = isBlue ? Color.cyan : Color.white;
-
-            hud.txt.text = isBlue
-                ? "Press R to deactivate blue light"
-                : "Press R to activate blue light";
-
-            messageTimer = 3f;
-        }
-
-        // === Ensure the border remains blue if the lens is merged ===
-        if (hasLens)
-        {
-            SetFlashlightSlotToBlue();
         }
     }
 
-    public bool IsFlashlightSelected()
+    IEnumerator ShowTMessage()
     {
-        var items = inventory.GetItems();
-        int idx = inventorySelector.currentSlot;
-        return idx >= 0 && idx < items.Count && items[idx].Name == "Flashlight";
+        tMessageShown = true;
+        hud.txt.text = "Press T to turn on/off the light";
+        yield return new WaitForSeconds(1.5f);
+        hud.HideMessage();
+        tMessageShown = false;
+    }
+
+    void ShowRPrompt()
+    {
+        if (rPromptRoutine != null)
+            StopCoroutine(rPromptRoutine);
+        rPromptRoutine = StartCoroutine(HideRPromptAfterDelay());
+    }
+
+    IEnumerator HideRPromptAfterDelay()
+    {
+        hud.txt.text = isBlue
+            ? "Press R to deactivate blue light."
+            : "Press R to activate blue light.";
+        yield return new WaitForSeconds(1.5f);
+        hud.HideMessage();
     }
 
     public void MergeLens()
     {
         hasLens = true;
-        SetFlashlightSlotToBlue();
-        hud.txt.text = "Lens merged successfully!";
-        messageTimer = 3f;
-    }
 
-    // === Method to make sure the slot stays blue ===
-    private void SetFlashlightSlotToBlue()
-    {
-        var items = inventory.GetItems();
-        for (int i = 0; i < items.Count; i++)
-        {
-            if (items[i].Name == "Flashlight")
-            {
-                inventorySelector.slotBorders[i].color = Color.blue;
-                break;
-            }
-        }
+        int slot = inventorySelector.currentSlot;
+        if (slot >= 0 && slot < inventorySelector.slotBorders.Length)
+            inventorySelector.slotBorders[slot].color = Color.blue;
+
+        ShowRPrompt(); // Show after merging
     }
+    public bool IsFlashlightSelected()
+{
+    var items = inventory.GetItems();
+    int idx = inventorySelector.currentSlot;
+    return idx >= 0 && idx < items.Count && items[idx].Name == "Flashlight";
+}
+
 }
