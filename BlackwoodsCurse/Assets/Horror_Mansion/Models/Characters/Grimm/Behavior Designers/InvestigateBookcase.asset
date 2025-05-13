@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: InvestigateBookcase
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-3310.89282,-596.3197)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-0.892822266,123.680328)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(-179.324356,134.317612)"},"ID":2,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":10},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(168.715317,115.052887)"},"ID":3,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-245.892349,185.902451)"},"ID":4,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"IsBookcaseMoved","NodeData":{"Offset":"(-122.499893,115.833313)"},"ID":5,"Name":"Is
+        Bookcase Moved","Instant":true},{"Type":"ResumeWandering","NodeData":{"Offset":"(91.60757,125.069046)"},"ID":6,"Name":"Resume
+        Wandering","Instant":true,"SharedGameObjecteventManagerObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"eventManagerObject","IsShared":true}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(254.597672,157.447678)"},"ID":7,"Name":"DialogueBranch","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"TriggerFungusDialogue","NodeData":{"Offset":"(-157.111664,145.668365)"},"ID":8,"Name":"Trigger
+        Fungus Dialogue","Instant":true,"SharedGameObjectflowchartObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"flowchartObject","IsShared":true},"StringblockName":"GrimmBookcaseHint"},{"Type":"WaitForFungusEnd","NodeData":{"Offset":"(15.2905273,162.002609)"},"ID":9,"Name":"Wait
+        For Fungus End","Instant":true},{"Type":"ResumeWandering","NodeData":{"Offset":"(201.6543,148.745087)"},"ID":10,"Name":"Resume
+        Wandering","Instant":true,"SharedGameObjecteventManagerObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"eventManagerObject","IsShared":true}}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"grimmFungusTriggerObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"eventManagerObject","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"flowchartObject","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.12

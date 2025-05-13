@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Weapon
   - Cloth
-  - Mirror
-  - LightDestination
+  - Grimm
   layers:
   - Default
   - TransparentFX
@@ -15,7 +14,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - GrimmBarrier
   - 
   - 
   - 
