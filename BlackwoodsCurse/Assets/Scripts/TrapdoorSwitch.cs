@@ -72,7 +72,11 @@ public class TrapdoorSwitch : MonoBehaviour
             if (wallBreakSound != null)
                 wallBreakSound.Play();
         }
-
+// Remove key items from inventory
+inventory.RemoveItem("Flashlight");
+inventory.RemoveItem("Crowbar");
+inventory.RemoveItem("Knife");
+inventory.RefreshUI(); // Optional: ensure UI updates immediately
         hud.HideMessage();
     }
 
