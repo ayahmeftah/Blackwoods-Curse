@@ -28,6 +28,8 @@ public class PianoPuzzleManager : MonoBehaviour
 public List<Material> solvedMaterials;            // your 4 custom solved materials
 public List<GameObject> glowObjects;              // optional glowing borders
 
+public List<GameObject> solvedPictureObjects; // the new solved image objects
+
 
     public void NotePlayed(string note)
     {
@@ -108,19 +110,16 @@ public List<GameObject> glowObjects;              // optional glowing borders
 
     void UpdateWallPictures()
 {
-    for (int i = 0; i < pictureRenderers.Count; i++)
+    for (int i = 0; i < solvedPictureObjects.Count; i++)
     {
-        if (i < solvedMaterials.Count && pictureRenderers[i] != null)
-        {
-            pictureRenderers[i].material = solvedMaterials[i];
-        }
+        if (solvedPictureObjects[i] != null)
+            solvedPictureObjects[i].SetActive(true);
 
         if (i < glowObjects.Count && glowObjects[i] != null)
-        {
             glowObjects[i].SetActive(true);
-        }
     }
 }
+
 
 
 
