@@ -1,39 +1,51 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-// ...
-
-
 
 public class PianoPuzzleManager : MonoBehaviour
 {
+    public HUD hud;
+
+    // Singleton instance
+    public static PianoPuzzleManager Instance { get; private set; }
+
+    // Puzzle sequence
     public List<string> correctSequence = new List<string> {
         "E1", "G1", "C1", "A1", "B1", "F1", "G2", "C2"
     };
 
+    // UI and visual feedback
     public List<Image> starImages; // Assign 8 star UI images in order
     public Color correctColor = Color.green;
     public Color wrongColor = Color.red;
     public Color neutralColor = Color.gray;
-
-    
-
     public TextMeshProUGUI resetMessage;
 
+    // Puzzle tracking
     private List<string> currentInput = new List<string>();
     private bool puzzleFailed = false;
+    private bool puzzleSolved = false;
+    public bool IsPuzzleSolved => puzzleSolved;
 
-    public List<MeshRenderer> pictureRenderers;       // your 4 picture objects
-public List<Material> solvedMaterials;            // your 4 custom solved materials
-public List<GameObject> glowObjects;              // optional glowing borders
+    // Environment changes
+    public List<MeshRenderer> pictureRenderers;
+    public List<GameObject> glowObjects;
+    public List<GameObject> solvedPictureObjects;
+    public GameObject peekBook;
+    public ParticleSystem sparkleEffect;
 
-public List<GameObject> solvedPictureObjects; // the new solved image objects
+    public PianoInteractionTrigger pianoTrigger; // Assign this too in Inspector
 
+    void Awake()
+    {
+        Instance = this;
+    }
 
     public void NotePlayed(string note)
     {
-        if (puzzleFailed || currentInput.Count >= correctSequence.Count)
+        if (puzzleFailed || puzzleSolved || currentInput.Count >= correctSequence.Count)
             return;
 
         currentInput.Add(note);
@@ -45,8 +57,9 @@ public List<GameObject> solvedPictureObjects; // the new solved image objects
 
             if (currentInput.Count == correctSequence.Count)
             {
+                puzzleSolved = true;
                 Debug.Log("Puzzle complete!");
-                // TODO: Trigger puzzle completion event
+                UpdateWallPictures();
             }
         }
         else
@@ -55,13 +68,6 @@ public List<GameObject> solvedPictureObjects; // the new solved image objects
             starImages[index].color = wrongColor;
             ShowResetMessage();
         }
-
-        if (currentInput.Count == correctSequence.Count)
-{
-    Debug.Log("Puzzle complete!");
-    UpdateWallPictures(); // 👈 this will be called
-}
-
     }
 
     void ShowResetMessage()
@@ -109,19 +115,51 @@ public List<GameObject> solvedPictureObjects; // the new solved image objects
     }
 
     void UpdateWallPictures()
-{
-    for (int i = 0; i < solvedPictureObjects.Count; i++)
     {
-        if (solvedPictureObjects[i] != null)
-            solvedPictureObjects[i].SetActive(true);
+        for (int i = 0; i < solvedPictureObjects.Count; i++)
+        {
+            if (solvedPictureObjects[i] != null)
+                solvedPictureObjects[i].SetActive(true);
 
-        if (i < glowObjects.Count && glowObjects[i] != null)
-            glowObjects[i].SetActive(true);
+            if (i < glowObjects.Count && glowObjects[i] != null)
+                glowObjects[i].SetActive(true);
+        }
+
+        if (peekBook != null && !peekBook.activeSelf)
+        {
+            peekBook.SetActive(true);
+            peekBook.transform.position += new Vector3(0.05f, 0f, 0f);
+        }
+
+        if (sparkleEffect != null)
+            sparkleEffect.Play();
+
+        if (hud != null && hud.txt != null)
+        {
+            StartCoroutine(ShowSuccessMessage());
+        }
+
+        if (pianoTrigger != null)
+        {
+            Invoke(nameof(ExitPianoModeAfterSuccess), 1.5f);
+        }
+    }
+
+    void ExitPianoModeAfterSuccess()
+    {
+        if (pianoTrigger != null)
+            pianoTrigger.ExitPianoMode();
+
+        if (hud != null)
+            hud.HideMessage();
+    }
+
+    IEnumerator ShowSuccessMessage()
+    {
+        hud.txt.color = Color.green;
+        hud.txt.text = "Puzzle Solved!";
+        yield return new WaitForSeconds(2f);
+        hud.txt.color = Color.white;
+        hud.HideMessage();
     }
 }
-
-
-
-
-}
-

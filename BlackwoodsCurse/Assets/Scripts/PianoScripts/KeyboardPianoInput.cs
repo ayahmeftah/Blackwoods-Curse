@@ -31,7 +31,7 @@ public class KeyboardPianoInput : MonoBehaviour
 
     void Update()
     {
-        if (!pianoTrigger.InPianoMode) return;
+        if (!pianoTrigger.InPianoMode || puzzleManager.IsPuzzleSolved) return;
 
         foreach (PianoKey key in pianoKeys)
         {

@@ -55,7 +55,7 @@ public class PianoInteractionTrigger : MonoBehaviour
             playerController.SetActive(false);
     }
 
-    void ExitPianoMode()
+    public void ExitPianoMode()
     {
         if (inventoryUI != null)
             inventoryUI.SetActive(true);
@@ -73,24 +73,52 @@ public class PianoInteractionTrigger : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Player"))
     {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerNear = true;
-            hud.txt.text = "Enter Piano Mode P";
-        }
-    }
+        isPlayerNear = true;
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isPlayerNear = false;
+        // ✅ Only show the message if puzzle is not solved
+        if (!PianoPuzzleManager.Instance.IsPuzzleSolved)
+            hud.txt.text = "Enter Piano Mode P";
+        else
             hud.HideMessage();
-        }
     }
+}
+
+
+   private void OnTriggerExit(Collider other)
+{
+    if (other.CompareTag("Player"))
+    {
+        isPlayerNear = false;
+        hud.HideMessage();
+    }
+}
+
 
     public bool InPianoMode => inPianoMode;
+
+public void ForceExit()
+{
+    if (inventoryUI != null)
+        inventoryUI.SetActive(true);
+
+    inPianoMode = false;
+
+    mainCamera.enabled = true;
+    pianoCamera.enabled = false;
+
+    piano3DModel.SetActive(false);
+    pianoOverlay.SetActive(false);
+
+    if (playerController != null)
+        playerController.SetActive(true);
+
+    if (hud != null)
+        hud.HideMessage();
+}
+
 
 }
 
