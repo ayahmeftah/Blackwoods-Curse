@@ -74,4 +74,15 @@ public class Inventory : MonoBehaviour
     }
     }
 
+    public void RemoveItem(string itemName)
+{
+    IInventoryItem itemToRemove = mItems.Find(item => item.Name == itemName);
+    if (itemToRemove != null)
+    {
+        mItems.Remove(itemToRemove);
+        Debug.Log($"Removed {itemName} from Inventory.");
+    }
+}
+
+
 }
