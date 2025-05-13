@@ -43,7 +43,7 @@ public class LightSwitchController : MonoBehaviour
             }
             else
             {
-                Debug.Log("❌ Wrong sequence! Resetting...");
+                Debug.Log("Wrong sequence! Resetting...");
                 PlayScarySoundAndReset();
             }
         }
@@ -60,11 +60,13 @@ public class LightSwitchController : MonoBehaviour
     }
 
     private void ReleaseChest()
-    {
-        Rigidbody chestRb = chest.GetComponent<Rigidbody>();
-        chestRb.isKinematic = false;
-        chestRb.useGravity = true;
-    }
+{
+    Rigidbody chestRb = chest.GetComponent<Rigidbody>();
+    ChestDrop dropScript = chest.GetComponent<ChestDrop>();
+    
+    if (dropScript != null)
+        dropScript.Drop();  // use Drop() instead of manual control
+}
 
     private void PlayScarySoundAndReset()
     {

@@ -5,6 +5,7 @@ public class SwitchRaycast : MonoBehaviour
     [Header("Raycast Settings")]
     public float raycastDistance = 5f;
     public LayerMask interactableLayer;
+    public HUD hud;
 
     private LightSwitch highlightedSwitch;
 
@@ -28,9 +29,12 @@ public class SwitchRaycast : MonoBehaviour
                     highlightedSwitch = switchScript;
                 }
 
+                hud.txt.text = "Press F to flick";
+
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     switchScript.ToggleSwitch();
+                    hud.HideMessage();
                 }
             }
         }
@@ -40,6 +44,7 @@ public class SwitchRaycast : MonoBehaviour
             {
                 //highlightedSwitch.UnHighlight();
                 highlightedSwitch = null;
+                hud.HideMessage();
             }
         }
     }
