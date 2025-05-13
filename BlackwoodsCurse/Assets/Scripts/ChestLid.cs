@@ -44,11 +44,11 @@ public class ChestLid : MonoBehaviour
             transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, openSpeed * Time.deltaTime);
             yield return null;
         }
-
+         // ✅ Show hammer after lid is fully open
+        hammer.SetActive(true);
         transform.localRotation = targetRotation;
 
-        // ✅ Show hammer after lid is fully open
-        hammer.SetActive(true);
+       
 
         // ✅ Show success message briefly then hide
         hud.txt.text = "Chest opened!";
