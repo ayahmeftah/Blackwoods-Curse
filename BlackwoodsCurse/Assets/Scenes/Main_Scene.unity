@@ -62434,7 +62434,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1732030965}
   selectedCommands:
-  - {fileID: 1732030968}
+  - {fileID: 1732030966}
   variables: []
   description: 
   stepPause: 0
@@ -62841,7 +62841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1276
+    x: 1276.6667
     y: 182.33334
     width: 174
     height: 40
@@ -62873,7 +62873,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: c4462edb500c9304a8fdf1faeb9e06eb, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62941,7 +62941,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1732030966
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -62958,7 +62958,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 5c17c774317760045b3d7efb677cdf14, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62969,7 +62969,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1732030967
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -62985,7 +62985,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 18ea70b01eacf224ca2081d57293d7d0, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -62996,7 +62996,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1732030968
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
