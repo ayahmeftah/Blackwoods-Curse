@@ -8,11 +8,15 @@ public class TrapdoorSwitch : MonoBehaviour
     public InventorySelector selector;
     public GameObject trapdoor;      // Assign the trapdoor to open
     public float rotationAngle = -40f;
+    public AudioSource creakSound;
 
     private bool playerNear = false;
     private bool isActivated = false;
     private bool wallIsBroken = false;
     private bool messageOverridden = false;
+    public GameObject wallToDestroy;
+public AudioSource wallBreakSound;
+
 
     public void EnableSwitch()  // Call this from BreakableWall when it breaks
     {
@@ -54,8 +58,17 @@ public class TrapdoorSwitch : MonoBehaviour
             trapdoor.transform.localRotation *= Quaternion.Euler(90f, 0f, 0f);
         }
 
+        //Trapdoor Open
+        creakSound?.Play();
 
-        hud.txt.text = "You flipped the switch!";
+        if (wallToDestroy != null)
+        {
+            Destroy(wallToDestroy);
+
+            if (wallBreakSound != null)
+            wallBreakSound.Play();
+        }
+
     }
 
     void OnTriggerEnter(Collider other)

@@ -8,9 +8,11 @@ public class ChestLock : MonoBehaviour
     public Inventory inventory;
     public InventorySelector selector;
     public ChestLid chestLid;  // reference to lid script
+    public AudioSource openSound;
     private bool playerNear = false;
     private bool isBroken = false;
     private bool messageOverridden = false;
+
 
     private Rigidbody rb;
 
@@ -48,6 +50,8 @@ public class ChestLock : MonoBehaviour
         rb.isKinematic = false;     // enable fall
         rb.useGravity = true;
         chestLid.UnlockChest();     // notify lid it can be opened
+        if (openSound != null)
+        openSound.Play();
         // hud.txt.text = "You broke the lock.";
         // Destroy(gameObject, 2f);    // remove lock after it drops
     }

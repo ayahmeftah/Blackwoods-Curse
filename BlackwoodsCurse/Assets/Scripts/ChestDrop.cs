@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ChestDrop : MonoBehaviour
 {
+    public AudioSource dropSound;
     private Rigidbody rb;
     private bool hasLanded = false;
 
@@ -17,6 +18,8 @@ public class ChestDrop : MonoBehaviour
         rb.isKinematic = false;
         rb.useGravity = true;
         hasLanded = false;
+        if (dropSound != null)
+        dropSound.Play();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -35,6 +38,5 @@ public class ChestDrop : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         rb.useGravity = false;
         rb.isKinematic = true;
-        Debug.Log("✅ Chest locked in place after landing.");
     }
 }
