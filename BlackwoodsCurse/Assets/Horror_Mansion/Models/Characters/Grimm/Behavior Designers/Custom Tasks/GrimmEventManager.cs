@@ -133,7 +133,6 @@ public class GrimmEventManager : MonoBehaviour
         bt.SetVariableValue("grimmFungusTriggerObject", grimmObject);
         bt.SetVariableValue("eventManagerObject", this.gameObject);
         bt.SetVariableValue("flowchartObject", hintFlowchart);
-        bt.SetVariableValue("blockName", blockName); // If using a dynamic name
         bt.EnableBehavior();
 
         Debug.Log("Code hint behavior tree enabled.");

@@ -26862,7 +26862,7 @@ MonoBehaviour:
   destination: {fileID: 829596690}
   wanderArea: {fileID: 813267459}
   upstairsBarrier: {fileID: 1218989992}
-  downstairsBarrier: {fileID: 750799974}
+  downstairsBarrier: {fileID: 1127369529}
   goUpstairs: 0
   opposingTrigger: {fileID: 373808708}
 --- !u!1001 &755629892
