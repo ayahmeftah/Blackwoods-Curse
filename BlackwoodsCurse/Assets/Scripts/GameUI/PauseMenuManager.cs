@@ -1,22 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    public GameObject instructionsPanel;
-    public GameObject pauseMenuUI;
+    public GameObject instructionsPanel; // Assign: InstructionsPanel
+    public GameObject pauseButtons;      // Assign: PauseButtons
+
     private bool isPaused = false;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-
         {
-            if (isPaused)
+            if (instructionsPanel.activeSelf)
+            {
+                HideInstructions();
+            }
+            else if (isPaused)
             {
                 Resume();
             }
@@ -26,30 +27,51 @@ public class PauseMenuManager : MonoBehaviour
             }
         }
     }
+
     public void ShowInstructions()
     {
-        pauseMenuUI.SetActive(false);
-        instructionsPanel.SetActive(true);
+        pauseButtons.SetActive(false);         // Hide pause buttons only
+        instructionsPanel.SetActive(true);     // Show instructions
+
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
+
     public void HideInstructions()
     {
         instructionsPanel.SetActive(false);
-        pauseMenuUI.SetActive(true);
+        pauseButtons.SetActive(true);
+
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
+        pauseButtons.SetActive(false);
+        instructionsPanel.SetActive(false);
+
         Time.timeScale = 1f;
         isPaused = false;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
+        pauseButtons.SetActive(true);
+        instructionsPanel.SetActive(false);
+
         Time.timeScale = 0f;
         isPaused = true;
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
+
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
