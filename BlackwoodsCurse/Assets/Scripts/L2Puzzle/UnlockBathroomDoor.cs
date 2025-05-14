@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DiningDoor : MonoBehaviour
+public class UnlockBathroomDoor : MonoBehaviour
 {
     bool trig, open;
     bool ePressed = false;
