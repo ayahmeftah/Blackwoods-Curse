@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class StoreroomKeypad : MonoBehaviour
 {
-    public StoreroomDoor storeroomDoor;
+    public StoreroomDoorAyah storeroomDoor;
 
     [Header("Code Settings")]
     public string correctCode = "4212";
