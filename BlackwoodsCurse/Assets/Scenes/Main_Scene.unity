@@ -4168,6 +4168,22 @@ PrefabInstance:
       objectReference: {fileID: 818042738}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fd3b534c8322f64d9923dccd58d1f1a, type: 3}
+--- !u!4 &93656329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8767798979545240477, guid: 2fd3b534c8322f64d9923dccd58d1f1a, type: 3}
+  m_PrefabInstance: {fileID: 93656328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &93656330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1126027738692601599, guid: 2fd3b534c8322f64d9923dccd58d1f1a, type: 3}
+  m_PrefabInstance: {fileID: 93656328}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7291011ff1a4d28a4385be7c65aab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &94260683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27836,6 +27852,155 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6139497804277657844, guid: 730ad49cb45eff64a86cc0c46e2a277c, type: 3}
   m_PrefabInstance: {fileID: 702304729}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &702505539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 93656329}
+    m_Modifications:
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6935111
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7522967
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06750727
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.267416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.08874
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7164725
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6976154
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -88.472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921294396319335, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_Name
+      value: Keypad_storeroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2303921294396319334, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+--- !u!114 &702505540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2303921292967740188, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+  m_PrefabInstance: {fileID: 702505539}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &702505541 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6711368086355063801, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+  m_PrefabInstance: {fileID: 702505539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &702505542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2303921294396319335, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+  m_PrefabInstance: {fileID: 702505539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &702505543 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2303921294396319332, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+  m_PrefabInstance: {fileID: 702505539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &702505544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702505542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876017a8c19de46459eedfa99b572c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storeroomDoor: {fileID: 93656330}
+  correctCode: 4212
+  displayText: {fileID: 702505540}
+  hud: {fileID: 818042738}
+  accessGrantedText: Door Opened
+  accessDeniedText: Wrong Password
+  restrictedText: 'Restricted: Complete Level 4 First!'
+  normalColor: {r: 0, g: 1, b: 1, a: 1}
+  grantedColor: {r: 0, g: 1, b: 0, a: 1}
+  deniedColor: {r: 1, g: 0, b: 0, a: 1}
+  audioSource: {fileID: 702505543}
+  clickSound: {fileID: 8300000, guid: 89d62380470be9e47ba7cf3f97105142, type: 3}
+  deniedSound: {fileID: 8300000, guid: 6badc82930e38c34891f46e1f01f63d3, type: 3}
+  grantedSound: {fileID: 8300000, guid: 54ccf978c7886364c980d9f84ff32bd3, type: 3}
+  panelMesh: {fileID: 702505541}
+  screenIntensity: 2.5
+  displayResultTime: 1.5
+  OnAccessGranted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 93656330}
+        m_TargetAssemblyTypeName: StoreroomDoorAyah, Assembly-CSharp
+        m_MethodName: UnlockDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &702505545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702505542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705052280
 GameObject:
   m_ObjectHideFlags: 0
