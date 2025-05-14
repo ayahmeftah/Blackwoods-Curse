@@ -96,6 +96,17 @@ public class DrawerLock : MonoBehaviour
         txt.text = "";
         if (drawerOpenSound != null)
             drawerOpenSound.Play();
+
+        // Add this
+        GrimmEventManager eventManager = FindObjectOfType<GrimmEventManager>();
+        if (eventManager != null)
+        {
+            eventManager.StartBookcaseInvestigation();
+        }
+        else
+        {
+            Debug.LogError("GrimmEventManager not found in scene!");
+        }
     }
 
     private bool PlayerIsHoldingKey(string keyName)

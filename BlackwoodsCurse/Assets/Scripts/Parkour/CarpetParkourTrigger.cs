@@ -17,7 +17,7 @@ public class CarpetParkourTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Start the supernatural event after a short delay
-            // StartCoroutine(StartSupernaturalEvent());
+            StartCoroutine(StartSupernaturalEvent());
 
             // disable this trigger so it doesn't get retriggered
             GetComponent<Collider>().enabled = false;
@@ -25,16 +25,14 @@ public class CarpetParkourTrigger : MonoBehaviour
             // Start fall detection after short delay
         if (fallDetectionHandler != null)
         {
-            // fallDetectionHandler.ActivateDetectionWithDelay();
+            fallDetectionHandler.ActivateDetectionWithDelay();
         }
     }
 
     private IEnumerator StartSupernaturalEvent()
     {
         // Wait before starting the supernatural event
-        // yield return new WaitForSeconds(3f);
-        yield return null; // no wait at all
-
+        yield return new WaitForSeconds(10f);
 
         if (voidPlane != null) voidPlane.SetActive(true);
         if (safeStartPlatform != null) safeStartPlatform.SetActive(true);

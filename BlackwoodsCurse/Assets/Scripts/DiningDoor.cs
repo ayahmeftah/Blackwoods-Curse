@@ -13,7 +13,10 @@ public class DiningDoor : MonoBehaviour
     private Quaternion defaultRot;
     private Quaternion openRot;
     public Text txt;
-    public bool isLocked = false; // default not locked
+    public bool isLocked = true; // default is locked
+    public AudioSource audioSource;
+    public AudioClip doorOpenClip;
+
 
     void Start()
     {
@@ -27,7 +30,13 @@ public class DiningDoor : MonoBehaviour
         {
             open = !open;
             ePressed = false;
+
+            if (open && audioSource != null && doorOpenClip != null)
+            {
+                audioSource.PlayOneShot(doorOpenClip);
+            }
         }
+
 
         if (open && Quaternion.Angle(transform.rotation, openRot) > rotationTolerance)
         {
@@ -101,8 +110,8 @@ public class DiningDoor : MonoBehaviour
         }
     }
     public void ForceOpen()
-{
-    open = true;
-}
+    {
+        open = true;
+    }
 
 }

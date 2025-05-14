@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Weapon
+  - Cloth
+  - BigCandle
+  - Candle
+  - Flashlight
+  - Switch
+  - Grimm
   layers:
   - Default
   - TransparentFX
@@ -11,7 +18,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - GrimmBarrier
   - 
   - 
   - 

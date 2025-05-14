@@ -1,0 +1,63 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CandlePuzzleManager : MonoBehaviour
+{
+    public List<BigCandle> candles;
+    public List<int> correctOrder = new List<int> { 0, 1, 2 }; // Correct lighting order
+    private List<int> currentOrder = new List<int>();
+    public ResetDiningState roomRestorer;
+
+    private CandleMessageDisplay messageDisplay;
+
+    private void Start()
+    {
+        messageDisplay = FindObjectOfType<CandleMessageDisplay>();
+        if (messageDisplay == null)
+        {
+            Debug.LogWarning("CandleMessageDisplay not found in scene!");
+        }
+    }
+
+    public void CandleLit(int index)
+    {
+        currentOrder.Add(index);
+        Debug.Log($"Candle {index} lit. Current Order: {string.Join(", ", currentOrder)}");
+
+        if (currentOrder.Count == correctOrder.Count)
+        {
+            // Check full sequence
+            for (int i = 0; i < correctOrder.Count; i++)
+            {
+                if (currentOrder[i] != correctOrder[i])
+                {
+                    Debug.Log("Wrong order. Resetting.");
+
+                    if (messageDisplay != null)
+                        messageDisplay.ShowMessage("Wrong order, please try again.", 4f);
+
+                    ResetPuzzle();
+                    return;
+                }
+            }
+
+            // If correct
+            Debug.Log("Puzzle solved! Unlock door or trigger next event here.");
+
+            if (messageDisplay != null)
+                messageDisplay.ShowMessage("Puzzle solved, you can escape to the next level.", 5f);
+
+            roomRestorer.RestoreRoom();
+        }
+    }
+
+    void ResetPuzzle()
+    {
+        currentOrder.Clear();
+        foreach (var candle in candles)
+        {
+            candle.ResetCandle();
+        }
+    }
+}
