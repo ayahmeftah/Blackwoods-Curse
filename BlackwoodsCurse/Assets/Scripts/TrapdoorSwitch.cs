@@ -75,6 +75,7 @@ public class TrapdoorSwitch : MonoBehaviour
         inventory.RemoveItem("Flashlight");
         inventory.RemoveItem("Crowbar");
         inventory.RemoveItem("Knife");
+        inventory.RemoveItem("Hammer");
         inventory.RefreshUI();
 
         // Disable flashlight light
