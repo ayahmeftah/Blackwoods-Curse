@@ -6515,6 +6515,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: e41351735c20372458d6e6e9a6b7e83f, type: 2}
     - {fileID: 11400000, guid: ea227350697bbae47afda9b908ba7d84, type: 2}
+    - {fileID: 11400000, guid: cee082b3e6fbe7a4a92cfac9cbb494bd, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -6535,6 +6536,20 @@ MonoBehaviour:
         - m_Target: {fileID: 356008936}
           m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
           m_MethodName: TriggerAtMansionLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 356008936}
+          m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
+          m_MethodName: TriggerPulledIntoMansion
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15084,6 +15099,8 @@ GameObject:
   - component: {fileID: 948143160}
   - component: {fileID: 948143161}
   - component: {fileID: 948143162}
+  - component: {fileID: 948143164}
+  - component: {fileID: 948143163}
   m_Layer: 0
   m_Name: Cutscene1_Subtitles
   m_TagString: Untagged
@@ -15105,8 +15122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -113.666626
-    y: -13.333336
+    x: -770.99994
+    y: 38.666664
     width: 181.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15132,7 +15149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 864.1667, y: 77.16669}
+  scrollPos: {x: 865.50006, y: 76.50003}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -15143,8 +15160,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 948143164}
+  selectedCommands:
+  - {fileID: 948143163}
   variables: []
   description: 
   stepPause: 0
@@ -15212,8 +15231,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 77.333374
-    y: 67.33333
+    x: -564.6666
+    y: 39.33333
     width: 137.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15288,6 +15307,50 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: 403c1b684d274604b989b3599c53afe7, type: 3}
   volume: 1
   waitUntilFinished: 0
+--- !u!114 &948143163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948143152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 032051624aa0ed44e912b8865e7345a3, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &948143164
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948143152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -361.50003
+    y: 57.833313
+    width: 158.66666
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 6
+  blockName: PulledIntoMansion
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 948143163}
+  suppressAllAutoSelections: 0
 --- !u!1001 &957527771
 PrefabInstance:
   m_ObjectHideFlags: 0
