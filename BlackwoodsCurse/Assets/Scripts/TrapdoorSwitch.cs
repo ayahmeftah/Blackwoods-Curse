@@ -6,31 +6,32 @@ public class TrapdoorSwitch : MonoBehaviour
     public HUD hud;
     public Inventory inventory;
     public InventorySelector selector;
-    public GameObject trapdoor;      // Trapdoor to open
+    public GameObject trapdoor;             // Trapdoor to open
+    public Light flashlightLight;           // Flashlight light to disable
     public float rotationAngle = -40f;
 
-    public GameObject wallToDestroy;
-    public AudioSource wallBreakSound;
-    public AudioSource trapdoorOpenSound; // Optional
+    [Header("Audio")]
+    public AudioSource trapdoorOpenSound;   // Play this immediately
+    public AudioSource wallBreakSound;      // Play this after 4 seconds
+
+    [Header("Wall To Destroy")]
+    public GameObject wallToDestroy;        // Assign wall upstairs here
 
     private bool playerNear = false;
     private bool isActivated = false;
     private bool wallIsBroken = false;
     private bool messageOverridden = false;
 
-    public void EnableSwitch()  // Call from wall when broken
+    public void EnableSwitch()
     {
         wallIsBroken = true;
     }
 
     void Update()
     {
-        if (!playerNear || isActivated || !wallIsBroken) return;
+        if (!playerNear || isActivated || !wallIsBroken || messageOverridden) return;
 
-        if (!messageOverridden)
-        {
-            hud.txt.text = "The switch seems far...";
-        }
+        hud.txt.text = "The switch seems far...";
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -43,7 +44,7 @@ public class TrapdoorSwitch : MonoBehaviour
             }
             else
             {
-                StartCoroutine(ShowTemporaryMessage("It’s not long enough.", 1.5f));
+                StartCoroutine(ShowTemporaryMessage("It’s not long enough.", 2f));
             }
         }
     }
@@ -55,29 +56,41 @@ public class TrapdoorSwitch : MonoBehaviour
         // Rotate switch
         transform.localRotation *= Quaternion.Euler(rotationAngle, 0f, 0f);
 
-        // Open trapdoor
+        // Rotate trapdoor open
         if (trapdoor != null)
         {
             trapdoor.transform.localRotation *= Quaternion.Euler(90f, 0f, 0f);
 
             if (trapdoorOpenSound != null)
-                trapdoorOpenSound.Play();
+                trapdoorOpenSound.Play(); // 🔊 Play trapdoor sound now
         }
 
-        // Destroy wall upstairs
-        if (wallToDestroy != null)
+        // Delay wall break sound & destruction
+        if (wallToDestroy != null && wallBreakSound != null)
         {
-            Destroy(wallToDestroy);
-
-            if (wallBreakSound != null)
-                wallBreakSound.Play();
+            StartCoroutine(PlayWallBreakAfterDelay(4f));
         }
-// Remove key items from inventory
-inventory.RemoveItem("Flashlight");
-inventory.RemoveItem("Crowbar");
-inventory.RemoveItem("Knife");
-inventory.RefreshUI(); // Optional: ensure UI updates immediately
-        hud.HideMessage();
+
+        // Remove items
+        inventory.RemoveItem("Flashlight");
+        inventory.RemoveItem("Crowbar");
+        inventory.RemoveItem("Knife");
+        inventory.RefreshUI();
+
+        // Disable flashlight light
+        if (flashlightLight != null)
+            flashlightLight.enabled = false;
+
+        hud.txt.text = "You flipped the switch!";
+    }
+
+    IEnumerator PlayWallBreakAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        wallBreakSound.Play();
+
+        // Optional: destroy the wall if needed visually
+        Destroy(wallToDestroy);
     }
 
     void OnTriggerEnter(Collider other)
