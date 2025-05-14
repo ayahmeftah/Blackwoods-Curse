@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StoreroomDoor : MonoBehaviour
+public class StoreroomDoor_aya : MonoBehaviour
 {
     public float openAngle = 90f;
     public float smooth = 2f;
