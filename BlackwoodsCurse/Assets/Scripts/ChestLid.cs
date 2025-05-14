@@ -6,6 +6,8 @@ public class ChestLid : MonoBehaviour
     public HUD hud;
     public GameObject hammer;     // hammer inside the chest
     public float openSpeed = 60f; // speed of lid opening
+    public AudioSource openSound;
+
 
     private bool playerNear = false;
     private bool canOpen = false;
@@ -29,11 +31,17 @@ public class ChestLid : MonoBehaviour
 
         hud.txt.text = "Press F to open chest";
 
+        
         if (Input.GetKeyDown(KeyCode.F))
         {
             isOpened = true;
+
+            if (openSound != null)
+                openSound.Play(); // ✅ Play the sound as soon as lid starts
+
             StartCoroutine(OpenLid());
         }
+
     }
 
     IEnumerator OpenLid()
