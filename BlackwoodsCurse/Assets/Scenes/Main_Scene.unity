@@ -8930,8 +8930,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0, y: 1, z: 0.5}
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &270452599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62606,6 +62606,10 @@ PrefabInstance:
     - target: {fileID: 2225887874147284791, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
       propertyPath: m_Name
       value: panelstoreroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303921292967740188, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
+      propertyPath: m_text
+      value: '****'
       objectReference: {fileID: 0}
     - target: {fileID: 2303921294396319333, guid: 9c384aa0f6a0644cdb53363e4b8f5975, type: 3}
       propertyPath: m_RootOrder
