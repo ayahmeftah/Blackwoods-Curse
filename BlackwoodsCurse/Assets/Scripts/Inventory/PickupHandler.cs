@@ -50,6 +50,7 @@ public class PickupHandler : MonoBehaviour
 
         if (item != null)
         {
+            Debug.Log("Trigger entered with: " + item.name); // Add this
             currentItem = item.GetComponent<IInventoryItem>();
             string itemName = currentItem.Name;
 

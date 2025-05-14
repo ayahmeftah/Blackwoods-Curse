@@ -9,6 +9,8 @@
     - Default, TransparentFX, Ignore Raycast, Ground, Water, UI, GrimmBarrier
 - Active game object:
   - Name: old_tv
+- Active game object:
+  - Name: LightSource
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

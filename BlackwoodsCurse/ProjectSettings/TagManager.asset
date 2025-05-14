@@ -8,6 +8,8 @@ TagManager:
   - Cloth
   - BigCandle
   - Candle
+  - Flashlight
+  - Switch
   - Grimm
   layers:
   - Default
