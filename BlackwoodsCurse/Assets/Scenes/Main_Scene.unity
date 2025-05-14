@@ -44493,7 +44493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7743916e2ce1143aadafb98d6f0a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storeroomDoor: {fileID: 0}
+  storeroomDoor: {fileID: 1154424944}
   timer: {fileID: 1860833697}
 --- !u!1001 &1157623551
 PrefabInstance:
