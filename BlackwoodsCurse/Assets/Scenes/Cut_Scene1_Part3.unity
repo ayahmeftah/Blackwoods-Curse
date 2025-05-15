@@ -3071,7 +3071,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1486555206}
           m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
-          m_MethodName: TriggerInsideMansio3
+          m_MethodName: TriggerInsideMansion3
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

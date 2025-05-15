@@ -30,8 +30,13 @@ public class DialogSignalTrigger : MonoBehaviour
         flowchart.ExecuteBlock("InsideMansion2");
     }
 
-    public void TriggerInsideMansio3()
+    public void TriggerInsideMansion3()
     {
         flowchart.ExecuteBlock("InsideMansion3");
+    }
+
+    public void TriggerCastedOut()
+    {
+        flowchart.ExecuteBlock("CastedOut");
     }
 }
