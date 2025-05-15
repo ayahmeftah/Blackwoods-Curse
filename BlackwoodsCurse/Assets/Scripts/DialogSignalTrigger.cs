@@ -39,4 +39,49 @@ public class DialogSignalTrigger : MonoBehaviour
     {
         flowchart.ExecuteBlock("CastedOut");
     }
+
+    public void TriggerTruth1()
+    {
+        flowchart.ExecuteBlock("TruthP1");
+    }
+
+    public void TriggerTruth2()
+    {
+        flowchart.ExecuteBlock("TruthP2");
+    }
+
+    public void TriggerTruth3()
+    {
+        flowchart.ExecuteBlock("TruthP3");
+    }
+
+    public void TriggerTruth4()
+    {
+        flowchart.ExecuteBlock("TruthP4");
+    }
+
+    public void TriggerTruth5()
+    {
+        flowchart.ExecuteBlock("TruthP5");
+    }
+
+    public void TriggerTruth6()
+    {
+        flowchart.ExecuteBlock("TruthP6");
+    }
+
+    public void TriggerTruth7()
+    {
+        flowchart.ExecuteBlock("TruthP7");
+    }
+
+    public void TriggerTruth8()
+    {
+        flowchart.ExecuteBlock("TruthP8");
+    }
+
+    public void TriggerTruth9()
+    {
+        flowchart.ExecuteBlock("TruthP9");
+    }
 }
