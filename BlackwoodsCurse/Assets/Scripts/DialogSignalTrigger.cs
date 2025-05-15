@@ -94,4 +94,9 @@ public class DialogSignalTrigger : MonoBehaviour
     {
         flowchart.ExecuteBlock("TrappedScream");
     }
+
+    public void TriggerNoEscape()
+    {
+        flowchart.ExecuteBlock("NoEscape");
+    }
 }

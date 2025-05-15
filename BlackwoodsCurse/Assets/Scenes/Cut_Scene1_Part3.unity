@@ -15080,7 +15080,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -137.66663
     y: -60.333336
-    width: 176
+    width: 181.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15117,9 +15117,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 948143174}
+  - {fileID: 948143167}
   selectedCommands:
-  - {fileID: 948143171}
+  - {fileID: 948143168}
   variables: []
   description: 
   stepPause: 0
@@ -15189,7 +15189,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 80.333374
     y: -67.66667
-    width: 134
+    width: 137.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15279,7 +15279,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -221.16669
     y: 68.83331
-    width: 137
+    width: 140.66666
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15308,7 +15308,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 23c90b3eee59ec24b843431c9bf4312b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -15333,7 +15333,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.83331
     y: 65.83331
-    width: 139
+    width: 142.66666
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15362,7 +15362,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: f3250cfec0f0f35438e0af66cee099ea, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -15389,7 +15389,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 557b2e6cbc85b2947aba0819db11fbc3, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -15414,7 +15414,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -60.166687
     y: 68.83331
-    width: 138
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

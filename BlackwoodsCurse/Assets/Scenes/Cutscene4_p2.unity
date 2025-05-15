@@ -3015,6 +3015,7 @@ GameObject:
   - component: {fileID: 167803760}
   - component: {fileID: 167803759}
   - component: {fileID: 167803762}
+  - component: {fileID: 167803763}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -3109,6 +3110,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &167803763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167803758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7d398c9dfac643c4196cd0bd1197100b, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 231274117}
+          m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
+          m_MethodName: TriggerNoEscape
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &169340433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4597,6 +4628,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a623f1429e3593468223a3ec78e5ea8, type: 3}
+--- !u!1 &231274116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a623f1429e3593468223a3ec78e5ea8, type: 3}
+  m_PrefabInstance: {fileID: 231274115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &231274117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231274116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d511292f1748b464183f04d0dc97daf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 948143155}
 --- !u!1001 &237580037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15098,6 +15147,8 @@ GameObject:
   - component: {fileID: 948143160}
   - component: {fileID: 948143161}
   - component: {fileID: 948143162}
+  - component: {fileID: 948143164}
+  - component: {fileID: 948143163}
   m_Layer: 0
   m_Name: Cutscene4_Subtitles
   m_TagString: Untagged
@@ -15146,7 +15197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 864.1667, y: 77.16669}
+  scrollPos: {x: 502.16663, y: 215.1667}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -15157,8 +15208,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 948143164}
+  selectedCommands:
+  - {fileID: 948143163}
   variables: []
   description: 
   stepPause: 0
@@ -15302,6 +15355,50 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: 403c1b684d274604b989b3599c53afe7, type: 3}
   volume: 1
   waitUntilFinished: 0
+--- !u!114 &948143163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948143152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: aa451763ff4f4ff49985e5a2a8a948d8, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &948143164
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948143152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 234.50006
+    y: 151.8333
+    width: 109.33333
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 6
+  blockName: NoEscape
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 948143163}
+  suppressAllAutoSelections: 0
 --- !u!1001 &957527771
 PrefabInstance:
   m_ObjectHideFlags: 0
