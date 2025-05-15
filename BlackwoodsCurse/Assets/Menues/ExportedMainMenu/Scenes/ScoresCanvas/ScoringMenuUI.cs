@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using System.Diagnostics;
+
 
 public class ScoringMenuUI : MonoBehaviour
 {
@@ -9,6 +11,11 @@ public class ScoringMenuUI : MonoBehaviour
     void Start()
     {
         UpdateUI();
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        
+
     }
 
     void UpdateUI()

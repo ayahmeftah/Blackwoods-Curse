@@ -53245,6 +53245,7 @@ MonoBehaviour:
   audioSource: {fileID: 1388471527}
   lifeLostClip: {fileID: 8300000, guid: a2762cb4274ac4ecba8bba5099f73be6, type: 3}
   deathClip: {fileID: 8300000, guid: e67c9de26aaf446eb8eabe70b7d3e35a, type: 3}
+  ScoreScene: ScoringMenu
 --- !u!82 &1388471527
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58478,7 +58479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f2fa0ce2f32744f96e8f7e48f1f7b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixingManager: {fileID: 0}
+  mixingManager: {fileID: 2083271942}
   interactionText: {fileID: 1954000865}
 --- !u!4 &1493211096 stripped
 Transform:
