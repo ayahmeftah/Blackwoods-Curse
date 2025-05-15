@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 
@@ -12,36 +13,36 @@ public class FlaskMixingManager : MonoBehaviour
         public GameObject flaskObject;
     }
 
-    //Color Mixing Logic variables
     public List<Flask> flasks;
     public Renderer mainFlaskRenderer;
     public Transform pourTargetPosition;
-    public float pourDuration = 5f;
+    public float pourDuration = 2f;
     public TextMeshProUGUI levelCompleteText;
     public CanvasGroup levelCompleteCanvasGroup;
-    public PouringZone pouringZone;  // Assign this in the Inspector
+    public PouringZone pouringZone;
 
     public Material blueMat, yellowMat, redMat;
     public Material greenMat, tealMat, maroonMat;
 
-    private string currentColor = "";
-    private bool isPouring = false;
+    public Material wrongColorMat;
+    public TextMeshProUGUI hudMessageText;
+    public float wrongColorDisplayTime = 2f;
 
-    public bool IsPouring => isPouring; // So the trigger script can check
-
-    //For Coffin opening variables
     public GameObject coffinLid;
     public float lidOpenDuration = 5f;
 
+    private string currentColor = "";
+    private bool isPouring = false;
     private bool coffinOpened = false;
 
-    //Wrong Color Logic variables
-    public Material wrongColorMat; 
-    public TextMeshProUGUI hudMessageText; 
-    public float wrongColorDisplayTime = 2f;
+    private Material originalMaterial;
 
-    private string lastValidColor = ""; 
+    public bool IsPouring => isPouring;
 
+    void Start()
+    {
+        originalMaterial = mainFlaskRenderer.material;
+    }
 
     public void PourFlaskByColor(string colorName)
     {
@@ -52,10 +53,6 @@ public class FlaskMixingManager : MonoBehaviour
         if (flaskObj != null)
         {
             StartCoroutine(PourFlaskRoutine(flaskObj, colorName));
-        }
-        else
-        {
-            Debug.LogWarning("Flask not found for color: " + colorName);
         }
     }
 
@@ -80,7 +77,6 @@ public class FlaskMixingManager : MonoBehaviour
 
     void MixColor(string addedColor)
     {
-        string previousColor = currentColor;
         string result = GetNewMixResult(currentColor, addedColor);
 
         if (result == "wrong")
@@ -89,15 +85,13 @@ public class FlaskMixingManager : MonoBehaviour
             return;
         }
 
-        lastValidColor = result;
         currentColor = result;
         UpdateMainFlaskColor(result);
 
         if (result == "maroon" && !coffinOpened)
         {
             OpenCoffin();
-            
-            // Hide instructions
+
             if (pouringZone != null && pouringZone.interactionText != null)
             {
                 pouringZone.interactionText.text = "";
@@ -106,11 +100,9 @@ public class FlaskMixingManager : MonoBehaviour
                 pouringZone.GetComponent<Collider>().enabled = false;
             }
 
-            //Show level completed message 
             DisplayMessage();
         }
     }
-
 
     void UpdateMainFlaskColor(string color)
     {
@@ -122,7 +114,8 @@ public class FlaskMixingManager : MonoBehaviour
             case "green": mainFlaskRenderer.material = greenMat; break;
             case "teal": mainFlaskRenderer.material = tealMat; break;
             case "maroon": mainFlaskRenderer.material = maroonMat; break;
-            default: Debug.Log("Unknown color: " + color); break;
+            default:;
+            break;
         }
     }
 
@@ -130,7 +123,7 @@ public class FlaskMixingManager : MonoBehaviour
     {
         if (string.IsNullOrEmpty(current)) return added;
 
-        //Detect right combos
+        // Valid combinations
         if ((current == "blue" && added == "yellow") || (current == "yellow" && added == "blue"))
             return "green";
         if ((current == "green" && added == "blue") || (current == "blue" && added == "green"))
@@ -138,9 +131,11 @@ public class FlaskMixingManager : MonoBehaviour
         if ((current == "teal" && added == "red") || (current == "red" && added == "teal"))
             return "maroon";
 
-        //Detect wrong color combos
+        // Invalid combinations
         if ((current == "red" && added == "blue") || (current == "blue" && added == "red") ||
-            (current == "yellow" && added == "red") || (current == "red" && added == "yellow"))
+            (current == "yellow" && added == "red") || (current == "red" && added == "yellow") ||
+            (current == "green" && added == "red") || (current == "green" && added == "yellow") ||
+            (current == "teal" && added == "blue") || (current == "teal" && added == "yellow"))
             return "wrong";
 
         if (current == added) return current;
@@ -148,11 +143,22 @@ public class FlaskMixingManager : MonoBehaviour
         return current;
     }
 
+    IEnumerator HandleWrongColor()
+    {
+        mainFlaskRenderer.material = wrongColorMat;
+        hudMessageText.text = "Wrong Color!";
+        hudMessageText.alpha = 1;
+
+        yield return new WaitForSeconds(wrongColorDisplayTime);
+
+        hudMessageText.alpha = 0;
+        mainFlaskRenderer.material = originalMaterial;
+        currentColor = ""; // Optionally reset currentColor to clear state
+    }
+
     void OpenCoffin()
     {
         coffinOpened = true;
-        Debug.Log("Coffin opens...");
-
         StartCoroutine(SlideLidOpen());
     }
 
@@ -178,19 +184,6 @@ public class FlaskMixingManager : MonoBehaviour
         coffinLid.transform.rotation = targetRot;
     }
 
-    IEnumerator HandleWrongColor()
-    {
-        Debug.Log("Wrong color mixed!");
-
-        mainFlaskRenderer.material = wrongColorMat;
-        hudMessageText.text = "Wrong Color!";
-        hudMessageText.alpha = 1;
-
-        yield return new WaitForSeconds(wrongColorDisplayTime);
-
-        hudMessageText.alpha = 0;
-        mainFlaskRenderer.material = GetMaterialByColor(lastValidColor);
-    }
     Material GetMaterialByColor(string color)
     {
         switch (color)
@@ -201,7 +194,7 @@ public class FlaskMixingManager : MonoBehaviour
             case "green": return greenMat;
             case "teal": return tealMat;
             case "maroon": return maroonMat;
-            default: return null;
+            default: return originalMaterial;
         }
     }
 
@@ -214,7 +207,7 @@ public class FlaskMixingManager : MonoBehaviour
     {
         levelCompleteText.text = "Level Complete!";
         levelCompleteCanvasGroup.alpha = 1;
-        yield return new WaitForSeconds(3f); // Display for 3 seconds
+        yield return new WaitForSeconds(3f);
         levelCompleteCanvasGroup.alpha = 0;
     }
 }

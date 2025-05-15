@@ -5808,6 +5808,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2122479143}
     - target: {fileID: 3565834101705851514, guid: 94f0b64959b24a1439cb96a5ec7a2f46, type: 3}
+      propertyPath: pourDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3565834101705851514, guid: 94f0b64959b24a1439cb96a5ec7a2f46, type: 3}
       propertyPath: hudMessageText
       value: 
       objectReference: {fileID: 1182016392}
@@ -9472,7 +9476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2434633642750838375, guid: 8980a5859954825498f74b49c5841ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 272.661
+      value: 275.789
       objectReference: {fileID: 0}
     - target: {fileID: 2434633642750838375, guid: 8980a5859954825498f74b49c5841ac0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -45165,7 +45169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -47}
+  m_AnchoredPosition: {x: 0, y: 255}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182016392
