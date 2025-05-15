@@ -19,5 +19,5 @@ public class Navigate : MonoBehaviour
     public void StartNewGame()
     {
         SceneManager.LoadScene("Cut_Scene1");
-}
+    }
 }
