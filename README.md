@@ -15,14 +15,14 @@
 
 ## Levels
 
-| **Level**   | **Description**                                                                                                                                                              | **Designer**       |
-|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|---------------------|
-| Level 1     | Explore the haunted mansion, discover a hidden study, and unlock a safe using a TV code to reveal a vial of blood needed for progression.                                   | Alya Sakhnini     |
-| Level 2     | Enter a floating dining room and complete a parkour challenge, then solve a candle-lighting puzzle using visual and narrative clues.                                         | Manar Alsetrawi        |
-| Level 3     | Investigate the bathroom to descend into the basement to solve a switch puzzle using a modified flashlight to see the riddle and discover the solution.                                               | Khadija Abdulla        |
-| Level 4     | Combine rope and magnet to retrieve a key, solve a piano puzzle, and uncover a secret passage or a storeroom code depending on the player’s path.                            | Ayah Meftah    |
-| Level 5.1   | Hidden lab: Solve a color-mixing puzzle based on poetic clues to open Dr. Blackwood’s coffin and reveal the mansion’s truth. (Good Ending)                                   | Mayyar Sakhnini        |
-| Level 5.2   | Storeroom: Align mirrors to reflect light beams while smashing shadow-obstructed ones under time pressure to escape. (Neutral Ending)                                 | Mayyar Sakhnini    |
+| **Level**   | **Description**                                                                                                                                                              | **Developer**      |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| Level 1     | Explore the haunted mansion, discover a hidden study, and unlock a safe using a TV code to reveal a vial of blood needed for progression.                                    | Alya Sakhnini      |
+| Level 2     | Enter a floating dining room and complete a parkour challenge, then solve a candle-lighting puzzle using visual and narrative clues.                                         | Manar Alsetrawi    |
+| Level 3     | Investigate the bathroom to descend into the basement to solve a switch puzzle using a modified flashlight to see the riddle and discover the solution.                      | Khadija Abdulla    |
+| Level 4     | Combine rope and magnet to retrieve a key, solve a piano puzzle, and uncover a secret passage or a storeroom code depending on the player’s path.                            | Ayah Meftah        |
+| Level 5.1   | Hidden lab: Solve a color-mixing puzzle based on poetic clues to open Dr. Blackwood’s coffin and reveal the mansion’s truth. (Good Ending)                                   | Mayyar Sakhnini    |
+| Level 5.2   | Storeroom: Align mirrors to reflect light beams while smashing shadow-obstructed ones under time pressure to escape. (Neutral Ending)                                        | Mayyar Sakhnini    |
 
 ## Extra Features
 
@@ -55,7 +55,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/blackwoods-curse.git
+   git clone https://github.com/ayahmeftah/blackwoods-curse.git
    ```
 2. Open the project in Unity 2021.
 3. Set the scene to `MainMenu` and press play.
