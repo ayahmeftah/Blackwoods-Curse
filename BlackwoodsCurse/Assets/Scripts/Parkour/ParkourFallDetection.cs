@@ -16,6 +16,7 @@ public class ParkourFallDetection : MonoBehaviour
     public AudioClip lifeLostClip;
     public AudioClip deathClip;
     private Coroutine fadeRoutine;
+    public string ScoreScene = "ScoringMenu";
 
     public void HandleFall(Transform player)
     {
@@ -29,7 +30,7 @@ public class ParkourFallDetection : MonoBehaviour
         {
             if (livesText != null)
             {
-                livesText.text = "You lost! Restarting...";
+                livesText.text = "You lost!";
                 livesText.color = Color.red;
                 livesText.CrossFadeAlpha(1f, 0f, true);
                 StartCoroutine(FadeOutText());
@@ -70,7 +71,10 @@ public class ParkourFallDetection : MonoBehaviour
     private IEnumerator RestartAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        SceneManager.LoadScene(ScoreScene);
+
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void UpdateLivesUI()

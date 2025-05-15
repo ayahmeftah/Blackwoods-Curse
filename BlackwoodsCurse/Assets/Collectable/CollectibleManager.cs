@@ -11,13 +11,17 @@ public class CollectibleManager : MonoBehaviour
     // Assign in Inspector
     private int score = 0;
 
-    void Awake()
+    private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            DontDestroyOnLoad(this.gameObject); 
+        }
         else
             Destroy(gameObject);
     }
+
 
     void Start()
     {
@@ -34,4 +38,10 @@ public class CollectibleManager : MonoBehaviour
     {
         scoreText.text = score + "/10";
     }
+
+    public int GetCollectedScore()
+    {
+        return score;
+    }
+
 }
