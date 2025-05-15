@@ -142,6 +142,7 @@ public class PianoPuzzleManager : MonoBehaviour
         if (pianoTrigger != null)
         {
             Invoke(nameof(ExitPianoModeAfterSuccess), 1.5f);
+            LevelManager.Instance.AdvanceLevel();
         }
     }
 
@@ -157,7 +158,6 @@ public class PianoPuzzleManager : MonoBehaviour
     IEnumerator ShowSuccessMessage()
     {
         hud.txt.color = Color.green;
-        hud.txt.text = "Puzzle Solved!";
         yield return new WaitForSeconds(2f);
         hud.txt.color = Color.white;
         hud.HideMessage();

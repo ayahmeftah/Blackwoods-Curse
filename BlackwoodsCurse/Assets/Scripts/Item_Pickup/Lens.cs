@@ -53,7 +53,7 @@ public class Lens : MonoBehaviour
         flashlightController.MergeLens();
 
         // Display success message
-        hud.txt.text = "Lens merged successfully!\nPress R to use the Labs";
+        hud.txt.text = "Lens merged successfully!\nPress R to use the Lens";
         messageTimer = 1.5f;
 
         // Destroy the lens object in the world

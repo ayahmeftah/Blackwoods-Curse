@@ -39,6 +39,7 @@ public class BookcaseTrigger : MonoBehaviour
                     bookcaseAnimator.Rebind();         // Reset to Idle pose
                     bookcaseAnimator.Update(0f);       // Apply immediately
                     bookcaseAnimator.SetTrigger("Pull");
+                    LevelManager.Instance.EnterBonusLevel();
                 }
             }
         }

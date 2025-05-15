@@ -57,6 +57,9 @@ public class BloodVial : MonoBehaviour, IInventoryItem
 
         hasBeenPickedUp = true;
 
+        //change level text UI
+        LevelManager.Instance.AdvanceLevel();
+
         Debug.Log("Picked up BloodVial — disabling object.");
         gameObject.SetActive(false);
     }

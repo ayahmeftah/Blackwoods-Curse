@@ -45,8 +45,7 @@ public class CandlePuzzleManager : MonoBehaviour
             // If correct
             Debug.Log("Puzzle solved! Unlock door or trigger next event here.");
 
-            if (messageDisplay != null)
-                messageDisplay.ShowMessage("Puzzle solved, you can escape to the next level.", 5f);
+            
 
             roomRestorer.RestoreRoom();
         }

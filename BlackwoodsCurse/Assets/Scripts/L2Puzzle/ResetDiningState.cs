@@ -85,6 +85,9 @@ public class ResetDiningState : MonoBehaviour
             unlockBathroomDoor.isLocked = false;
             unlockBathroomDoor.ForceOpen();
 
+            //Level Complete UI
+            LevelManager.Instance.AdvanceLevel();
+
             //Play door open sound
             if (audioSource != null && doorOpenClip != null)
                 audioSource.PlayOneShot(doorOpenClip);

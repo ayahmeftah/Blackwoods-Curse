@@ -82,7 +82,7 @@ public class TrapdoorSwitch : MonoBehaviour
         if (flashlightLight != null)
             flashlightLight.enabled = false;
 
-        hud.txt.text = "You flipped the switch!";
+        LevelManager.Instance.AdvanceLevel();
     }
 
     IEnumerator PlayWallBreakAfterDelay(float delay)
