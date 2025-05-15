@@ -84,4 +84,14 @@ public class DialogSignalTrigger : MonoBehaviour
     {
         flowchart.ExecuteBlock("TruthP9");
     }
+
+    public void TriggerCastedOutMansion()
+    {
+        flowchart.ExecuteBlock("CastedOutMansion");
+    }
+
+    public void TriggerTrappedScream()
+    {
+        flowchart.ExecuteBlock("TrappedScream");
+    }
 }

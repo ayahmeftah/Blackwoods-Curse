@@ -1346,12 +1346,12 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ee282cfde2a39154db862a8ce69c2e37, type: 2}
     - {fileID: 11400000, guid: 195104a89d304474fbb517e974a5212c, type: 2}
     - {fileID: 11400000, guid: 24dae557248051b42aadc439ed85ef97, type: 2}
+    - {fileID: 11400000, guid: dc6f0f62e4fed334cbbe94a3c77461c2, type: 2}
     - {fileID: 11400000, guid: 1b3ed070506280141ba1b7f729bbd809, type: 2}
     - {fileID: 11400000, guid: 2f55d2f5b64ad4f4b80f13ecabf928e8, type: 2}
     - {fileID: 11400000, guid: 8f238f599fefb364384b939c1896b44c, type: 2}
     - {fileID: 11400000, guid: f2b6699b795fa46459ff6a4ad089cd8d, type: 2}
     - {fileID: 11400000, guid: 58f668b6a1f72bb4fa0fa4d250472445, type: 2}
-    - {fileID: 11400000, guid: dc6f0f62e4fed334cbbe94a3c77461c2, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -1386,6 +1386,20 @@ MonoBehaviour:
         - m_Target: {fileID: 467334661}
           m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
           m_MethodName: TriggerTruth3
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 467334661}
+          m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
+          m_MethodName: TriggerTruth4
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1456,20 +1470,6 @@ MonoBehaviour:
         - m_Target: {fileID: 467334661}
           m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
           m_MethodName: TriggerTruth9
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 467334661}
-          m_TargetAssemblyTypeName: DialogSignalTrigger, Assembly-CSharp
-          m_MethodName: TriggerTruth4
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
