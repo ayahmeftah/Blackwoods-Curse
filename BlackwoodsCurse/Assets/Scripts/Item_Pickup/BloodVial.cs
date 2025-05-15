@@ -1,4 +1,6 @@
 using NavKeypad;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class BloodVial : MonoBehaviour, IInventoryItem
@@ -6,6 +8,8 @@ public class BloodVial : MonoBehaviour, IInventoryItem
     public string Name { get { return "BloodVial"; } }
     public Sprite _Image = null;
     public Sprite Image { get { return _Image; } }
+    public TextMeshProUGUI levelCompleteText;
+    public CanvasGroup levelCompleteCanvasGroup;
 
     private bool isPlayerNear = false;
     private bool hasBeenPickedUp = false;
@@ -56,9 +60,13 @@ public class BloodVial : MonoBehaviour, IInventoryItem
         }
 
         hasBeenPickedUp = true;
-
+        LevelManager.Instance.AdvanceLevel();
         Debug.Log("Picked up BloodVial — disabling object.");
         gameObject.SetActive(false);
+
+        
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -80,4 +88,6 @@ public class BloodVial : MonoBehaviour, IInventoryItem
 
         Debug.Log("BloodVial pickup is now enabled (via animation event).");
     }
+
+    
 }
