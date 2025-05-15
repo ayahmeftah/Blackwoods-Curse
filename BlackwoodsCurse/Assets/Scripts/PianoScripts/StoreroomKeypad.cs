@@ -178,7 +178,7 @@ public class StoreroomKeypad : MonoBehaviour
             hasShownRestrictedMessage = true;
             if (hud != null && hud.txt != null)
             {
-                hud.txt.color = Color.red;
+                hud.txt.color = Color.white;
                 hud.txt.text = restrictedText;
                 StartCoroutine(ClearHUDMessage(2f));
             }

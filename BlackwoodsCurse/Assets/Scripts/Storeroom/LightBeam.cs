@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Diagnostics;
+using UnityEngine.Diagnostics;
 
 public class LightBeam
 {
@@ -9,7 +11,6 @@ public class LightBeam
     GameObject lightOjb;
     LineRenderer light;
     List<Vector3> lightIndices = new List<Vector3>();
-    public GameObject storeroomDoor;
 
     public LightBeam(Vector3 pos, Vector3 dir, Material material)
     {
@@ -83,7 +84,6 @@ public class LightBeam
     // This is the logic when the beam reaches the destination
     void OnLightDestinationHit()
     {
-        Debug.Log("Light reached the destination!");
 
         // Destroy the light beam
         GameObject.Destroy(lightOjb);
@@ -93,13 +93,6 @@ public class LightBeam
         if (timer != null)
         {
             timer.StopTimer();
-        }
-
-        // Open the door
-        StoreroomDoor door = GameObject.FindObjectOfType<StoreroomDoor>();
-        if (door != null)
-        {
-            door.ForceOpen();
         }
 
         // Call the Coroutine on MonoBehaviour

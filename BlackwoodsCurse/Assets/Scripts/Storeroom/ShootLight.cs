@@ -7,7 +7,6 @@ public class ShootLight : MonoBehaviour
 {
     public Material material;
     LightBeam beam;
-    public GameObject storeroomDoor;
     public TextMeshProUGUI levelCompleteText;
     public CanvasGroup levelCompleteCanvasGroup;
 
@@ -42,5 +41,6 @@ public class ShootLight : MonoBehaviour
         levelCompleteCanvasGroup.alpha = 1;
         yield return new WaitForSeconds(3f); // Display for 3 seconds
         levelCompleteCanvasGroup.alpha = 0;
+        Debug.Log("Level Completed");
     }
 }

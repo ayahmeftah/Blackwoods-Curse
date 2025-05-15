@@ -12338,7 +12338,6 @@ GameObject:
   m_Component:
   - component: {fileID: 319796808}
   - component: {fileID: 319796810}
-  - component: {fileID: 319796809}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -12361,14 +12360,6 @@ Transform:
   m_Father: {fileID: 2008672873}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &319796809
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319796807}
-  m_Enabled: 0
 --- !u!20 &319796810
 Camera:
   m_ObjectHideFlags: 0
@@ -16617,7 +16608,6 @@ GameObject:
   m_Component:
   - component: {fileID: 403988097}
   - component: {fileID: 403988099}
-  - component: {fileID: 403988098}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -16640,14 +16630,6 @@ Transform:
   m_Father: {fileID: 195860538}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &403988098
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403988096}
-  m_Enabled: 0
 --- !u!20 &403988099
 Camera:
   m_ObjectHideFlags: 0
@@ -21398,7 +21380,6 @@ GameObject:
   m_Component:
   - component: {fileID: 512174671}
   - component: {fileID: 512174673}
-  - component: {fileID: 512174672}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -21421,14 +21402,6 @@ Transform:
   m_Father: {fileID: 2136282770}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &512174672
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512174670}
-  m_Enabled: 0
 --- !u!20 &512174673
 Camera:
   m_ObjectHideFlags: 0
@@ -21606,7 +21579,6 @@ GameObject:
   m_Component:
   - component: {fileID: 514916850}
   - component: {fileID: 514916852}
-  - component: {fileID: 514916851}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -21629,14 +21601,6 @@ Transform:
   m_Father: {fileID: 931749644}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &514916851
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514916849}
-  m_Enabled: 0
 --- !u!20 &514916852
 Camera:
   m_ObjectHideFlags: 0
@@ -25087,7 +25051,6 @@ GameObject:
   m_Component:
   - component: {fileID: 598758617}
   - component: {fileID: 598758619}
-  - component: {fileID: 598758618}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -25110,14 +25073,6 @@ Transform:
   m_Father: {fileID: 842055306}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &598758618
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598758616}
-  m_Enabled: 0
 --- !u!20 &598758619
 Camera:
   m_ObjectHideFlags: 0
@@ -31766,7 +31721,6 @@ GameObject:
   m_Component:
   - component: {fileID: 795769658}
   - component: {fileID: 795769660}
-  - component: {fileID: 795769659}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -31789,14 +31743,6 @@ Transform:
   m_Father: {fileID: 1083150264}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &795769659
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795769657}
-  m_Enabled: 0
 --- !u!20 &795769660
 Camera:
   m_ObjectHideFlags: 0
@@ -41860,7 +41806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca22fb26da5d7a443840758741219d8e, type: 2}
+  - {fileID: 2100000, guid: ad49c0d6f89b4e44aa3b68083f0ef630, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41904,7 +41850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 13164360}
   textCanvasGroup: {fileID: 13164362}
-  objectMaterial: {fileID: 2100000, guid: ca22fb26da5d7a443840758741219d8e, type: 2}
+  objectMaterial: {fileID: 2100000, guid: ad49c0d6f89b4e44aa3b68083f0ef630, type: 2}
 --- !u!1001 &1085551508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50444,7 +50390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1339564184}
   - component: {fileID: 1339564186}
-  - component: {fileID: 1339564185}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -50467,14 +50412,6 @@ Transform:
   m_Father: {fileID: 1878083398}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1339564185
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339564183}
-  m_Enabled: 0
 --- !u!20 &1339564186
 Camera:
   m_ObjectHideFlags: 0
@@ -64018,9 +63955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: b8e86b32889902c41bcc482d2eb00c6d, type: 2}
-  storeroomDoor: {fileID: 0}
-  levelCompleteText: {fileID: 2102435009}
-  levelCompleteCanvasGroup: {fileID: 2102435011}
+  levelCompleteText: {fileID: 447816481}
+  levelCompleteCanvasGroup: {fileID: 447816483}
   MirrorTextCanvasGroup: {fileID: 13164362}
 --- !u!1001 &1696215577
 PrefabInstance:
@@ -71817,7 +71753,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 95b97b8d2fff1514d9663486dc795b1e, type: 2}
+  - {fileID: 2100000, guid: ab54ca825c328154abc6da8f2f62ee26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71861,7 +71797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 13164360}
   textCanvasGroup: {fileID: 13164362}
-  objectMaterial: {fileID: 2100000, guid: 95b97b8d2fff1514d9663486dc795b1e, type: 2}
+  objectMaterial: {fileID: 2100000, guid: ab54ca825c328154abc6da8f2f62ee26, type: 2}
 --- !u!1001 &1879820552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82602,7 +82538,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 97860637d78638643a7e1884dc54c6a8, type: 2}
+  - {fileID: 2100000, guid: 64c3c1b163e127049a685da6e17dbb32, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82646,7 +82582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 13164360}
   textCanvasGroup: {fileID: 13164362}
-  objectMaterial: {fileID: 2100000, guid: 97860637d78638643a7e1884dc54c6a8, type: 2}
+  objectMaterial: {fileID: 2100000, guid: 64c3c1b163e127049a685da6e17dbb32, type: 2}
 --- !u!1001 &2008899265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83528,7 +83464,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2031006887}
   - component: {fileID: 2031006889}
-  - component: {fileID: 2031006888}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -83551,14 +83486,6 @@ Transform:
   m_Father: {fileID: 2002568254}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &2031006888
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031006886}
-  m_Enabled: 0
 --- !u!20 &2031006889
 Camera:
   m_ObjectHideFlags: 0
