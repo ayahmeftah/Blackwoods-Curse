@@ -14,4 +14,9 @@ public class DialogSignalTrigger : MonoBehaviour
     {
         flowchart.ExecuteBlock("AtMansionLine");
     }
+
+    public void TriggerPulledIntoMansion()
+    {
+        flowchart.ExecuteBlock("PulledIntoMansion");
+    }
 }
