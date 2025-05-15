@@ -207,7 +207,7 @@ public class StoreroomKeypad : MonoBehaviour
     private IEnumerator ClearHUDMessage(float delay)
     {
         yield return new WaitForSeconds(delay);
-        if (hud != null && isPlayerNear && !puzzleSolved)
+        if (hud != null && isPlayerNear)
         {
             hud.txt.color = Color.white;
             hud.HideMessage();
