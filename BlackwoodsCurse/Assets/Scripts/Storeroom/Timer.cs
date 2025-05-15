@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public string cutSceneName = "Cutscene3";
+
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime = 12;
     [SerializeField] CanvasGroup timerCanvasGroup;
@@ -32,6 +35,7 @@ public class Timer : MonoBehaviour
             remainingTime = 0;
             isGameOver = true;
             GameOver();
+            SceneManager.LoadScene(cutSceneName);
         }
 
         if (remainingTime < 11)

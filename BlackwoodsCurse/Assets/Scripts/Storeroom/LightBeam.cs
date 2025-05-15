@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Diagnostics;
 using UnityEngine.Diagnostics;
+using UnityEngine.SceneManagement;
 
 public class LightBeam
 {
@@ -11,6 +12,8 @@ public class LightBeam
     GameObject lightOjb;
     LineRenderer light;
     List<Vector3> lightIndices = new List<Vector3>();
+
+    private string cutSceneName = "Cutscene4_p1";
 
     public LightBeam(Vector3 pos, Vector3 dir, Material material)
     {
@@ -99,5 +102,7 @@ public class LightBeam
         ShootLight.Instance.DisplayMessage();
 
         ShootLight.Instance.HideMirrorText();
+
+        SceneManager.LoadScene(cutSceneName);
     }
 }
