@@ -15124,7 +15124,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -770.99994
     y: 38.666664
-    width: 181.33333
+    width: 179.8969
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15149,11 +15149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 865.50006, y: 76.50003}
+  scrollPos: {x: 891.6341, y: 91.93302}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -15233,7 +15233,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -564.6666
     y: 39.33333
-    width: 137.33334
+    width: 136.59793
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15309,7 +15309,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &948143163
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -15321,7 +15321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 032051624aa0ed44e912b8865e7345a3, type: 3}
+  soundClip: {fileID: 8300000, guid: 9dea67147a8b8fd44aa69bc294c17d7f, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &948143164
@@ -15338,9 +15338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -361.50003
-    y: 57.833313
-    width: 158.66666
+    x: -388.50003
+    y: 39.833313
+    width: 157.21649
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
